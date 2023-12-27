@@ -10,6 +10,65 @@ function World() {
             {
               man: {
                 age: null,
+                anatomicalСharacteristics: {
+                  head: {
+                    quantity: null,
+                    brain: {
+                      quantity: null,
+                      medullaOblongata: {
+                        substantiaGrisea: [] //серое вещество
+                      }, //Продолговатый мозг
+                      think() { }, //думать
+                    },
+                    eyes: {},
+                    mouth: {},
+                    nose: {},
+                    nurse: {},
+                  },
+
+                  //центральная нервная система
+                  centralNervousSystem: {
+
+                    // нейроны
+                    neurons: [
+                      {
+                        quantity: null,
+
+                        cellBody: {}, // тело клетки
+                        dendrites: [{}], // дендриты
+                        axon: {}, // аксон
+
+                        /**
+                         * приём информации из вне
+                         */
+                        receivingInformationFromOutside() { },
+
+                        /**
+                         * обработка информации
+                         */
+                        dataProcessing() { },
+
+                        /**
+                         *хранение информации
+                         */
+                        dataStorage() { },
+
+                        /**
+                         * передача информации
+                         */
+                        transferOfInformation() { },
+
+                        /**
+                         * вывод информации вовне
+                         */
+                        outputOfInformationToOutside() {
+                          let electricalSignal;
+                          let chemicalSignal;
+                        },
+                      },
+                    ]
+                  }
+                },
                 firstName: null,
                 lastName: null,
                 siblings: [], //родственники 
@@ -17,19 +76,14 @@ function World() {
                 experience: [], //опыт
                 skills: [], //навыки в работе
                 beliefs: [], //убеждения
-                emotions:[], //эмоции
-                anatomicalСharacteristics:[
-                  {brain:[]},
-                ],
-                think(){}, //думать
-                choose(){}, //выбирать
-                watch(){}, //видеть
-                hear(){}, //слышать
-                feel(){}, //ощущать
-                remember(){}, //запоминать
-                speak(){},
-                go(){}
-
+                emotions: [], //эмоции
+                choose() { }, //выбирать
+                watch() { }, //видеть
+                hear() { }, //слышать
+                feel() { }, //ощущать
+                remember() { }, //запоминать
+                speak() { },
+                go() { }
               }
             }
           ],
