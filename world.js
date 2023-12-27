@@ -16,6 +16,20 @@ function World() {
                 acquiredHabbits: [], //привычки          
                 experience: [], //опыт
                 skills: [], //навыки в работе
+                beliefs: [], //убеждения
+                emotions:[], //эмоции
+                anatomicalСharacteristics:[
+                  {brain:[]},
+                ],
+                think(){}, //думать
+                choose(){}, //выбирать
+                watch(){}, //видеть
+                hear(){}, //слышать
+                feel(){}, //ощущать
+                remember(){}, //запоминать
+                speak(){},
+                go(){}
+
               }
             }
           ],
