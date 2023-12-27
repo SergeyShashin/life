@@ -65,6 +65,13 @@ function World() {
                           let electricalSignal;
                           let chemicalSignal;
                         },
+
+                        /**
+                         *объединение нейронов 
+                         */
+                        connect(){
+
+                        }
                       },
                     ]
                   }
