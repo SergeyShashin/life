@@ -41,7 +41,7 @@ function World() {
                         /**
                          * приём информации из вне
                          */
-                        receivingInformationFromOutside() { },
+                        resivingInformationFromOutside() { },
 
                         /**
                          * обработка информации
