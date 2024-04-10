@@ -20,3 +20,6 @@ Start with the auto-settings of the character and the world.
 Start with manual character or world settings.
 The ability to change the characteristics of a character or world during the game.
 Rewind the game.
+
+Начальная страница.
+Создание или выбор персонажей.
