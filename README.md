@@ -22,4 +22,6 @@ The ability to change the characteristics of a character or world during the gam
 Rewind the game.
 
 Начальная страница.
+Реальный мир с актуальностью на момент старта.
 Создание или выбор персонажей.
+Создание или выбор места старта для каждого из персонажей.
