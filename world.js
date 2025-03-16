@@ -90,7 +90,10 @@ function World() {
                 feel() { }, //ощущать
                 remember() { }, //запоминать
                 speak() { },
-                go() { }
+                speakForTarget() { },
+                smileSimple(){},
+                smileForTarget(){},
+                go() { },
               }
             }
           ],
