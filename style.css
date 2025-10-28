@@ -1,30 +1,58 @@
 * {
-  color: crimson;
+  color: beige;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightseagreen;
+  padding: 5px;
+}
+
+.time {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.worldInfo {
+  display: flex;
+}
+
+time {
+  background: crimson;
+  padding: 10px;
+  border-radius: 10px;
+  height: 30px;
 }
 
 .baseEl {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  width: 170px;
+  margin: 10px;
 }
 
 .baseEl_monitor {
   display: flex;
   justify-content: center;
-  width: 80px;
-  height: 80px;
-  padding: 30px;
+  align-items: center;
+  height: 30px;
   border-radius: 50px;
-  background: lightseagreen;
+  background: crimson;
 }
 
 .baseEl_text {
+  display: flex;
+  justify-content: center;
 }
 
-sup{
-  font-size: 10px;
+.controlTime {
+  border: none;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background: crimson;
 }
 
 .controlTime:hover {
