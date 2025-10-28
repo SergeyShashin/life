@@ -10,13 +10,22 @@ body {
   padding: 5px;
 }
 
+.container {
+  width: 320px;
+  text-align: center;
+  margin: auto;
+}
+
 .time {
+  display: flex;
   text-align: center;
   margin: 20px 0;
 }
 
 .worldInfo {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 time {
