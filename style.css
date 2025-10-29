@@ -10,6 +10,10 @@ body {
   padding: 5px;
 }
 
+input {
+  color: crimson;
+}
+
 .container {
   width: 320px;
   text-align: center;
