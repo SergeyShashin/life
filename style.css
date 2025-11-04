@@ -14,6 +14,11 @@ input {
   color: crimson;
 }
 
+fieldset{
+  margin: 5px 0;
+  padding: 5px;
+}
+
 .container {
   width: 320px;
   text-align: center;
