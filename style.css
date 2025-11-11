@@ -14,7 +14,7 @@ input {
   color: crimson;
 }
 
-fieldset{
+fieldset {
   margin: 5px 0;
   padding: 5px;
 }
@@ -75,4 +75,11 @@ time {
 
 .controlTime:hover {
   cursor: pointer;
+}
+
+button {
+  width: 170px;
+  margin: 10px;
+  border-radius: 50px;
+  background: crimson;
 }
