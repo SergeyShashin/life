@@ -77,9 +77,16 @@ time {
   cursor: pointer;
 }
 
-button {
+#btnStartGame {
   width: 170px;
+  padding: 10px 0;
   margin: 10px;
-  border-radius: 50px;
+  border-radius: 20px;
   background: crimson;
+  border: 1px solid crimson;
+}
+
+#btnStartGame:hover {
+  cursor: pointer;
+  border: 1px solid beige;
 }
