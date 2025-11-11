@@ -21,7 +21,7 @@
           &nbsp;<button class="controlTime">></button>
     </section>
 
-    <section class='worldInfo'>
+    <section class='worldInfo' id='worldInfo'>
       <div class='baseEl'>
         <p class='baseEl_monitor'>8 336 615 895</p>
         <p class='baseEl_text'>человек</p>
@@ -3359,7 +3359,46 @@
         </fieldset>
 
       </form>
-      <button id='btnStartGame'>Старт</button>
+      <button class='btn' id='btnStartGame'>Старт</button>
+    </section>
+
+    <section id='modeling'>
+      <button class='btn' id='btnAutomaticControlOrHandControl'>Ручное управление</button>
+      <table id='currentDay'>
+        <tr>
+          <td></td>
+          <td>{День 1. Текущий день. Меняется с какой-то скоростью, меняя инфо о мире и данном человеке}</td>
+        </tr>
+        <tr>
+          <td>{00:00:00}</td>
+          <td>{иконка события в это время с возможностью кликнуть для просмотра или участия}</td>
+        </tr>
+        <tr>
+          <td>{00:00:01}</td>
+          <td>{иконка события в это время с возможностью кликнуть для просмотра или участия}</td>
+
+        </tr>
+        <tr>
+          <td>{00:00:02}</td>
+          <td>{иконка события в это время с возможностью кликнуть для просмотра или участия}</td>
+
+        </tr>
+        <tr>
+          <td>{00:00:03}</td>
+          <td>{иконка события в это время с возможностью кликнуть для просмотра или участия}</td>
+
+        </tr>
+        <tr>
+          <td>{00:00:04}</td>
+          <td>{иконка события в это время с возможностью кликнуть для просмотра или участия}</td>
+
+        </tr>
+        <tr>
+          <td>{00:00:05}</td>
+          <td>{иконка события в это время с возможностью кликнуть для просмотра или участия}</td>
+
+        </tr>
+      </table>
     </section>
 
   </div>
@@ -3376,6 +3415,7 @@
 
   <script src="world.js"></script>
   <script src="setCurrentTime.js"></script>
+  <script src="handlersEvents.js"></script>
 
 
 </body>
