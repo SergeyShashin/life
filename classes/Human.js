@@ -7,7 +7,6 @@ export class Human {
   surname;
   patronymic;
   daysLife;
-  
 
   constructor(relatives, anatomy, dateBirth, placeBirth, firstName, surname, patronymic) {
     this.relatives = relatives;
@@ -18,4 +17,33 @@ export class Human {
     this.surname = surname;
     this.patronymic = patronymic;
   }
+
+  getRelatives() {
+    return this.relatives;
+  }
+
+  getAnatomy() {
+    return this.anatomy;
+  }
+
+  getDateBirth() {
+    return this.dateBirth;
+  }
+
+  getPlaceBirth() {
+    return this.placeBirth;
+  }
+
+  getfirstName() {
+    return this.firstName;
+  }
+
+  getSurnName() {
+    return this.surname;
+  }
+
+  getPatronymic(){
+    return this.patronymic;
+  }
+
 }
