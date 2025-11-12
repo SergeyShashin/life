@@ -1,0 +1,20 @@
+{
+  "name": "life",
+  "version": "1.0.0",
+  "description": "Игра (приложение), моделирующая один из возможных вариантов жизни на земле.",
+  "main": "life.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyShashin/life.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyShashin/life/issues"
+  },
+  "homepage": "https://github.com/SergeyShashin/life#readme"
+}

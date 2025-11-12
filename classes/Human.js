@@ -1,4 +1,4 @@
-export class Human {
+class Human {
   relatives;
   anatomy;
   dateBirth;
