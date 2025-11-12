@@ -8,6 +8,7 @@
 body {
   background: lightseagreen;
   padding: 5px;
+  overflow: scroll;
 }
 
 input {
@@ -79,9 +80,9 @@ time {
 }
 
 .btn {
-  width: 170px;
-  padding: 10px 0;
-  margin: 10px;
+  width: 120px;
+  height: 50px;
+  margin: 5px;
   border-radius: 20px;
   background: crimson;
   border: 1px solid crimson;
@@ -92,18 +93,31 @@ time {
   border: 1px solid beige;
 }
 
-#btnStartGame {}
-
 
 #modeling {
   display: none;
 }
 
+#btnStartGame {}
+
 #btnAutomaticControlOrHandControl {
-  height: 50px;
 }
 
 td {
   margin: 2px;
   border: 1px solid beige;
+}
+
+#settings{
+
+}
+
+#map img{
+  width: 320px;
+}
+
+#btnMap{}
+#btnSettings{}
+
+#control{
 }
