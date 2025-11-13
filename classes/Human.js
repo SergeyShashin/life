@@ -1,12 +1,15 @@
 class Human {
+  anatomy = {
+
+  };
   relatives;
-  anatomy;
   dateBirth;
   placeBirth;
   firstName;
   surname;
   patronymic;
-  daysLife;
+  quantityDaysLife = 43800;
+  numberDayLife = 1;
 
   constructor(dateBirth, placeBirth, firstName, surname, patronymic) {
     this.dateBirth = dateBirth;
@@ -50,6 +53,14 @@ class Human {
 
   getPatronymic() {
     return this.patronymic;
+  }
+
+  setNumberDayLife(numberDayLife) {
+    this.numberDayLife = numberDayLife;
+  }
+
+  getNumberDayLife() {
+    return this.numberDayLife;
   }
 
 }

@@ -36,7 +36,6 @@ const life = {
     this.settingsEl = document.getElementById('settings');
     this.modelingEl = document.getElementById('modeling');
     this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');
-
   },
 
   setEventHandlers() {
