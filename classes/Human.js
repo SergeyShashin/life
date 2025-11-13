@@ -8,7 +8,7 @@ class Human {
   patronymic;
   daysLife;
 
-  constructor(relatives, anatomy, dateBirth, placeBirth, firstName, surname, patronymic) {
+  constructor(dateBirth, placeBirth, firstName, surname, patronymic) {
     this.dateBirth = dateBirth;
     this.placeBirth = placeBirth;
     this.firstName = firstName;
