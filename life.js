@@ -3,7 +3,15 @@
 const human = new Human('{new dateBirth}', '{new placeBirth}', '{new firstName}', '{new surname}', '{new patronymic}');
 console.log(human);
 
+const settings = {
+  sizeTeam: 20,
+  getSizeTeam() {
+    return this.sizeTeam
+  },
+};
+
 const life = {
+  settings,
   timeEL: null,
   interval: null,
   worldInfoEl: null,
@@ -53,6 +61,6 @@ const life = {
         break;
     }
   }
-}
+};
 
 window.onload = life.run();
