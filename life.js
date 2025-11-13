@@ -30,7 +30,7 @@ const life = {
     this.date = new Date();
     this.interval = setInterval(() => {
       this.date.setSeconds(this.date.getSeconds() + 1);
-      this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth()}:${this.date.getDate()} ${this.date.toTimeString()}`;
+      this.renderTime();
     }, 1000);
     this.worldInfoEl = document.getElementById('worldInfo');
     this.settingsEl = document.getElementById('settings');
@@ -58,7 +58,21 @@ const life = {
       case 'btnSettings':
         this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'inline-block' : 'none';
         break;
+      case 'btnSettings':
+        this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'inline-block' : 'none';
+        break;
+      case 'btnMinusDay':
+      case 'btnPlusDay':
+        this.updateDate(e.target.dataset.dayvalue);
+        break;
     }
+  },
+  renderTime() {
+    this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth()+1}:${this.date.getDate()} ${this.date.toTimeString()}`;
+  },
+  updateDate(quantityDay) {
+    this.date.setDate(this.date.getDate() + Number(quantityDay));
+    this.renderTime();
   }
 };
 
