@@ -28,38 +28,40 @@ fieldset {
 
 .time {
   display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
   margin: 20px 0;
 }
 
-.worldInfo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 time {
   background: crimson;
+  border-radius: 20px;
   padding: 10px;
-  border-radius: 10px;
-  height: 50px;
+}
+
+.worldInfo {
+  display: flex;
+  flex-flow: wrap;
+  /* flex-wrap: wrap; */
+  justify-content: center;
 }
 
 .baseEl {
   display: flex;
   flex-direction: column;
-  width: 170px;
+  width: 150px;
   margin: 5px;
 }
 
 .baseEl_monitor {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 30px;
-  border-radius: 50px;
+  border-radius: 20px;
   background: crimson;
+  padding: 10px;
 }
 
 .baseEl_text {

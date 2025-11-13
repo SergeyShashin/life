@@ -10,6 +10,7 @@ const life = {
   settingsEl: null,
   modelingEl: null,
   btnAutomaticControlOrHandControlEl: null,
+  date: null,
 
   run() {
     this.init();
@@ -18,11 +19,16 @@ const life = {
 
   init() {
     this.timeEL = document.querySelector('time');
-    this.interval = setInterval(() => timeEL.textContent = new Date(), 1000);
+    this.date = new Date();
+    this.interval = setInterval(() => {
+      this.date.setSeconds(this.date.getSeconds() + 1);
+      this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth()}:${this.date.getDate()} ${this.date.toTimeString()}`;
+    }, 1000);
     this.worldInfoEl = document.getElementById('worldInfo');
     this.settingsEl = document.getElementById('settings');
     this.modelingEl = document.getElementById('modeling');
     this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');
+
   },
 
   setEventHandlers() {
