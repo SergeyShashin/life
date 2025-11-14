@@ -322,6 +322,188 @@ class Human {
           description: '',
           pathImg: ''
         },
+        processusPalatinusMaxillae: {
+          inStock: true,
+          nameLatin: 'processus palatinus maxillae',
+          nameRussian: 'нёбный отросток верхней челюсти',
+          description: '',
+          pathImg: ''
+        },
+        hamulusPterygoideus: {
+          inStock: true,
+          nameLatin: 'hamulus pterygoideus',
+          nameRussian: 'крыловидный крючок',
+          description: '',
+          pathImg: ''
+        },
+        angulusMandibulae: {
+          inStock: true,
+          nameLatin: 'angulus mandibulae',
+          nameRussian: 'угол нижней челюсти',
+          description: '',
+          pathImg: ''
+        },
+        margoForaminisMagni: {
+          inStock: true,
+          nameLatin: 'margo foraminis magni',
+          nameRussian: 'край большого затылочного отверстия',
+          description: '',
+          pathImg: ''
+        },
+        protuberantiaOccipitalisExterna: {
+          inStock: true,
+          nameLatin: 'protuberantia occipitalis externa',
+          nameRussian: 'наружный затылочный выступ',
+          description: '',
+          pathImg: ''
+        },
+        canalisAuditivusInternusInPartemPetrosamOssisTemporalisDucens: {
+          inStock: true,
+          nameLatin: 'canalis auditivus internus in partem petrosam ossis temporalis ducens',
+          nameRussian: 'внутренний слуховой проход, вещущий в каменистую часть височной кости',
+          description: '',
+          pathImg: ''
+        },
+        sulciArteriaeMeningeaeMediae: {
+          inStock: true,
+          nameLatin: 'sulci arteriae meningeae mediae',
+          nameRussian: 'борозды средней менингеальной артерии',
+          description: '',
+          pathImg: ''
+        },
+        suturaSagittalis: {
+          inStock: true,
+          nameLatin: 'sutura sagittalis',
+          nameRussian: 'сагиттальный шов',
+          description: 'Сочленяет между собой теменные кости.',
+          pathImg: ''
+        },
+        osPlanum: {
+          inStock: true,
+          nameLatin: 'os planum',
+          nameRussian: 'плоская кость',
+          description: 'Состоит из трех слоев - внутренней пластинки, слоя губчатого вещества и наружной пластинки.',
+          pathImg: ''
+        },
+        sulciAtrteriaeMeningealisMediae: {
+          inStock: true,
+          nameLatin: 'sulci atrteriae meningealis mediae',
+          nameRussian: 'борозды средней мозговой артерии',
+          description: 'В этом месте пролегает средняя менингеальная артерия, снабжающая кровью мозговые оболчки.',
+          pathImg: ''
+        },
+        cristaFrontalis: {
+          inStock: true,
+          nameLatin: 'crista frontalis',
+          nameRussian: 'лобный гребень',
+          description: 'Выступ лобной кости, вдающийся в полость черепа.',
+          pathImg: ''
+        },
+        vertex: {
+          inStock: true,
+          nameLatin: 'vertex',
+          nameRussian: 'вертекс',
+          description: 'Макушка головы.',
+          pathImg: ''
+        },
+        tuberositasOssisParietalis: {
+          inStock: true,
+          nameLatin: 'tuberositas ossis parietalis',
+          nameRussian: 'бугристость теменной кости',
+          description: 'Бугорки на поверхности теменной кости.',
+          pathImg: ''
+        },
+        canalisIncisivus: {
+          inStock: true,
+          nameLatin: 'canalis incisivus',
+          nameRussian: 'резцовый канал',
+          description: 'Углубление верхнего нёба, идущее к резцам.',
+          pathImg: ''
+        },
+        raphePlatinum: {
+          inStock: true,
+          nameLatin: 'raphe platinum',
+          nameRussian: 'срединный нёбный шов',
+          description: 'Проходит между нёбными отростками верхних челюстей.',
+          pathImg: ''
+        },
+        foramenSpinosum: {
+          inStock: true,
+          nameLatin: 'foramen spinosum',
+          nameRussian: 'остистое отверстие',
+          description: '',
+          pathImg: ''
+        },
+        tuberculumPharyngeum: {
+          inStock: true,
+          nameLatin: 'tuberculum pharyngeum',
+          nameRussian: 'глоточный бугорок',
+          description: '',
+          pathImg: ''
+        },
+        foramenStylomastoideum: {
+          inStock: true,
+          nameLatin: 'foramen stylomastoideum',
+          nameRussian: 'шилососцевидное отверстие',
+          description: '',
+          pathImg: ''
+        },
+        foramenMagnum: {
+          inStock: true,
+          nameLatin: 'foramen magnum',
+          nameRussian: 'большое затылочное отверстие',
+          description: 'Отверстие, через которое спинной мозг соединяется со стволом головного мозга.',
+          pathImg: ''
+        },
+        foramenMastoideum: {
+          inStock: true,
+          nameLatin: 'foramen mastoideum',
+          nameRussian: 'сосцевидное отверстие',
+          description: '',
+          pathImg: ''
+        },
+        cristaOccipitalisExterna: {
+          inStock: true,
+          nameLatin: 'crista occipitalis externa',
+          nameRussian: 'наружный затылочный гребень',
+          description: '',
+          pathImg: ''
+        },
+        incisuraMastoidea: {
+          inStock: true,
+          nameLatin: 'incisura mastoidea',
+          nameRussian: 'сосцевидная вырезка',
+          description: '',
+          pathImg: ''
+        },
+        foramenJugulare: {
+          inStock: true,
+          nameLatin: 'foramen jugulare',
+          nameRussian: 'ярёмное отверстие',
+          description: '',
+          pathImg: ''
+        },
+        canalisCarotis: {
+          inStock: true,
+          nameLatin: 'canalis carotis',
+          nameRussian: 'каротидный канал',
+          description: '',
+          pathImg: ''
+        },
+        foramenLacerum: {
+          inStock: true,
+          nameLatin: 'foramen lacerum',
+          nameRussian: 'рваное отверстие',
+          description: '',
+          pathImg: ''
+        },
+        foramenOvale: {
+          inStock: true,
+          nameLatin: 'foramen ovale',
+          nameRussian: 'овальное отверстие',
+          description: '',
+          pathImg: ''
+        },
 
 
       },
