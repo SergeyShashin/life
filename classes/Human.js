@@ -27,8 +27,92 @@ class Human {
           nameRussian: 'венечный шов',
           description: 'Сочленение лобной кости с теменными костями.',
           pathImg: ''
+        },
+        osParietale: {
+          inStock: true,
+          nameLatin: 'os parietale',
+          nameRussian: 'теменная кость',
+          description: 'Одна из двух парных костей, образующих крышку и боковые стенки черепа.',
+          pathImg: ''
+        },
+        calvaria: {
+          inStock: true,
+          nameLatin: 'calvaria',
+          nameRussian: 'свод черепа',
+          description: 'Свод, прикрывающий сверху головной мозг.',
+          pathImg: ''
+        },
+        glabella: {
+          inStock: true,
+          nameLatin: 'glabella',
+          nameRussian: 'надпереносье',
+          description: 'Место соединения носовых костей с лобными отростками верхних челюстей.',
+          pathImg: ''
+        },
+        incisuraFrontalis: {
+          inStock: true,
+          nameLatin: 'incisura frontalis',
+          nameRussian: 'Лобная вырезка',
+          description: 'Отверстие или канавка в верхнем крае глазницы; место выхода кровеносных сосудов и нервов.',
+          pathImg: ''
+        },
+        sinusFrontales: {
+          inStock: true,
+          nameLatin: 'sinus frontales',
+          nameRussian: 'Лобные пазухи',
+          description: 'Воздухоносные полости, сообщаются с носовой полостью; их функция не вполне ясна, но считается, что они придают опреденную форму глазницам, чем помогают обеспечивать бинокулярное зрение.',
+          pathImg: ''
+        },
+        orbita: {
+          inStock: true,
+          nameLatin: 'orbita',
+          nameRussian: 'Глазница',
+          description: 'Полость, содержащая глазное яблоко, наружные мышца глаза, нервы и кровеносные сосуды.',
+          pathImg: ''
+        },
+        osLacrimale: {
+          inStock: true,
+          nameLatin: 'os lacrimale',
+          nameRussian: 'Слезная кость',
+          description: 'Самая маленькая кость лицевого черепа. Является частью стенки глазницы.',
+          pathImg: ''
+        },
+        nazion: {
+          inStock: true,
+          nameLatin: 'nazion',
+          nameRussian: 'назион',
+          description: 'Точка соединения носовых костей с лобной костью.',
+          pathImg: ''
+        },
+        osNasale: {
+          inStock: true,
+          nameLatin: 'os nasale',
+          nameRussian: 'Носовая кость',
+          description: 'Парная кость, носовые кости образуют верхнюю часть спинки носа - переносицу.',
+          pathImg: ''
+        },
+        cristaGalli: {
+          inStock: true,
+          nameLatin: 'crista galli',
+          nameRussian: 'Петушистый гребень',
+          description: 'Гребневидный отросток решётчатой кости.',
+          pathImg: ''
+        },
+        cellulaeEthmoidales: {
+          inStock: true,
+          nameLatin: 'cellulae ethmoidales',
+          nameRussian: 'Решётчатые ячейки',
+          description: '8-10 небольших воздухоносных ячеек в наружном слое решётчатой кости.',
+          pathImg: ''
+        },
+        septumNasi: {
+          inStock: true,
+          nameLatin: 'septum nasi',
+          nameRussian: 'перегородка носа',
+          description: 'Костное образование, разделяющее носовую полость на правый и левый носовые ходы.',
+          pathImg: ''
         }
-
+        
       },
       eyes: {},
       mouth: {},
