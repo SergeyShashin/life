@@ -9,7 +9,25 @@ class Human {
         }, //Продолговатый мозг
       },
       cranium: {
-        
+        inStock: true,
+        nameLatin: 'cranium',
+        nameRussian: 'Череп',
+        description: 'Состоит из двадцати восьми костей. Защищает мозг и ограны чувств от повреждений.',
+        pathImg: '',
+        osFrontale: {
+          inStock: true,
+          nameLatin: 'os frontale',
+          nameRussian: 'лобная кость',
+          description: 'Образует лоб и верхние стенки глазниц. При рождении состоит из двух половин, которые затем срастаются между собой.',
+          pathImg: ''
+        },
+        suturaСoronalis: {
+          inStock: true,
+          nameLatin: 'sutura coronalis',
+          nameRussian: 'венечный шов',
+          description: 'Сочленение лобной кости с теменными костями.',
+          pathImg: ''
+        }
 
       },
       eyes: {},
