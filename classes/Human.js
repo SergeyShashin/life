@@ -7,7 +7,10 @@ class Human {
         medullaOblongata: {
           substantiaGrisea: [] //серое вещество
         }, //Продолговатый мозг
-        think() { }, //думать
+      },
+      cranium: {
+        
+
       },
       eyes: {},
       mouth: {},
@@ -79,6 +82,7 @@ class Human {
   skills = []; //навыки
   beliefs = []; //убеждения
   emotions = []; //эмоции
+  currentEmotion;
 
   constructor(dateBirth, placeBirth, firstName, surname, patronymic) {
     this.dateBirth = dateBirth;
@@ -164,24 +168,40 @@ class Human {
     return this.skills;
   }
 
-  choose() { } //выбирать
+  setBeliefs(beliefs) {
+    this.beliefs = beliefs;
+  }
 
+  getBeliefs() {
+    return this.beliefs;
+  }
+
+  setEmotions(emotions) {
+    this.emotions = emotions;
+  }
+
+  getEmotions() {
+    return this.emotions;
+  }
+
+  setCurrentEmotion(currentEmotion) {
+    this.currentEmotion = currentEmotion;
+  }
+
+  getCurrentEmotion() {
+    return this.currentEmotion;
+  }
+
+  think() { } //думать
   watch() { } //видеть
-
+  choose() { } //выбирать
   hear() { } //слышать
-
   feel() { } //ощущать
-
-  remember() { } //запоминать
-
+  remember(data) { } //запоминать
   speak() { }
-
   speakForTarget() { }
-
   smileSimple() { }
-
   smileForTarget() { }
-
-  go() { }
+  go(targetPosition) { }
 
 }
