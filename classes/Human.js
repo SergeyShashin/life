@@ -175,6 +175,153 @@ class Human {
           description: 'Пространство между верхней и внутренней стенками глазницы, через которое проходят кровеносные сосуды и нервы.',
           pathImg: ''
         },
+        osZygomaticum: {
+          inStock: true,
+          nameLatin: 'os zygomaticum',
+          nameRussian: 'cкуловая кость',
+          description: 'Одна из парных костей, образующих скулу и боковую (латеральную) стенку глазницы.',
+          pathImg: ''
+        },
+        arcusZygomaticum: {
+          inStock: true,
+          nameLatin: 'arcus zygomaticum',
+          nameRussian: 'cкуловая дуга',
+          description: 'Костный отросток, соединяющий височную и скуловую кости.',
+          pathImg: ''
+        },
+        margoOrbitaeInferior: {
+          inStock: true,
+          nameLatin: 'margo orbitae inferior',
+          nameRussian: 'нижний край глазницы',
+          description: '',
+          pathImg: ''
+        },
+        foramenInfraorbitale: {
+          inStock: true,
+          nameLatin: 'foramen infraorbitale',
+          nameRussian: 'подглазничное отверстие',
+          description: 'Через это отверстие выходят кровеносные сосуды и подглазничный нерв.',
+          pathImg: ''
+        },
+        maxila: {
+          inStock: true,
+          nameLatin: 'maxila',
+          nameRussian: 'верхняя челюсть',
+          description: 'Одна из парных костей, образующих верхнюю челюсть.',
+          pathImg: ''
+        },
+        sinusMaxillaris: {
+          inStock: true,
+          nameLatin: 'sinus maxillaris',
+          nameRussian: 'верхнечелюстная пазуха',
+          description: 'Полость пирамидаидальной формы, расположенная внутри верхней челюсти (гайморова пазуха).',
+          pathImg: ''
+        },
+        ramusMandibulae: {
+          inStock: true,
+          nameLatin: 'ramus mandibulae',
+          nameRussian: 'ветвь нижней челюсти',
+          description: 'Костные отростки, отходящие от тела нижней челюсти позади зубов. Служит местом прикрепления мышц нижней челюсти.',
+          pathImg: ''
+        },
+        corpusMandibulae: {
+          inStock: true,
+          nameLatin: 'corpus mandibulae',
+          nameRussian: 'тело нижней челюсти',
+          description: 'Подковообразная часть нижней челюсти.',
+          pathImg: ''
+        },
+        caputMandibulae: {
+          inStock: true,
+          nameLatin: 'caput mandibulae',
+          nameRussian: 'головка нижней челюсти',
+          description: 'Участвует в образовании височно-нижнечелюстного сустава.',
+          pathImg: ''
+        },
+        processusStyloideusOssisTemporalis: {
+          inStock: true,
+          nameLatin: 'processus styloideus ossis temporalis',
+          nameRussian: 'шиловидный отросток височной кости',
+          description: 'Тонкая продолговатая кость, к которой крепятся мышцы и связки.',
+          pathImg: ''
+        },
+        meatusAcusticusExternus: {
+          inStock: true,
+          nameLatin: 'meatus acusticus externus',
+          nameRussian: 'наружный слуховой проход',
+          description: 'Канал, ведущий в среднее и внутреннее ухо.',
+          pathImg: ''
+        },
+        processusMastoideusOssisTemporalis: {
+          inStock: true,
+          nameLatin: 'processus mastoideus ossis temporalis',
+          nameRussian: 'сосцевидный отросток',
+          description: 'Выпуклость височной кости, находящаяся за ухом. Место прикрепления шейных мышц.',
+          pathImg: ''
+        },
+        osOccipitale: {
+          inStock: true,
+          nameLatin: 'os occipitale',
+          nameRussian: 'затылочная кость',
+          description: 'Блюдцеобразная кость, образующая заднюю стенку и часть основания черепа.',
+          pathImg: ''
+        },
+        suturaLambdoidea: {
+          inStock: true,
+          nameLatin: 'sutura lambdoidea',
+          nameRussian: 'ламбовидный шов',
+          description: 'Шов, соединяющий теменные кости с затылочной костью.',
+          pathImg: ''
+        },
+        foramenMentale: {
+          inStock: true,
+          nameLatin: 'foramen mentale',
+          nameRussian: 'подбородочное отверстие',
+          description: 'Отверстие, через которое нервы и кровеносные сосуды направляются от корней зубов к нижней губе и подбородку.',
+          pathImg: ''
+        },
+        fossaHypophysialis: {
+          inStock: true,
+          nameLatin: 'fossa hypophysialis',
+          nameRussian: 'гипофизарная ямка',
+          description: 'Углубление в котором располагается гипофиз.',
+          pathImg: ''
+        },
+        parsOrbitalisOssisFrontalis: {
+          inStock: true,
+          nameLatin: 'pars orbitalis ossis frontalis',
+          nameRussian: 'глазничная часть лобной кости',
+          description: 'Учавствует в образовании стенок глазницы.',
+          pathImg: ''
+        },
+        sinusFrontalis: {
+          inStock: true,
+          nameLatin: 'sinus frontalis',
+          nameRussian: 'лобная пазуха',
+          description: '',
+          pathImg: ''
+        },
+        sinusSphenoidalis: {
+          inStock: true,
+          nameLatin: 'sinus sphenoidalis',
+          nameRussian: 'клиновидная пазуха',
+          description: '',
+          pathImg: ''
+        },
+        laminaPerpendicularisOssisEthmoidalis: {
+          inStock: true,
+          nameLatin: 'lamina perpendicularis ossis ethmoidalis',
+          nameRussian: 'перпендикулярная пластинка из решётчатой кости',
+          description: '',
+          pathImg: ''
+        },
+        vomer: {
+          inStock: true,
+          nameLatin: 'vomer',
+          nameRussian: 'сошник',
+          description: '',
+          pathImg: ''
+        },
 
 
       },
