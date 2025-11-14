@@ -111,8 +111,72 @@ class Human {
           nameRussian: 'перегородка носа',
           description: 'Костное образование, разделяющее носовую полость на правый и левый носовые ходы.',
           pathImg: ''
-        }
-        
+        },
+        conchaNasalis: {
+          inStock: true,
+          nameLatin: 'concha nasalis',
+          nameRussian: 'носовая раковина',
+          description: 'Похожее формой на раковину костное образование, выступающее в носовую полость.',
+          pathImg: ''
+        },
+        conchaNasalisInferior: {
+          inStock: true,
+          nameLatin: 'concha nasalis inferior',
+          nameRussian: 'Нижняя носовая раковина',
+          description: 'Увеличивает площадь поверхности полоса носа.',
+          pathImg: ''
+        },
+        pterion: {
+          inStock: true,
+          nameLatin: 'pterion',
+          nameRussian: 'птерион',
+          description: 'Место, где сочленяются теменная и лобная кости, чешуйчатая часть височной кости и большое крыло клиновидной кости.',
+          pathImg: ''
+        },
+        osTemporale: {
+          inStock: true,
+          nameLatin: 'os temporale',
+          nameRussian: 'височная кость',
+          description: 'Одная из парных костей, образующих боковые области свода черепа и боковые участки основания черепа.',
+          pathImg: ''
+        },
+        parsSquamosaOssisTemporalis: {
+          inStock: true,
+          nameLatin: 'pars squamosa ossis temporalis',
+          nameRussian: 'Чешуйчатая часть височной кости',
+          description: 'Образует часть боковой стенки черепа.',
+          pathImg: ''
+        },
+        osSphenoidale: {
+          inStock: true,
+          nameLatin: 'os sphenoidale',
+          nameRussian: 'клиновидная кость',
+          description: 'Позади глазниц принимает участие в образовании основания черепа.',
+          pathImg: ''
+        },
+        alaMinorOssisSphenoidalis: {
+          inStock: true,
+          nameLatin: 'ala minor ossis sphenoidalis',
+          nameRussian: 'Малое крыло клиновидной кости',
+          description: 'Один из парных боковых отростков тела клиновидной кости.',
+          pathImg: ''
+        },
+        alaMajorOssisSphenoidalis: {
+          inStock: true,
+          nameLatin: 'ala majnor ossis sphenoidalis',
+          nameRussian: 'Большое крыло клиновидной кости',
+          description: 'Один из симметричных отростков, отходящих в обе стороны из тела клиновидной кости.',
+          pathImg: ''
+        },
+        fissuraSuperiorOrbitae: {
+          inStock: true,
+          nameLatin: 'fissura superior orbitae',
+          nameRussian: 'Верхняя щель глазницы',
+          description: 'Пространство между верхней и внутренней стенками глазницы, через которое проходят кровеносные сосуды и нервы.',
+          pathImg: ''
+        },
+
+
       },
       eyes: {},
       mouth: {},
