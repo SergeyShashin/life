@@ -1,7 +1,11 @@
 class Human {
   anatomy = {
     head: {
-      quantity: null,
+      inStock: true,
+      nameLatin: '',
+      nameRussian: 'голова',
+      description: '',
+      pathImg: '',
       brain: {
         quantity: null,
         medullaOblongata: {
