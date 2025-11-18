@@ -844,9 +844,32 @@ class Human {
   renderCranium(parentEl) {
     let craniumEl = document.createElement('section');
     craniumEl.id = `cranium${parentEl.id}`;
+    let { cranium } = this.anatomy.head;
 
-    for (let craniumPart of this.getCranium()) {
-      console.log(craniumPart);
+    if (!cranium.inStock) {
+      return
+    }
+
+    let headerCraniumEl = document.createElement('h4');
+    headerCraniumEl.textContent = cranium.nameRussian;
+
+    let headerDecription = document.createElement('p');
+    headerDecription.textContent = cranium.description;
+
+    craniumEl.appendChild(headerCraniumEl);
+    craniumEl.appendChild(headerDecription);
+
+    for (let craniumKey in cranium) {
+      if (typeof cranium[craniumKey] !== 'object' && !cranium[craniumKey].inStock) {
+        continue;
+      }
+
+      let craniumPartEl = document.createElement('section');
+
+      let headerCraniumPartEl = document.createElement('h5');
+      headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
+      craniumPartEl.appendChild(headerCraniumPartEl);
+      craniumEl.appendChild(craniumPartEl);
     }
 
     parentEl.appendChild(craniumEl);
