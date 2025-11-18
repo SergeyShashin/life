@@ -34,10 +34,14 @@ const life = {
     this.modelingEl = document.getElementById('modeling');
     this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');
 
-    for (let team = 0; team < this.settings.getSizeTeam(); team++) {
+    for (let i = 0; i < this.settings.getSizeTeam(); i++) {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
-         '{new placeBirth}', '{new firstName}', '{new surname}', '{new patronymic}');
+        '[00.000000, 00.000000]', '', '', '');
+
+      human.createHeadEl(`head${i}`);
+      console.log(human);
+      human.renderHead(this.settingsEl);
     }
   },
 

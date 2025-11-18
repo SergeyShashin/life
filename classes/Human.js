@@ -690,7 +690,7 @@ class Human {
   relatives; // связи
   siblings = []; //родственники 
   dateBirth;
-  placeBirth;
+  coordinatesBirth;
   firstName;
   surname;
   patronymic;
@@ -700,12 +700,15 @@ class Human {
   experience = []; //опыт
   skills = []; //навыки
   beliefs = []; //убеждения
+  fears = [];//страхи
   emotions = []; //эмоции
   currentEmotion;
 
-  constructor(dateBirth, placeBirth, firstName, surname, patronymic) {
+  headEl;
+
+  constructor(dateBirth, coordinatesBirth, firstName, surname, patronymic) {
     this.dateBirth = dateBirth;
-    this.placeBirth = placeBirth;
+    this.coordinatesBirth = coordinatesBirth;
     this.firstName = firstName;
     this.surname = surname;
     this.patronymic = patronymic;
@@ -731,8 +734,8 @@ class Human {
     return this.dateBirth;
   }
 
-  getPlaceBirth() {
-    return this.placeBirth;
+  getcoordinatesBirth() {
+    return this.coordinatesBirth;
   }
 
   getfirstName() {
@@ -822,5 +825,32 @@ class Human {
   smileSimple() { }
   smileForTarget() { }
   go(targetPosition) { }
+
+
+  createHeadEl(idHeadEl) {
+    this.headEl = document.createElement('section');
+    this.headEl.id = idHeadEl;
+    this.renderCranium(this.headEl);
+  }
+
+  getHeadEl() {
+    return this.headEl;
+  }
+
+  renderHead(parentEl) {
+    parentEl.appendChild(this.getHeadEl());
+  }
+
+  renderCranium(parentEl) {
+    let craniumEl = document.createElement('section');
+    craniumEl.id = `cranium${parentEl.id}`;
+
+    for (let craniumPart of this.getCranium()) {
+      console.log(craniumPart);
+    }
+
+    parentEl.appendChild(craniumEl);
+  }
+
 
 }
