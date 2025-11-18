@@ -513,7 +513,7 @@ class Human {
         },
 
       },
-      tegumentaCranii:{
+      tegumentaCranii: {
         inStock: true,
         nameLatin: 'tegumenta cranii',
         nameRussian: 'покровы черепа',
@@ -559,6 +559,71 @@ class Human {
           nameLatin: 'vena diplocia',
           nameRussian: 'dена губчатого вещества',
           description: 'Находится внутри губчатой кости свода черепа.',
+          pathImg: ''
+        },
+        textusConnectivusDensus: {
+          inStock: true,
+          nameLatin: 'textus connectivus densus',
+          nameRussian: 'плотная соединительная ткань',
+          description: 'Второй слой, связывает кожу с апоневрозом и содержит множество кровеносных сосудов.',
+          pathImg: ''
+        },
+        aponeurosisEpicranialis: {
+          inStock: true,
+          nameLatin: 'aponeurosis epicranialis',
+          nameRussian: 'сухожильный шлем',
+          description: 'Листок фиброзной ткани, соединяющий затылочную мышцу с лобной мышцей.',
+          pathImg: ''
+        },
+        musculusTemporalis: {
+          inStock: true,
+          nameLatin: 'musculus temporalis',
+          nameRussian: 'височная мышца',
+          description: 'Парная мышца, расположенная на боковой поверхности головы.\
+           Эта мышца прикрепляется к нижней челюсти. Ее можно прощупать в височной области, если стиснуть зубы.\
+           При сокращении поднимает нижнюю челюсть, и поддерживает её в покое.',
+          pathImg: ''
+        },
+        textusСonnectivuslaxus: {
+          inStock: true,
+          nameLatin: 'textus connectivus laxus',
+          nameRussian: 'рыхлая соединительная ткань',
+          description: 'Этот слой позволяет коже достаточно свободно смещаться относительно надкостницы черепа.',
+          pathImg: ''
+        },
+        pericranium: {
+          inStock: true,
+          nameLatin: 'pericranium',
+          nameRussian: 'надкостница черепа',
+          description: 'Самый глубокий слой покровов черепа. Этот слой располагается непосредственно на костях черепа.',
+          pathImg: ''
+        },
+        musculusOccipitalisGasterOccipitalisMusculusOccipitofrontalis: {
+          inStock: true,
+          nameLatin: 'musculus occipitalis, gaster occipitalis musculus occipitofrontalis',
+          nameRussian: 'затылочная мышца, затылочное брюшко затылочно-лобной мышцы',
+          description: 'Начинается в области затылочной кости и прикрепляется к сухожильному шрему. При сокращении смещает кожу и мягкие ткани головы.',
+          pathImg: ''
+        },
+        musculusFrontalis: {
+          inStock: true,
+          nameLatin: 'musculus frontalis',
+          nameRussian: 'лобная мышца',
+          description: 'Начинается в мягких тканях лба и прикрепляются к сухожильному шлему на своде черепа. При сокращении поднимает брови сморщивает лоб.',
+          pathImg: ''
+        },
+        musculusOrbicularisOculi: {
+          inStock: true,
+          nameLatin: 'musculus orbicularis oculi',
+          nameRussian: 'круговая мышца',
+          description: 'Плоская мышца, окружающая глаз.',
+          pathImg: ''
+        },
+        musculusOrbicularisOris: {
+          inStock: true,
+          nameLatin: 'musculus orbicularis oris',
+          nameRussian: 'круговая мышца рта',
+          description: 'Мышца, окружающая ротовую щель, при сокращении смыкает губы.',
           pathImg: ''
         },
       },
