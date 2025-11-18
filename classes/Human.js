@@ -504,8 +504,63 @@ class Human {
           description: '',
           pathImg: ''
         },
+        laminaHorizontalisOssisPalatini: {
+          inStock: true,
+          nameLatin: 'lamina horizontalis ossis palatini',
+          nameRussian: 'горизонтальная пластинка нёбной кости',
+          description: '',
+          pathImg: ''
+        },
 
-
+      },
+      tegumentaCranii:{
+        inStock: true,
+        nameLatin: 'tegumenta cranii',
+        nameRussian: 'покровы черепа',
+        description: '',
+        pathImg: '',
+        cutis: {
+          inStock: true,
+          nameLatin: 'cutis',
+          nameRussian: 'кожа',
+          description: 'Наружный слой покровов головы; содержит множество волосяных фоликулов, потовых и сальных желёз.',
+          pathImg: ''
+        },
+        diploe: {
+          inStock: true,
+          nameLatin: 'diploe',
+          nameRussian: 'губчатое вещество',
+          description: 'Cетчатая ткань, расположенная между наружной и внутренней поверхностями крыши черепа.',
+          pathImg: ''
+        },
+        faciesСerebri: {
+          inStock: true,
+          nameLatin: 'facies cerebri',
+          nameRussian: 'поверхность головного мозга',
+          description: '',
+          pathImg: ''
+        },
+        arahnoidea: {
+          inStock: true,
+          nameLatin: 'arahnoidea',
+          nameRussian: 'паутинная оболочка',
+          description: '',
+          pathImg: ''
+        },
+        duraMater: {
+          inStock: true,
+          nameLatin: 'dura mater',
+          nameRussian: 'твёрдая мозговая оболочка',
+          description: 'Слой плотной и прочной соединительной ткани, выстилающий изнутри костный череп.',
+          pathImg: ''
+        },
+        venaDiplocia: {
+          inStock: true,
+          nameLatin: 'vena diplocia',
+          nameRussian: 'dена губчатого вещества',
+          description: 'Находится внутри губчатой кости свода черепа.',
+          pathImg: ''
+        },
       },
       eyes: {},
       mouth: {},
