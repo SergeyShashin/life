@@ -1,8 +1,5 @@
 'use strict';
 
-const human = new Human('{new dateBirth}', '{new placeBirth}', '{new firstName}', '{new surname}', '{new patronymic}');
-console.log(human);
-
 const settings = {
   sizeTeam: 20,
   getSizeTeam() {
@@ -36,6 +33,12 @@ const life = {
     this.settingsEl = document.getElementById('settings');
     this.modelingEl = document.getElementById('modeling');
     this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');
+
+    for (let team = 0; team < this.settings.getSizeTeam(); team++) {
+      const human = new Human(
+        { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
+         '{new placeBirth}', '{new firstName}', '{new surname}', '{new patronymic}');
+    }
   },
 
   setEventHandlers() {
@@ -68,7 +71,7 @@ const life = {
     }
   },
   renderTime() {
-    this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth()+1}:${this.date.getDate()} ${this.date.toTimeString()}`;
+    this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth() + 1}:${this.date.getDate()} ${this.date.toTimeString()}`;
   },
   updateDate(quantityDay) {
     this.date.setDate(this.date.getDate() + Number(quantityDay));
