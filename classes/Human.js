@@ -856,8 +856,13 @@ class Human {
     let headerDecriptionEl = document.createElement('p');
     headerDecriptionEl.textContent = cranium.description;
 
+    let craniumCheckBoxEl = document.createElement('input');
+    craniumCheckBoxEl.type = 'checkbox';
+    craniumCheckBoxEl.checked = true;
+
     craniumEl.appendChild(headerCraniumEl);
     craniumEl.appendChild(headerDecriptionEl);
+    craniumEl.appendChild(craniumCheckBoxEl);
 
     for (let craniumKey in cranium) {
       if (typeof cranium[craniumKey] !== 'object' && !cranium[craniumKey].inStock) {
