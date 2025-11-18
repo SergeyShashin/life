@@ -853,11 +853,11 @@ class Human {
     let headerCraniumEl = document.createElement('h4');
     headerCraniumEl.textContent = cranium.nameRussian;
 
-    let headerDecription = document.createElement('p');
-    headerDecription.textContent = cranium.description;
+    let headerDecriptionEl = document.createElement('p');
+    headerDecriptionEl.textContent = cranium.description;
 
     craniumEl.appendChild(headerCraniumEl);
-    craniumEl.appendChild(headerDecription);
+    craniumEl.appendChild(headerDecriptionEl);
 
     for (let craniumKey in cranium) {
       if (typeof cranium[craniumKey] !== 'object' && !cranium[craniumKey].inStock) {
@@ -868,7 +868,15 @@ class Human {
 
       let headerCraniumPartEl = document.createElement('h5');
       headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
+      let craniumPartDecriptionEl = document.createElement('p');
+      craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
+      let craniumPartCheckBoxEl = document.createElement('input');
+      craniumPartCheckBoxEl.type = 'checkbox';
+      craniumPartCheckBoxEl.checked = true;
+
       craniumPartEl.appendChild(headerCraniumPartEl);
+      craniumPartEl.appendChild(craniumPartDecriptionEl);
+      craniumPartEl.appendChild(craniumPartCheckBoxEl);
       craniumEl.appendChild(craniumPartEl);
     }
 

@@ -20,8 +20,13 @@ fieldset {
   padding: 5px;
 }
 
-h4, h5 {
+h4,
+h5 {
   text-transform: uppercase;
+}
+
+section {
+  margin: 10px 0;
 }
 
 .container {
