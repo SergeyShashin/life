@@ -41,7 +41,11 @@ const life = {
 
       human.createHeadEl(`head${i}`);
       human.renderHead(this.settingsEl);
+      
+      let headEl = new HTMLElement('section', '', `head${i}`, 'partHuman');
+      console.log(headEl.render());
     }
+
   },
 
   setEventHandlers() {
