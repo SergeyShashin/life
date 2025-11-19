@@ -902,16 +902,23 @@ class Human {
   }
 
   think() { } //думать
+  remember(data) { } //запоминать
   watch() { } //видеть
+  look() { } //смотреть
   choose() { } //выбирать
   hear() { } //слышать
+  listen() { }//слушать
   feel() { } //ощущать
-  remember(data) { } //запоминать
-  speak() { }
+  speak() { } //говорить
+  stand() { }//стоять
+  sit() { }//сидеть
+  lie(){}//лежать
+  go(targetPosition) { }//идти
+  run(){}//бежать
+  //...
   speakForTarget() { }
   smileSimple() { }
   smileForTarget() { }
-  go(targetPosition) { }
 
 
   createHeadEl(idHeadEl) {
