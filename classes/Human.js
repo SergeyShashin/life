@@ -1,3 +1,5 @@
+'use strict';
+
 class Human {
   anatomy = {
     head: {
