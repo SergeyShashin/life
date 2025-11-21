@@ -1,7 +1,7 @@
 'use strict';
 
 const settings = {
-  sizeTeam: 14,
+  sizeTeam: 14, //120
   getSizeTeam() {
     return this.sizeTeam
   },
@@ -39,10 +39,10 @@ const life = {
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
 
-      human.createHeadEl(`head${i}`);
-      human.renderHead(this.settingsEl);
+      // human.createHeadEl(`head${i}`);
+      // human.renderHead(this.settingsEl);
 
-      // this.settingsEl.appendChild(human.render());
+      this.settingsEl.appendChild(human.render());
     }
 
   },
