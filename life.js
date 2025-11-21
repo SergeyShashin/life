@@ -37,13 +37,11 @@ const life = {
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
-        '[00.000000, 00.000000]', '', '', '');
+        '[00.000000, 00.000000]', '', '', '', i);
 
       human.createHeadEl(`head${i}`);
       human.renderHead(this.settingsEl);
 
-      // let headEl = new HTMLElement('section', '', `head${i}`, 'partHuman');
-      
       // this.settingsEl.appendChild(human.render());
     }
 

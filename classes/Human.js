@@ -723,7 +723,6 @@ class Human {
       eyes: {},
       mouth: {},
       nose: {},
-      nurse: {},
     },
     //центральная нервная система
     centralNervousSystem: {
@@ -783,6 +782,7 @@ class Human {
   firstName;
   surname;
   patronymic;
+  idHuman;
   quantityDaysLife = 43800;
   numberDayLife = 1;
   acquiredHabbits = []; //привычки          
@@ -795,12 +795,13 @@ class Human {
 
   headEl;
 
-  constructor(dateBirth, coordinatesBirth, firstName, surname, patronymic) {
+  constructor(dateBirth, coordinatesBirth, firstName, surname, patronymic, idHuman) {
     this.dateBirth = dateBirth;
     this.coordinatesBirth = coordinatesBirth;
     this.firstName = firstName;
     this.surname = surname;
     this.patronymic = patronymic;
+    this.idHuman = idHuman;
   }
 
   setAnatomy(anatomy) {
@@ -823,11 +824,11 @@ class Human {
     return this.dateBirth;
   }
 
-  getcoordinatesBirth() {
+  getCoordinatesBirth() {
     return this.coordinatesBirth;
   }
 
-  getfirstName() {
+  getFirstName() {
     return this.firstName;
   }
 
@@ -914,14 +915,23 @@ class Human {
   speak() { } //говорить
   stand() { }//стоять
   sit() { }//сидеть
-  lie(){}//лежать
+  lie() { }//лежать
   go(targetPosition) { }//идти
-  run(){}//бежать
+  run() { }//бежать
   //...
   speakForTarget() { }
   smileSimple() { }
   smileForTarget() { }
 
+  render() {
+    let humanEl = document.createElement('section');
+    humanEl.id = this.idHuman;
+    let { head } = this.anatomy;
+    let { cranium, } = head;
+
+    humanEl.appendChild();
+    return humanEl
+  }
 
   createHeadEl(idHeadEl) {
     this.headEl = document.createElement('section');
