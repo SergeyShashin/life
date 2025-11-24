@@ -905,6 +905,13 @@ class Human {
   }
 
   think() { } //думать
+  analyzeSubject(subject){} // анализировать предмет
+  analyzePhenomen(phenomen){} // анализировать явление
+  synthesize(){}//синтезировать
+  classify(){}//классифицировать
+  generalize(){}//обобщать
+  specify(){}//специализировать
+  abstract(){}//абстрагировать
   remember(data) { } //запоминать
   watch() { } //видеть
   look() { } //смотреть
