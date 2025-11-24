@@ -39,10 +39,9 @@ const life = {
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
 
-      // human.createHeadEl(`head${i}`);
-      // human.renderHead(this.settingsEl);
+      human.createHeadEl(`head${i}`);
+      human.renderHead(this.settingsEl);
 
-      this.settingsEl.appendChild(human.render());
     }
 
   },

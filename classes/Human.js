@@ -27,7 +27,7 @@ class Human {
           nameRussian: 'лобная кость',
           description: 'Образует лоб и верхние стенки глазниц. При рождении состоит из двух половин, которые затем срастаются между собой.',
           pathImg: 'img/smile.png',
-          pathFullImg: 'img/fullimg/smile.png',
+          pathFullImg: 'img/fullimg/smile.png',        
         },
         suturaСoronalis: {
           inStock: true,
@@ -588,11 +588,7 @@ class Human {
           description: '',
           pathImg: 'img/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
-        },
-        render() {
-          // let craniumEl = new HTMLElement('div', 'cranium', 'idcranium', 'classRanium');
-          // console.log(someEl);
-        }
+        },        
       },
       tegumentaCranii: {
         inStock: true,
@@ -927,91 +923,82 @@ class Human {
   smileSimple() { }
   smileForTarget() { }
 
-  // createHeadEl(idHeadEl) {
-  //   this.headEl = document.createElement('section');
-  //   this.headEl.id = idHeadEl;
-  //   this.renderCranium(this.headEl);
-  // }
-
-  // getHeadEl() {
-  //   return this.headEl;
-  // }
-
-  // renderHead(parentEl) {
-  //   parentEl.appendChild(this.getHeadEl());
-  // }
-
-  // renderCranium(parentEl) {
-  //   let craniumEl = document.createElement('section');
-  //   craniumEl.id = `cranium${parentEl.id}`;
-  //   let { cranium } = this.anatomy.head;
-
-  //   if (!cranium.inStock) {
-  //     return
-  //   }
-
-  //   let headerCraniumEl = document.createElement('h4');
-  //   headerCraniumEl.textContent = cranium.nameRussian;
-
-  //   let headerDecriptionEl = document.createElement('p');
-  //   headerDecriptionEl.textContent = cranium.description;
-
-  //   let craniumCheckBoxEl = document.createElement('input');
-  //   craniumCheckBoxEl.type = 'checkbox';
-  //   craniumCheckBoxEl.checked = true;
-
-  //   let craniumWrapForImgEl = document.createElement('p');
-  //   let craniumImgEl = new Image();
-  //   craniumImgEl.src = cranium.pathImg;
-  //   craniumImgEl.dataset.pathFullImg = cranium.pathFullImg;
-  //   craniumWrapForImgEl.appendChild(craniumImgEl);
-
-  //   craniumEl.appendChild(headerCraniumEl);
-  //   craniumEl.appendChild(craniumWrapForImgEl);
-  //   craniumEl.appendChild(headerDecriptionEl);
-  //   craniumEl.appendChild(craniumCheckBoxEl);
-
-  //   for (let craniumKey in cranium) {
-  //     if (typeof cranium[craniumKey] !== 'object' && !cranium[craniumKey].inStock) {
-  //       continue;
-  //     }
-
-  //     let craniumPartEl = document.createElement('section');
-
-  //     let headerCraniumPartEl = document.createElement('h5');
-  //     headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
-
-  //     let craniumPartDecriptionEl = document.createElement('p');
-  //     craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
-
-  //     let craniumPartCheckBoxEl = document.createElement('input');
-  //     craniumPartCheckBoxEl.type = 'checkbox';
-  //     craniumPartCheckBoxEl.checked = true;
-
-  //     let craniumPartWrapForImgEl = document.createElement('p');
-  //     let craniumPartImgEl = new Image();
-  //     craniumPartImgEl.src = cranium[craniumKey].pathImg;
-  //     craniumImgEl.dataset.pathFullImg = cranium[craniumKey].pathFullImg;
-  //     craniumPartWrapForImgEl.appendChild(craniumPartImgEl);
-
-  //     craniumPartEl.appendChild(headerCraniumPartEl);
-  //     craniumPartEl.appendChild(craniumPartWrapForImgEl);
-  //     craniumPartEl.appendChild(craniumPartDecriptionEl);
-  //     craniumPartEl.appendChild(craniumPartCheckBoxEl);
-  //     craniumEl.appendChild(craniumPartEl);
-  //   }
-
-  //   parentEl.appendChild(craniumEl);
-  // }
-
-
-  render() {
-    let humanEl = document.createElement('section');
-    humanEl.id = this.idHuman;
-    let { head } = this.anatomy; // добавить остальные части человека
-    let { brain, cranium, tegumentaCranii, eyes, mouth, nose } = head; //сделать рендеры других частей головы
-    humanEl.appendChild(cranium.render());
-    return humanEl
+  createHeadEl(idHeadEl) {
+    this.headEl = document.createElement('section');
+    this.headEl.id = idHeadEl;
+    this.renderCranium(this.headEl);
   }
+
+  getHeadEl() {
+    return this.headEl;
+  }
+
+  renderHead(parentEl) {
+    parentEl.appendChild(this.getHeadEl());
+  }
+
+  renderCranium(parentEl) {
+    let craniumEl = document.createElement('section');
+    craniumEl.id = `cranium${parentEl.id}`;
+    let { cranium } = this.anatomy.head;
+
+    if (!cranium.inStock) {
+      return
+    }
+
+    let headerCraniumEl = document.createElement('h4');
+    headerCraniumEl.textContent = cranium.nameRussian;
+
+    let headerDecriptionEl = document.createElement('p');
+    headerDecriptionEl.textContent = cranium.description;
+
+    let craniumCheckBoxEl = document.createElement('input');
+    craniumCheckBoxEl.type = 'checkbox';
+    craniumCheckBoxEl.checked = true;
+
+    let craniumWrapForImgEl = document.createElement('p');
+    let craniumImgEl = new Image();
+    craniumImgEl.src = cranium.pathImg;
+    craniumImgEl.dataset.pathFullImg = cranium.pathFullImg;
+    craniumWrapForImgEl.appendChild(craniumImgEl);
+
+    craniumEl.appendChild(headerCraniumEl);
+    craniumEl.appendChild(craniumWrapForImgEl);
+    craniumEl.appendChild(headerDecriptionEl);
+    craniumEl.appendChild(craniumCheckBoxEl);
+
+    for (let craniumKey in cranium) {
+      if (typeof cranium[craniumKey] !== 'object' && !cranium[craniumKey].inStock) {
+        continue;
+      }
+
+      let craniumPartEl = document.createElement('section');
+
+      let headerCraniumPartEl = document.createElement('h5');
+      headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
+
+      let craniumPartDecriptionEl = document.createElement('p');
+      craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
+
+      let craniumPartCheckBoxEl = document.createElement('input');
+      craniumPartCheckBoxEl.type = 'checkbox';
+      craniumPartCheckBoxEl.checked = true;
+
+      let craniumPartWrapForImgEl = document.createElement('p');
+      let craniumPartImgEl = new Image();
+      craniumPartImgEl.src = cranium[craniumKey].pathImg;
+      craniumImgEl.dataset.pathFullImg = cranium[craniumKey].pathFullImg;
+      craniumPartWrapForImgEl.appendChild(craniumPartImgEl);
+
+      craniumPartEl.appendChild(headerCraniumPartEl);
+      craniumPartEl.appendChild(craniumPartWrapForImgEl);
+      craniumPartEl.appendChild(craniumPartDecriptionEl);
+      craniumPartEl.appendChild(craniumPartCheckBoxEl);
+      craniumEl.appendChild(craniumPartEl);
+    }
+
+    parentEl.appendChild(craniumEl);
+  }
+ 
 
 }
