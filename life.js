@@ -9,6 +9,7 @@ const settings = {
 
 const life = {
   settings,
+  containerEl: null,
   timeEL: null,
   interval: null,
   worldInfoEl: null,
@@ -23,13 +24,17 @@ const life = {
   },
 
   init() {
+    this.containerEl = document.querySelector('.container');
     this.timeEL = document.querySelector('time');
     this.date = new Date();
     this.interval = setInterval(() => {
       this.date.setSeconds(this.date.getSeconds() + 1);
       this.renderTime();
     }, 1000);
-    this.worldInfoEl = document.getElementById('worldInfo');
+    // this.worldInfoEl = document.getElementById('worldInfo');
+    const world = new World();
+    this.containerEl.appendChild(world.info.createHTMLElInfo());
+
     this.settingsEl = document.getElementById('settings');
     this.modelingEl = document.getElementById('modeling');
     this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');

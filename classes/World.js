@@ -274,6 +274,30 @@ class World {
       number: '?',
       nameRu: 'плутоний',
     },
+    createHTMLElInfo() {
+      let infoEl = document.createElement('section');
+      infoEl.id = 'worldInfo';
+      infoEl.className = 'worldInfo';
+
+      for (const key in this) {
+        if (typeof key === 'function') {
+          return
+        }
+        let divEl = document.createElement('div');
+        divEl.className = 'baseEl';
+        let monitorEl = document.createElement('p');
+        monitorEl.className = 'baseEl_monitor';
+        monitorEl.textContent = this[key].number;
+        let textEl = document.createElement('p');
+        monitorEl.className = 'baseEl_text';
+        monitorEl.textContent = this[key].nameRu;
+        divEl.appendChild(monitorEl);
+        divEl.appendChild(textEl);
+        infoEl.appendChild(divEl);
+      }
+
+      return infoEl;
+    }
 
   };
   galaxies = [];
