@@ -7,7 +7,7 @@ class Human {
       nameLatin: '',
       nameRussian: 'голова',
       description: '',
-      pathImg: 'img/smile.png',
+      pathImg: 'img/small/smile.png',
       brain: {
         quantity: null,
         medullaOblongata: {
@@ -19,14 +19,14 @@ class Human {
         nameLatin: 'cranium',
         nameRussian: 'Череп',
         description: 'Состоит из двадцати восьми костей. Защищает мозг и ограны чувств от повреждений.',
-        pathImg: 'img/smile.png',
+        pathImg: 'img/small/smile.png',
         pathFullImg: 'img/fullimg/smile.png',
         osFrontale: {
           inStock: true,
           nameLatin: 'os frontale',
           nameRussian: 'лобная кость',
           description: 'Образует лоб и верхние стенки глазниц. При рождении состоит из двух половин, которые затем срастаются между собой.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',        
         },
         suturaСoronalis: {
@@ -34,7 +34,7 @@ class Human {
           nameLatin: 'sutura coronalis',
           nameRussian: 'венечный шов',
           description: 'Сочленение лобной кости с теменными костями.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osParietale: {
@@ -42,7 +42,7 @@ class Human {
           nameLatin: 'os parietale',
           nameRussian: 'теменная кость',
           description: 'Одна из двух парных костей, образующих крышку и боковые стенки черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         calvaria: {
@@ -50,7 +50,7 @@ class Human {
           nameLatin: 'calvaria',
           nameRussian: 'свод черепа',
           description: 'Свод, прикрывающий сверху головной мозг.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         glabella: {
@@ -58,7 +58,7 @@ class Human {
           nameLatin: 'glabella',
           nameRussian: 'надпереносье',
           description: 'Место соединения носовых костей с лобными отростками верхних челюстей.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         incisuraFrontalis: {
@@ -66,7 +66,7 @@ class Human {
           nameLatin: 'incisura frontalis',
           nameRussian: 'Лобная вырезка',
           description: 'Отверстие или канавка в верхнем крае глазницы; место выхода кровеносных сосудов и нервов.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         sinusFrontales: {
@@ -74,7 +74,7 @@ class Human {
           nameLatin: 'sinus frontales',
           nameRussian: 'Лобные пазухи',
           description: 'Воздухоносные полости, сообщаются с носовой полостью; их функция не вполне ясна, но считается, что они придают опреденную форму глазницам, чем помогают обеспечивать бинокулярное зрение.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         orbita: {
@@ -82,7 +82,7 @@ class Human {
           nameLatin: 'orbita',
           nameRussian: 'Глазница',
           description: 'Полость, содержащая глазное яблоко, наружные мышца глаза, нервы и кровеносные сосуды.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osLacrimale: {
@@ -90,7 +90,7 @@ class Human {
           nameLatin: 'os lacrimale',
           nameRussian: 'Слезная кость',
           description: 'Самая маленькая кость лицевого черепа. Является частью стенки глазницы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         nazion: {
@@ -98,7 +98,7 @@ class Human {
           nameLatin: 'nazion',
           nameRussian: 'назион',
           description: 'Точка соединения носовых костей с лобной костью.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osNasale: {
@@ -106,7 +106,7 @@ class Human {
           nameLatin: 'os nasale',
           nameRussian: 'Носовая кость',
           description: 'Парная кость, носовые кости образуют верхнюю часть спинки носа - переносицу.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         cristaGalli: {
@@ -114,7 +114,7 @@ class Human {
           nameLatin: 'crista galli',
           nameRussian: 'Петушистый гребень',
           description: 'Гребневидный отросток решётчатой кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         cellulaeEthmoidales: {
@@ -122,7 +122,7 @@ class Human {
           nameLatin: 'cellulae ethmoidales',
           nameRussian: 'Решётчатые ячейки',
           description: '8-10 небольших воздухоносных ячеек в наружном слое решётчатой кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         septumNasi: {
@@ -130,7 +130,7 @@ class Human {
           nameLatin: 'septum nasi',
           nameRussian: 'перегородка носа',
           description: 'Костное образование, разделяющее носовую полость на правый и левый носовые ходы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         conchaNasalis: {
@@ -138,7 +138,7 @@ class Human {
           nameLatin: 'concha nasalis',
           nameRussian: 'носовая раковина',
           description: 'Похожее формой на раковину костное образование, выступающее в носовую полость.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         conchaNasalisInferior: {
@@ -146,7 +146,7 @@ class Human {
           nameLatin: 'concha nasalis inferior',
           nameRussian: 'Нижняя носовая раковина',
           description: 'Увеличивает площадь поверхности полоса носа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         pterion: {
@@ -154,7 +154,7 @@ class Human {
           nameLatin: 'pterion',
           nameRussian: 'птерион',
           description: 'Место, где сочленяются теменная и лобная кости, чешуйчатая часть височной кости и большое крыло клиновидной кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osTemporale: {
@@ -162,7 +162,7 @@ class Human {
           nameLatin: 'os temporale',
           nameRussian: 'височная кость',
           description: 'Одная из парных костей, образующих боковые области свода черепа и боковые участки основания черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         parsSquamosaOssisTemporalis: {
@@ -170,7 +170,7 @@ class Human {
           nameLatin: 'pars squamosa ossis temporalis',
           nameRussian: 'Чешуйчатая часть височной кости',
           description: 'Образует часть боковой стенки черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osSphenoidale: {
@@ -178,7 +178,7 @@ class Human {
           nameLatin: 'os sphenoidale',
           nameRussian: 'клиновидная кость',
           description: 'Позади глазниц принимает участие в образовании основания черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         alaMinorOssisSphenoidalis: {
@@ -186,7 +186,7 @@ class Human {
           nameLatin: 'ala minor ossis sphenoidalis',
           nameRussian: 'Малое крыло клиновидной кости',
           description: 'Один из парных боковых отростков тела клиновидной кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         alaMajorOssisSphenoidalis: {
@@ -194,7 +194,7 @@ class Human {
           nameLatin: 'ala majnor ossis sphenoidalis',
           nameRussian: 'Большое крыло клиновидной кости',
           description: 'Один из симметричных отростков, отходящих в обе стороны из тела клиновидной кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         fissuraSuperiorOrbitae: {
@@ -202,7 +202,7 @@ class Human {
           nameLatin: 'fissura superior orbitae',
           nameRussian: 'Верхняя щель глазницы',
           description: 'Пространство между верхней и внутренней стенками глазницы, через которое проходят кровеносные сосуды и нервы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osZygomaticum: {
@@ -210,7 +210,7 @@ class Human {
           nameLatin: 'os zygomaticum',
           nameRussian: 'cкуловая кость',
           description: 'Одна из парных костей, образующих скулу и боковую (латеральную) стенку глазницы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         arcusZygomaticum: {
@@ -218,7 +218,7 @@ class Human {
           nameLatin: 'arcus zygomaticum',
           nameRussian: 'cкуловая дуга',
           description: 'Костный отросток, соединяющий височную и скуловую кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         margoOrbitaeInferior: {
@@ -226,7 +226,7 @@ class Human {
           nameLatin: 'margo orbitae inferior',
           nameRussian: 'нижний край глазницы',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenInfraorbitale: {
@@ -234,7 +234,7 @@ class Human {
           nameLatin: 'foramen infraorbitale',
           nameRussian: 'подглазничное отверстие',
           description: 'Через это отверстие выходят кровеносные сосуды и подглазничный нерв.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         maxila: {
@@ -242,7 +242,7 @@ class Human {
           nameLatin: 'maxila',
           nameRussian: 'верхняя челюсть',
           description: 'Одна из парных костей, образующих верхнюю челюсть.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         sinusMaxillaris: {
@@ -250,7 +250,7 @@ class Human {
           nameLatin: 'sinus maxillaris',
           nameRussian: 'верхнечелюстная пазуха',
           description: 'Полость пирамидаидальной формы, расположенная внутри верхней челюсти (гайморова пазуха).',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         ramusMandibulae: {
@@ -258,7 +258,7 @@ class Human {
           nameLatin: 'ramus mandibulae',
           nameRussian: 'ветвь нижней челюсти',
           description: 'Костные отростки, отходящие от тела нижней челюсти позади зубов. Служит местом прикрепления мышц нижней челюсти.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         corpusMandibulae: {
@@ -266,7 +266,7 @@ class Human {
           nameLatin: 'corpus mandibulae',
           nameRussian: 'тело нижней челюсти',
           description: 'Подковообразная часть нижней челюсти.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         caputMandibulae: {
@@ -274,7 +274,7 @@ class Human {
           nameLatin: 'caput mandibulae',
           nameRussian: 'головка нижней челюсти',
           description: 'Участвует в образовании височно-нижнечелюстного сустава.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         processusStyloideusOssisTemporalis: {
@@ -282,7 +282,7 @@ class Human {
           nameLatin: 'processus styloideus ossis temporalis',
           nameRussian: 'шиловидный отросток височной кости',
           description: 'Тонкая продолговатая кость, к которой крепятся мышцы и связки.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         meatusAcusticusExternus: {
@@ -290,7 +290,7 @@ class Human {
           nameLatin: 'meatus acusticus externus',
           nameRussian: 'наружный слуховой проход',
           description: 'Канал, ведущий в среднее и внутреннее ухо.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         processusMastoideusOssisTemporalis: {
@@ -298,7 +298,7 @@ class Human {
           nameLatin: 'processus mastoideus ossis temporalis',
           nameRussian: 'сосцевидный отросток',
           description: 'Выпуклость височной кости, находящаяся за ухом. Место прикрепления шейных мышц.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osOccipitale: {
@@ -306,7 +306,7 @@ class Human {
           nameLatin: 'os occipitale',
           nameRussian: 'затылочная кость',
           description: 'Блюдцеобразная кость, образующая заднюю стенку и часть основания черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         suturaLambdoidea: {
@@ -314,7 +314,7 @@ class Human {
           nameLatin: 'sutura lambdoidea',
           nameRussian: 'ламбовидный шов',
           description: 'Шов, соединяющий теменные кости с затылочной костью.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenMentale: {
@@ -322,7 +322,7 @@ class Human {
           nameLatin: 'foramen mentale',
           nameRussian: 'подбородочное отверстие',
           description: 'Отверстие, через которое нервы и кровеносные сосуды направляются от корней зубов к нижней губе и подбородку.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         fossaHypophysialis: {
@@ -330,7 +330,7 @@ class Human {
           nameLatin: 'fossa hypophysialis',
           nameRussian: 'гипофизарная ямка',
           description: 'Углубление в котором располагается гипофиз.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         parsOrbitalisOssisFrontalis: {
@@ -338,7 +338,7 @@ class Human {
           nameLatin: 'pars orbitalis ossis frontalis',
           nameRussian: 'глазничная часть лобной кости',
           description: 'Учавствует в образовании стенок глазницы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         sinusFrontalis: {
@@ -346,7 +346,7 @@ class Human {
           nameLatin: 'sinus frontalis',
           nameRussian: 'лобная пазуха',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         sinusSphenoidalis: {
@@ -354,7 +354,7 @@ class Human {
           nameLatin: 'sinus sphenoidalis',
           nameRussian: 'клиновидная пазуха',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         laminaPerpendicularisOssisEthmoidalis: {
@@ -362,7 +362,7 @@ class Human {
           nameLatin: 'lamina perpendicularis ossis ethmoidalis',
           nameRussian: 'перпендикулярная пластинка из решётчатой кости',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         vomer: {
@@ -370,7 +370,7 @@ class Human {
           nameLatin: 'vomer',
           nameRussian: 'сошник',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         processusPalatinusMaxillae: {
@@ -378,7 +378,7 @@ class Human {
           nameLatin: 'processus palatinus maxillae',
           nameRussian: 'нёбный отросток верхней челюсти',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         hamulusPterygoideus: {
@@ -386,7 +386,7 @@ class Human {
           nameLatin: 'hamulus pterygoideus',
           nameRussian: 'крыловидный крючок',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         angulusMandibulae: {
@@ -394,7 +394,7 @@ class Human {
           nameLatin: 'angulus mandibulae',
           nameRussian: 'угол нижней челюсти',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         margoForaminisMagni: {
@@ -402,7 +402,7 @@ class Human {
           nameLatin: 'margo foraminis magni',
           nameRussian: 'край большого затылочного отверстия',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         protuberantiaOccipitalisExterna: {
@@ -410,7 +410,7 @@ class Human {
           nameLatin: 'protuberantia occipitalis externa',
           nameRussian: 'наружный затылочный выступ',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         canalisAuditivusInternusInPartemPetrosamOssisTemporalisDucens: {
@@ -418,7 +418,7 @@ class Human {
           nameLatin: 'canalis auditivus internus in partem petrosam ossis temporalis ducens',
           nameRussian: 'внутренний слуховой проход, вещущий в каменистую часть височной кости',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         sulciArteriaeMeningeaeMediae: {
@@ -426,7 +426,7 @@ class Human {
           nameLatin: 'sulci arteriae meningeae mediae',
           nameRussian: 'борозды средней менингеальной артерии',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         suturaSagittalis: {
@@ -434,7 +434,7 @@ class Human {
           nameLatin: 'sutura sagittalis',
           nameRussian: 'сагиттальный шов',
           description: 'Сочленяет между собой теменные кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         osPlanum: {
@@ -442,7 +442,7 @@ class Human {
           nameLatin: 'os planum',
           nameRussian: 'плоская кость',
           description: 'Состоит из трех слоев - внутренней пластинки, слоя губчатого вещества и наружной пластинки.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         sulciAtrteriaeMeningealisMediae: {
@@ -450,7 +450,7 @@ class Human {
           nameLatin: 'sulci atrteriae meningealis mediae',
           nameRussian: 'борозды средней мозговой артерии',
           description: 'В этом месте пролегает средняя менингеальная артерия, снабжающая кровью мозговые оболчки.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         cristaFrontalis: {
@@ -458,7 +458,7 @@ class Human {
           nameLatin: 'crista frontalis',
           nameRussian: 'лобный гребень',
           description: 'Выступ лобной кости, вдающийся в полость черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         vertex: {
@@ -466,7 +466,7 @@ class Human {
           nameLatin: 'vertex',
           nameRussian: 'вертекс',
           description: 'Макушка головы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         tuberositasOssisParietalis: {
@@ -474,7 +474,7 @@ class Human {
           nameLatin: 'tuberositas ossis parietalis',
           nameRussian: 'бугристость теменной кости',
           description: 'Бугорки на поверхности теменной кости.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         canalisIncisivus: {
@@ -482,7 +482,7 @@ class Human {
           nameLatin: 'canalis incisivus',
           nameRussian: 'резцовый канал',
           description: 'Углубление верхнего нёба, идущее к резцам.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         raphePlatinum: {
@@ -490,7 +490,7 @@ class Human {
           nameLatin: 'raphe platinum',
           nameRussian: 'срединный нёбный шов',
           description: 'Проходит между нёбными отростками верхних челюстей.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenSpinosum: {
@@ -498,7 +498,7 @@ class Human {
           nameLatin: 'foramen spinosum',
           nameRussian: 'остистое отверстие',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         tuberculumPharyngeum: {
@@ -506,7 +506,7 @@ class Human {
           nameLatin: 'tuberculum pharyngeum',
           nameRussian: 'глоточный бугорок',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenStylomastoideum: {
@@ -514,7 +514,7 @@ class Human {
           nameLatin: 'foramen stylomastoideum',
           nameRussian: 'шилососцевидное отверстие',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenMagnum: {
@@ -522,7 +522,7 @@ class Human {
           nameLatin: 'foramen magnum',
           nameRussian: 'большое затылочное отверстие',
           description: 'Отверстие, через которое спинной мозг соединяется со стволом головного мозга.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenMastoideum: {
@@ -530,7 +530,7 @@ class Human {
           nameLatin: 'foramen mastoideum',
           nameRussian: 'сосцевидное отверстие',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         cristaOccipitalisExterna: {
@@ -538,7 +538,7 @@ class Human {
           nameLatin: 'crista occipitalis externa',
           nameRussian: 'наружный затылочный гребень',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         incisuraMastoidea: {
@@ -546,7 +546,7 @@ class Human {
           nameLatin: 'incisura mastoidea',
           nameRussian: 'сосцевидная вырезка',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenJugulare: {
@@ -554,7 +554,7 @@ class Human {
           nameLatin: 'foramen jugulare',
           nameRussian: 'ярёмное отверстие',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         canalisCarotis: {
@@ -562,7 +562,7 @@ class Human {
           nameLatin: 'canalis carotis',
           nameRussian: 'каротидный канал',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenLacerum: {
@@ -570,7 +570,7 @@ class Human {
           nameLatin: 'foramen lacerum',
           nameRussian: 'рваное отверстие',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         foramenOvale: {
@@ -578,7 +578,7 @@ class Human {
           nameLatin: 'foramen ovale',
           nameRussian: 'овальное отверстие',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         laminaHorizontalisOssisPalatini: {
@@ -586,7 +586,7 @@ class Human {
           nameLatin: 'lamina horizontalis ossis palatini',
           nameRussian: 'горизонтальная пластинка нёбной кости',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },        
       },
@@ -595,14 +595,14 @@ class Human {
         nameLatin: 'tegumenta cranii',
         nameRussian: 'покровы черепа',
         description: '',
-        pathImg: 'img/smile.png',
+        pathImg: 'img/small/smile.png',
         pathFullImg: 'img/fullimg/smile.png',
         cutis: {
           inStock: true,
           nameLatin: 'cutis',
           nameRussian: 'кожа',
           description: 'Наружный слой покровов головы; содержит множество волосяных фоликулов, потовых и сальных желёз.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         diploe: {
@@ -610,7 +610,7 @@ class Human {
           nameLatin: 'diploe',
           nameRussian: 'губчатое вещество',
           description: 'Cетчатая ткань, расположенная между наружной и внутренней поверхностями крыши черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         faciesСerebri: {
@@ -618,7 +618,7 @@ class Human {
           nameLatin: 'facies cerebri',
           nameRussian: 'поверхность головного мозга',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         arahnoidea: {
@@ -626,7 +626,7 @@ class Human {
           nameLatin: 'arahnoidea',
           nameRussian: 'паутинная оболочка',
           description: '',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         duraMater: {
@@ -634,7 +634,7 @@ class Human {
           nameLatin: 'dura mater',
           nameRussian: 'твёрдая мозговая оболочка',
           description: 'Слой плотной и прочной соединительной ткани, выстилающий изнутри костный череп.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         venaDiplocia: {
@@ -642,7 +642,7 @@ class Human {
           nameLatin: 'vena diplocia',
           nameRussian: 'dена губчатого вещества',
           description: 'Находится внутри губчатой кости свода черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         textusConnectivusDensus: {
@@ -650,7 +650,7 @@ class Human {
           nameLatin: 'textus connectivus densus',
           nameRussian: 'плотная соединительная ткань',
           description: 'Второй слой, связывает кожу с апоневрозом и содержит множество кровеносных сосудов.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         aponeurosisEpicranialis: {
@@ -658,7 +658,7 @@ class Human {
           nameLatin: 'aponeurosis epicranialis',
           nameRussian: 'сухожильный шлем',
           description: 'Листок фиброзной ткани, соединяющий затылочную мышцу с лобной мышцей.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         musculusTemporalis: {
@@ -668,7 +668,7 @@ class Human {
           description: 'Парная мышца, расположенная на боковой поверхности головы.\
            Эта мышца прикрепляется к нижней челюсти. Ее можно прощупать в височной области, если стиснуть зубы.\
            При сокращении поднимает нижнюю челюсть, и поддерживает её в покое.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         textusСonnectivuslaxus: {
@@ -676,7 +676,7 @@ class Human {
           nameLatin: 'textus connectivus laxus',
           nameRussian: 'рыхлая соединительная ткань',
           description: 'Этот слой позволяет коже достаточно свободно смещаться относительно надкостницы черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         pericranium: {
@@ -684,7 +684,7 @@ class Human {
           nameLatin: 'pericranium',
           nameRussian: 'надкостница черепа',
           description: 'Самый глубокий слой покровов черепа. Этот слой располагается непосредственно на костях черепа.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         musculusOccipitalisGasterOccipitalisMusculusOccipitofrontalis: {
@@ -692,7 +692,7 @@ class Human {
           nameLatin: 'musculus occipitalis, gaster occipitalis musculus occipitofrontalis',
           nameRussian: 'затылочная мышца, затылочное брюшко затылочно-лобной мышцы',
           description: 'Начинается в области затылочной кости и прикрепляется к сухожильному шрему. При сокращении смещает кожу и мягкие ткани головы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         musculusFrontalis: {
@@ -700,7 +700,7 @@ class Human {
           nameLatin: 'musculus frontalis',
           nameRussian: 'лобная мышца',
           description: 'Начинается в мягких тканях лба и прикрепляются к сухожильному шлему на своде черепа. При сокращении поднимает брови сморщивает лоб.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         musculusOrbicularisOculi: {
@@ -708,7 +708,7 @@ class Human {
           nameLatin: 'musculus orbicularis oculi',
           nameRussian: 'круговая мышца',
           description: 'Плоская мышца, окружающая глаз.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
         musculusOrbicularisOris: {
@@ -716,7 +716,7 @@ class Human {
           nameLatin: 'musculus orbicularis oris',
           nameRussian: 'круговая мышца рта',
           description: 'Мышца, окружающая ротовую щель, при сокращении смыкает губы.',
-          pathImg: 'img/smile.png',
+          pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
         },
       },
