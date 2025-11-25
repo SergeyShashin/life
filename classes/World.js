@@ -14,6 +14,119 @@ class World {
       number: 361000000,
       nameRu: 'площадь воды (кв.км)',
     },
+    water: {
+      number: 1400000000,
+      nameRu: 'вода (куб.км)',
+    },
+    freshWater: {
+      number: 35000000,
+      nameRu: 'пресная вода (куб.км)',
+    },
+    hydrogen: {
+      number: 5000000000000,
+      nameRu: 'водород (т)',
+    },
+    oxygen: {
+      number: '?',
+      nameRu: 'кислород',
+    },
+    helium: {
+      number: '?',
+      nameRu: 'гелий',
+    },
+    lithium: {
+      number: '?',
+      nameRu: 'литий',
+    },
+    beryllium: {
+      number: '?',
+      nameRu: 'бериллий',
+    },
+    boron: {
+      number: '?',
+      nameRu: 'бор',
+    },
+    carbon: {
+      number: '?',
+      nameRu: 'углерод',
+    },
+    nitrogen: {
+      number: '?',
+      nameRu: 'азот',
+    },
+    fluorine: {
+      number: '?',
+      nameRu: 'фтор',
+    },
+    neon: {
+      number: '?',
+      nameRu: 'неон',
+    },
+    sodium: {
+      number: '?',
+      nameRu: 'натрий',
+    },
+    magnesium: {
+      number: '?',
+      nameRu: 'магний',
+    },
+    aluminum: {
+      number: '?',
+      nameRu: 'алюминий',
+    },
+    silicon: {
+      number: '?',
+      nameRu: 'кремний',
+    },
+    phosphorus: {
+      number: '?',
+      nameRu: 'фосфор',
+    },
+    sulfur: {
+      number: '?',
+      nameRu: 'сера',
+    },
+    chlorine: {
+      number: '?',
+      nameRu: 'хлор',
+    },
+    argon: {
+      number: '?',
+      nameRu: 'аргон',
+    },
+    potassium: {
+      number: '?',
+      nameRu: 'калий',
+    },
+    calcium: {
+      number: '?',
+      nameRu: 'кальций',
+    },
+    scandium: {
+      number: '?',
+      nameRu: 'скандий',
+    },
+    titanium: {
+      number: '?',
+      nameRu: 'титан',
+    },
+    vanadium: {
+      number: '?',
+      nameRu: 'ванадий',
+    },
+    chromium: {
+      number: '?',
+      nameRu: 'хром',
+    },
+    manganese: {
+      number: '?',
+      nameRu: 'марганец',
+    },
+    iron: {
+      number: '?',
+      nameRu: 'железо',
+    },
+
   };
   galaxies = [];
   planets = [
