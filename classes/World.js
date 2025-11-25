@@ -1,6 +1,20 @@
 'use strict';
 
 class World {
+  info = {
+    populationSize: {
+      number: 8341290530,
+      nameRu: 'человек',
+    },
+    landArea: {
+      number: 149000000,
+      nameRu: 'площадь суши (кв.км)',
+    },
+    waterArea: {
+      number: 361000000,
+      nameRu: 'площадь воды (кв.км)',
+    },
+  };
   galaxies = [];
   planets = [
     {
