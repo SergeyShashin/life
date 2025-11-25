@@ -218,6 +218,62 @@ class World {
       number: '?',
       nameRu: 'лантан',
     },
+    cerium: {
+      number: '?',
+      nameRu: 'церий',
+    },
+    neodymium: {
+      number: '?',
+      nameRu: 'неодим',
+    },
+    terbium: {
+      number: '?',
+      nameRu: 'тербий',
+    },
+    wolfram: {
+      number: '?',
+      nameRu: 'вольфрам',
+    },
+    osmium: {
+      number: '?',
+      nameRu: 'осмий',
+    },
+    platinum: {
+      number: '?',
+      nameRu: 'платина',
+    },
+    gold: {
+      number: '?',
+      nameRu: 'золото',
+    },
+    mercury: {
+      number: '?',
+      nameRu: 'ртуть',
+    },
+    thallium: {
+      number: '?',
+      nameRu: 'талий',
+    },
+    plumbum: {
+      number: '?',
+      nameRu: 'свинец',
+    },
+    bismuth: {
+      number: '?',
+      nameRu: 'висмут',
+    },
+    thorium: {
+      number: '?',
+      nameRu: 'торий',
+    },
+    uranium: {
+      number: '?',
+      nameRu: 'уран',
+    },
+    plutonium: {
+      number: '?',
+      nameRu: 'плутоний',
+    },
 
   };
   galaxies = [];
