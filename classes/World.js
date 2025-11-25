@@ -126,6 +126,98 @@ class World {
       number: '?',
       nameRu: 'железо',
     },
+    cobalt: {
+      number: '?',
+      nameRu: 'железо',
+    },
+    nickel: {
+      number: '?',
+      nameRu: 'никель',
+    },
+    copper: {
+      number: '?',
+      nameRu: 'медь',
+    },
+    zinc: {
+      number: '?',
+      nameRu: 'цинк',
+    },
+    gallium: {
+      number: '?',
+      nameRu: 'галий',
+    },
+    germanium: {
+      number: '?',
+      nameRu: 'германий',
+    },
+    garsenic: {
+      number: '?',
+      nameRu: 'мышьяк',
+    },
+    selenium: {
+      number: '?',
+      nameRu: 'селен',
+    },
+    bromine: {
+      number: '?',
+      nameRu: 'бром',
+    },
+    rubidium: {
+      number: '?',
+      nameRu: 'рубидий',
+    },
+    strontium: {
+      number: '?',
+      nameRu: 'стронций',
+    },
+    zirconium: {
+      number: '?',
+      nameRu: 'цирконий',
+    },
+    molybdenum: {
+      number: '?',
+      nameRu: 'молибден',
+    },
+    rhodium: {
+      number: '?',
+      nameRu: 'родий',
+    },
+    palladium: {
+      number: '?',
+      nameRu: 'палладий',
+    },
+    cadmium: {
+      number: '?',
+      nameRu: 'кадмий',
+    },
+    indium: {
+      number: '?',
+      nameRu: 'индий',
+    },
+    tin: {
+      number: '?',
+      nameRu: 'олово',
+    },
+    tellurium: {
+      number: '?',
+      nameRu: 'теллур',
+    },
+    xenon: {
+      number: '?',
+      nameRu: 'ксенон',
+    },
+    cesium: {
+      number: '?',
+      nameRu: 'цезий',
+    },
+    barium: {
+      number: '?',
+      nameRu: 'барий',
+    },
+    lanthanum: {
+      number: '?',
+      nameRu: 'лантан',
+    },
 
   };
   galaxies = [];
