@@ -4,9 +4,8 @@ class Control {
   controlHTMLEl;
   buttons = [
     { class: 'btn', id: 'btnAutomaticControlOrHandControl', textRu: 'Ручное' },
-    { class: 'btn', id: 'id', textRu: 'Карта' },
+    { class: 'btn', id: 'btnMap', textRu: 'Карта' },
     { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
-
   ];
   btnAutomaticControlOrHandControlEl;
   createControlHTMLEl() {

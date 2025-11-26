@@ -13,8 +13,6 @@ const life = {
   settingsEl: null,
   modelingEl: null,
   btnAutomaticControlOrHandControlEl: null,
-  // date: null,
-  // interval: null,
   world: null,
   time: null,
   control: null,
@@ -30,11 +28,6 @@ const life = {
     this.containerEl.appendChild(this.time.createTimeHTMLEl());
     this.control = new Control();
     this.containerEl.appendChild(this.control.createControlHTMLEl());
-    // this.date = new Date();
-    // this.interval = setInterval(() => {
-    //   this.date.setSeconds(this.date.getSeconds() + 1);
-    //   this.renderTime();
-    // }, 1000);
 
     this.world = new World();
     this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
@@ -71,7 +64,6 @@ const life = {
         this.control.toggleBtnAutomaticControlOrHandControlEl();
         break;
       case 'btnMap':
-        // this.worldInfoEl.style.display = this.worldInfoEl.style.display === 'none' ? 'flex' : 'none';
         this.world.info.toggleInfoEl();
         break;
       case 'btnSettings':
@@ -79,18 +71,11 @@ const life = {
         break;
       case 'btnMinusDay':
       case 'btnPlusDay':
-        // this.updateDate(e.target.dataset.dayvalue);
         this.time.updateTime(e.target.dataset.dayvalue);
         break;
     }
   },
-  // renderTime() {
-  //   this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth() + 1}:${this.date.getDate()} ${this.date.toTimeString()}`;
-  // },
-  // updateDate(quantityDay) {
-  //   this.date.setDate(this.date.getDate() + Number(quantityDay));
-  //   this.renderTime();
-  // }
+ 
 };
 
 window.onload = life.run();
