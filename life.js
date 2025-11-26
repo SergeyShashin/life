@@ -59,7 +59,7 @@ const life = {
   handlerClickBtn(e) {
     switch (e.target.id) {
       case 'btnStartGame':
-        this.worldInfoEl.style.display = 'none';
+        this.world.info.hideInfoEl();
         this.settingsEl.style.display = 'none';
         this.modelingEl.style.display = 'block';
         break;

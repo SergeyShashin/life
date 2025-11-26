@@ -322,12 +322,21 @@ class World {
     setNumber(field, number) {
       this[field].number = number;
     },
+    /**
+     * Переключает видмость элемента в DOM.
+     */
     toggleInfoEl() {
       this.infoEl.style.display = this.infoEl.style.display === 'none' ? 'flex' : 'none';
     },
+    /**
+     * Прячет элемент в DOM.
+     */
     hideInfoEl() {
       this.infoEl.style.display = 'none';
     },
+    /**
+     * Показывает элемент в DOM.
+     */
     showInfoEl() {
       this.infoEl.style.display = 'flex';
     }
