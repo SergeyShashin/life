@@ -5,15 +5,12 @@ class Time {
   timeEl;
   interval;
   btnMinusDayEl;
+  tagTimeEl;
   btnPlusDayEl;
 
   createTimeHTMLEl() {
     this.date = new Date();
     this.timeEl = document.createElement('section');
-    this.interval = setInterval(() => {
-      this.date.setSeconds(this.date.getSeconds() + 1);
-      this.renderTimeHTMLEl();
-    }, 1000);
     this.timeEl.className = 'time';
     this.btnMinusDayEl = document.createElement('button');
     this.btnMinusDayEl.id = 'btnMinusDay';
@@ -25,20 +22,26 @@ class Time {
     this.btnPlusDayEl.id = 'btnPlusDay';
     this.btnPlusDayEl.className = 'controlTime';
     this.btnPlusDayEl.dataset.dayvalue = '1';
-    this.btnPlusDayEl.dataset.textContent = '>';
+    this.btnPlusDayEl.textContent = '>';
     this.timeEl.appendChild(this.btnMinusDayEl);
     this.timeEl.appendChild(this.tagTimeEl);
     this.timeEl.appendChild(this.btnPlusDayEl);
+    this.interval = setInterval(() => {
+      this.date.setSeconds(this.date.getSeconds() + 1);
+      this.renderTimeHTMLEl();
+    }, 1000);
     return this.timeEl
   }
 
   renderTimeHTMLEl() {
-    this.timeEl.textContent = `${this.date.getFullYear()}:${this.date.getMonth() + 1}:${this.date.getDate()} ${this.date.toTimeString()}`;
+    this.tagTimeEl.textContent = `${this.date.getFullYear()}:${this.date.getMonth() + 1}:${this.date.getDate()} ${this.date.toTimeString()}`;
   }
+
   setTime() { }
-  updateTime() {
+
+  updateTime(quantityDay) {
     this.date.setDate(this.date.getDate() + Number(quantityDay));
-    renderTimeHTMLEl();
+    this.renderTimeHTMLEl();
   }
 
 }
