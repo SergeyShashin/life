@@ -17,6 +17,7 @@ const life = {
   // interval: null,
   world: null,
   time: null,
+  control: null,
 
   run() {
     this.init();
@@ -27,6 +28,8 @@ const life = {
     this.containerEl = document.querySelector('.container');
     this.time = new Time();
     this.containerEl.appendChild(this.time.createTimeHTMLEl());
+    this.control = new Control();
+    this.containerEl.appendChild(this.control.createControlHTMLEl());
     // this.date = new Date();
     // this.interval = setInterval(() => {
     //   this.date.setSeconds(this.date.getSeconds() + 1);
@@ -65,7 +68,7 @@ const life = {
         this.modelingEl.style.display = 'block';
         break;
       case 'btnAutomaticControlOrHandControl':
-        this.btnAutomaticControlOrHandControlEl.textContent = this.btnAutomaticControlOrHandControlEl.textContent === 'Ручное' ? 'Автоматическое' : 'Ручное';
+        this.control.toggleBtnAutomaticControlOrHandControlEl();
         break;
       case 'btnMap':
         // this.worldInfoEl.style.display = this.worldInfoEl.style.display === 'none' ? 'flex' : 'none';
