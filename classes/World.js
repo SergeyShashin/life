@@ -311,7 +311,6 @@ class World {
     */
     renderInfoHTMLEl() {
       for (let el of this.infoEl.children) {
-        console.log(this[el.firstChild.dataset.nameValue]);
         el.firstChild.textContent = this[el.firstChild.dataset.nameValue].number.toLocaleString();
       };
     },
