@@ -319,8 +319,17 @@ class World {
      * @param {string} field 
      * @param {number} number 
      */
-    set(field, number) {
+    setNumber(field, number) {
       this[field].number = number;
+    },
+    toggleInfoEl() {
+      this.infoEl.style.display = this.infoEl.style.display === 'none' ? 'flex' : 'none';
+    },
+    hideInfoEl() {
+      this.infoEl.style.display = 'none';
+    },
+    showInfoEl() {
+      this.infoEl.style.display = 'flex';
     }
 
   };

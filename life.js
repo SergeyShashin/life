@@ -16,6 +16,7 @@ const life = {
   modelingEl: null,
   btnAutomaticControlOrHandControlEl: null,
   date: null,
+  world: null,
 
   run() {
     this.init();
@@ -31,9 +32,9 @@ const life = {
       this.renderTime();
     }, 1000);
 
-    const world = new World();
-    this.containerEl.appendChild(world.info.createInfoHTMLEl());
-    world.info.renderInfoHTMLEl();
+    this.world = new World();
+    this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
+    this.world.info.renderInfoHTMLEl();
 
     this.settingsEl = document.getElementById('settings');
     this.modelingEl = document.getElementById('modeling');
@@ -66,10 +67,8 @@ const life = {
         this.btnAutomaticControlOrHandControlEl.textContent = this.btnAutomaticControlOrHandControlEl.textContent === 'Ручное' ? 'Автоматическое' : 'Ручное';
         break;
       case 'btnMap':
-        this.worldInfoEl.style.display = this.worldInfoEl.style.display === 'none' ? 'flex' : 'none';
-        break;
-      case 'btnSettings':
-        this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'inline-block' : 'none';
+        // this.worldInfoEl.style.display = this.worldInfoEl.style.display === 'none' ? 'flex' : 'none';
+        this.world.info.toggleInfoEl();
         break;
       case 'btnSettings':
         this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'inline-block' : 'none';
