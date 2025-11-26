@@ -12,7 +12,6 @@ const life = {
   containerEl: null,
   timeEL: null,
   interval: null,
-  worldInfoEl: null,
   settingsEl: null,
   modelingEl: null,
   btnAutomaticControlOrHandControlEl: null,
@@ -31,9 +30,10 @@ const life = {
       this.date.setSeconds(this.date.getSeconds() + 1);
       this.renderTime();
     }, 1000);
-    // this.worldInfoEl = document.getElementById('worldInfo');
+
     const world = new World();
-    this.containerEl.appendChild(world.info.createHTMLElInfo());
+    this.containerEl.appendChild(world.info.createInfoHTMLEl());
+    world.info.renderInfoHTMLEl();
 
     this.settingsEl = document.getElementById('settings');
     this.modelingEl = document.getElementById('modeling');

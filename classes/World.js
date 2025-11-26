@@ -1,6 +1,7 @@
 'use strict';
 
 class World {
+  infoEl;
   info = {
     populationSize: {
       number: 8341290530,
@@ -274,10 +275,11 @@ class World {
       number: '?',
       nameRu: 'плутоний',
     },
-    createHTMLElInfo() {
+    createInfoHTMLEl() {
       let infoEl = document.createElement('section');
       infoEl.id = 'worldInfo';
       infoEl.className = 'worldInfo';
+
       for (const key in this) {
         if (typeof this[key] === 'function') {
           continue
@@ -295,7 +297,14 @@ class World {
         infoEl.appendChild(divEl);
       }
 
+      this.infoEl = infoEl;
+
       return infoEl;
+    },
+    renderInfoHTMLEl() {
+      for (let el of this.infoEl.children) {
+        console.log(el);
+      };
     }
 
   };
