@@ -278,19 +278,18 @@ class World {
       let infoEl = document.createElement('section');
       infoEl.id = 'worldInfo';
       infoEl.className = 'worldInfo';
-
       for (const key in this) {
-        if (typeof key === 'function') {
-          return
+        if (typeof this[key] === 'function') {
+          continue
         }
         let divEl = document.createElement('div');
         divEl.className = 'baseEl';
         let monitorEl = document.createElement('p');
         monitorEl.className = 'baseEl_monitor';
-        monitorEl.textContent = this[key].number;
+        monitorEl.textContent = this[key].number.toLocaleString();
         let textEl = document.createElement('p');
-        monitorEl.className = 'baseEl_text';
-        monitorEl.textContent = this[key].nameRu;
+        textEl.className = 'baseEl_text';
+        textEl.textContent = this[key].nameRu;
         divEl.appendChild(monitorEl);
         divEl.appendChild(textEl);
         infoEl.appendChild(divEl);
