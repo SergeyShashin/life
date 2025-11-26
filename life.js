@@ -10,13 +10,13 @@ const settings = {
 const life = {
   settings,
   containerEl: null,
-  timeEL: null,
-  interval: null,
   settingsEl: null,
   modelingEl: null,
   btnAutomaticControlOrHandControlEl: null,
-  date: null,
+  // date: null,
+  // interval: null,
   world: null,
+  time: null,
 
   run() {
     this.init();
@@ -25,12 +25,13 @@ const life = {
 
   init() {
     this.containerEl = document.querySelector('.container');
-    this.timeEL = document.querySelector('time');
-    this.date = new Date();
-    this.interval = setInterval(() => {
-      this.date.setSeconds(this.date.getSeconds() + 1);
-      this.renderTime();
-    }, 1000);
+    this.time = new Time();
+    this.containerEl.appendChild(this.time.createTimeHTMLEl());
+    // this.date = new Date();
+    // this.interval = setInterval(() => {
+    //   this.date.setSeconds(this.date.getSeconds() + 1);
+    //   this.renderTime();
+    // }, 1000);
 
     this.world = new World();
     this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
@@ -75,17 +76,18 @@ const life = {
         break;
       case 'btnMinusDay':
       case 'btnPlusDay':
-        this.updateDate(e.target.dataset.dayvalue);
+        // this.updateDate(e.target.dataset.dayvalue);
+        this.time.updateTime(e.target.dataset.dayvalue);
         break;
     }
   },
-  renderTime() {
-    this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth() + 1}:${this.date.getDate()} ${this.date.toTimeString()}`;
-  },
-  updateDate(quantityDay) {
-    this.date.setDate(this.date.getDate() + Number(quantityDay));
-    this.renderTime();
-  }
+  // renderTime() {
+  //   this.timeEL.textContent = `${this.date.getFullYear()}:${this.date.getMonth() + 1}:${this.date.getDate()} ${this.date.toTimeString()}`;
+  // },
+  // updateDate(quantityDay) {
+  //   this.date.setDate(this.date.getDate() + Number(quantityDay));
+  //   this.renderTime();
+  // }
 };
 
 window.onload = life.run();
