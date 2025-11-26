@@ -275,6 +275,10 @@ class World {
       number: '?',
       nameRu: 'плутоний',
     },
+    /**
+     * Создаёт HTML элемент с информацией о мире.
+     * @returns HTML элемент
+     */
     createInfoHTMLEl() {
       let infoEl = document.createElement('section');
       infoEl.id = 'worldInfo';
@@ -288,6 +292,7 @@ class World {
         divEl.className = 'baseEl';
         let monitorEl = document.createElement('p');
         monitorEl.className = 'baseEl_monitor';
+        monitorEl.dataset.nameValue = key;
         monitorEl.textContent = this[key].number.toLocaleString();
         let textEl = document.createElement('p');
         textEl.className = 'baseEl_text';
@@ -301,10 +306,22 @@ class World {
 
       return infoEl;
     },
+    /**
+    * Обновляет  HTML элементы с информацией о мире.     * 
+    */
     renderInfoHTMLEl() {
       for (let el of this.infoEl.children) {
-        console.log(el);
+        console.log(this[el.firstChild.dataset.nameValue]);
+        el.firstChild.textContent = this[el.firstChild.dataset.nameValue].number.toLocaleString();
       };
+    },
+    /**
+     * Устанавливает число в поле
+     * @param {string} field 
+     * @param {number} number 
+     */
+    set(field, number) {
+      this[field].number = number;
     }
 
   };
