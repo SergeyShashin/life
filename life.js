@@ -53,8 +53,8 @@ const life = {
     switch (e.target.id) {
       case 'btnStartGame':
         this.world.info.hideInfoEl();
-        this.settingsEl.style.display = 'none';
-        this.modelingEl.style.display = 'block';
+        this.settings.hideSettingsEl();
+        this.modelingEl.style.display = 'block'; // переделать на show после создания класса
         break;
       case 'btnAutomaticControlOrHandControl':
         this.control.toggleBtnAutomaticControlOrHandControlEl();
@@ -63,7 +63,6 @@ const life = {
         this.world.info.toggleInfoEl();
         break;
       case 'btnSettings':
-        this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'inline-block' : 'none';
         break;
       case 'btnMinusDay':
       case 'btnPlusDay':
