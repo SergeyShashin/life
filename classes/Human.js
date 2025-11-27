@@ -859,14 +859,6 @@ class Human {
     return this.patronymic;
   }
 
-  setNumberDayLife(numberDayLife) {
-    this.numberDayLife = numberDayLife;
-  }
-
-  getNumberDayLife() {
-    return this.numberDayLife;
-  }
-
   setSiblings(siblings) {
     this.siblings = siblings;
   }
@@ -954,11 +946,36 @@ class Human {
     let headerFirstNameHTMLEl = document.createElement('h4');
     headerFirstNameHTMLEl.textContent = 'имя';
     this.inputFirstNameHTMLEl = document.createElement('input');
+    this.inputFirstNameHTMLEl.name = 'firstName';
 
     this.firstNameHTMLEl.appendChild(headerFirstNameHTMLEl);
     this.firstNameHTMLEl.appendChild(this.inputFirstNameHTMLEl);
 
     return this.firstNameHTMLEl;
+  }
+
+  createNumberDayLifeHTMLEl() {
+    this.numberDayLifeHTMLEl = document.createElement('div');
+    let headerNumberDayLifeHTMLEl = document.createElement('h4');
+    headerNumberDayLifeHTMLEl.textContent = 'день жизни';
+    this.inputNumberDayLifeHTMLEl = document.createElement('input');
+    this.inputNumberDayLifeHTMLEl.name = 'numberDayLife';
+    this.inputNumberDayLifeHTMLEl.type = 'number';
+    this.inputNumberDayLifeHTMLEl.min = 1;
+    this.inputNumberDayLifeHTMLEl.value = this.numberDayLife;
+
+    this.numberDayLifeHTMLEl.appendChild(headerNumberDayLifeHTMLEl);
+    this.numberDayLifeHTMLEl.appendChild(this.inputNumberDayLifeHTMLEl);
+
+    return this.numberDayLifeHTMLEl;
+  }
+
+  setNumberDayLife(numberDayLife) {
+    this.numberDayLife = numberDayLife;
+  }
+
+  getNumberDayLife() {
+    return this.numberDayLife;
   }
 
   createHeadEl() {
