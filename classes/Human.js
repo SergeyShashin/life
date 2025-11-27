@@ -27,7 +27,7 @@ class Human {
           nameRussian: 'лобная кость',
           description: 'Образует лоб и верхние стенки глазниц. При рождении состоит из двух половин, которые затем срастаются между собой.',
           pathImg: 'img/small/smile.png',
-          pathFullImg: 'img/fullimg/smile.png',        
+          pathFullImg: 'img/fullimg/smile.png',
         },
         suturaСoronalis: {
           inStock: true,
@@ -588,7 +588,7 @@ class Human {
           description: '',
           pathImg: 'img/small/smile.png',
           pathFullImg: 'img/fullimg/smile.png',
-        },        
+        },
       },
       tegumentaCranii: {
         inStock: true,
@@ -780,7 +780,7 @@ class Human {
   dateBirth;
   coordinatesBirth;
   firstName;
-  surname;
+  surName;
   patronymic;
   idHuman;
   quantityDaysLife = 43800;
@@ -828,12 +828,24 @@ class Human {
     return this.coordinatesBirth;
   }
 
+  setFirstName(firstName) {
+    this.firstName = firstName;
+  }
+
   getFirstName() {
     return this.firstName;
   }
 
+  setSurnName(surName) {
+    this.suRname = surName;
+  }
+
   getSurnName() {
-    return this.surname;
+    return this.suRname;
+  }
+
+  setPatronymic(patronymic) {
+    this.patronymic = patronymic;
   }
 
   getPatronymic() {
@@ -880,12 +892,12 @@ class Human {
     return this.skills;
   }
 
-  setBeliefs(beliefs) {
-    this.beliefs = beliefs;
-  }
-
   getBeliefs() {
     return this.beliefs;
+  }
+
+  setBeliefs(beliefs) {
+    this.beliefs = beliefs;
   }
 
   setEmotions(emotions) {
@@ -905,13 +917,13 @@ class Human {
   }
 
   think() { } //думать
-  analyzeSubject(subject){} // анализировать предмет
-  analyzePhenomen(phenomen){} // анализировать явление
-  synthesize(){}//синтезировать
-  classify(){}//классифицировать
-  generalize(){}//обобщать
-  specify(){}//специализировать
-  abstract(){}//абстрагировать
+  analyzeSubject(subject) { } // анализировать предмет
+  analyzePhenomen(phenomen) { } // анализировать явление
+  synthesize() { }//синтезировать
+  classify() { }//классифицировать
+  generalize() { }//обобщать
+  specify() { }//специализировать
+  abstract() { }//абстрагировать
   remember(data) { } //запоминать
   watch() { } //видеть
   look() { } //смотреть
@@ -1006,6 +1018,6 @@ class Human {
 
     parentEl.appendChild(craniumEl);
   }
- 
+
 
 }
