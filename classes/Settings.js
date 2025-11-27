@@ -15,7 +15,7 @@ class Settings {
     this.sizeTeamEl = document.createElement('div');
     this.sizeTeamEl.id = 'sizeTeam';
     let headerSizeTeamEl = document.createElement('h4');
-    headerSettingsEl.textContent = 'размер группы';
+     headerSizeTeamEl.textContent = 'размер группы';
     this.inputSizeTeamEl = document.createElement('input');
     this.inputSizeTeamEl.id = 'inputSizeTeamEl';
     this.inputSizeTeamEl.value = this.sizeTeam;
