@@ -38,8 +38,10 @@ const life = {
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
 
-      human.createHeadEl(`head${i}`);
-      human.renderHead(this.settings.getSettingsEl());
+
+      // human.renderHead(this.settings.getSettingsEl());
+      this.settings.getSettingsEl().appendChild(human.createFirtNameHTMLEl());
+      this.settings.getSettingsEl().appendChild(human.createHeadEl());
 
     }
 

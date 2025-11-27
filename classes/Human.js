@@ -780,11 +780,13 @@ class Human {
   dateBirth;
   coordinatesBirth;
   firstName;
+  firstNameHTMLEl;
   surName;
   patronymic;
   idHuman;
   quantityDaysLife = 43800;
   numberDayLife = 1;
+  numberDayLifeHTMLEl;
   acquiredHabbits = []; //привычки          
   experience = []; //опыт
   skills = []; //навыки
@@ -794,6 +796,7 @@ class Human {
   currentEmotion;
 
   headEl;
+  craniumEl;
 
   constructor(dateBirth, coordinatesBirth, firstName, surname, patronymic, idHuman) {
     this.dateBirth = dateBirth;
@@ -802,6 +805,10 @@ class Human {
     this.surname = surname;
     this.patronymic = patronymic;
     this.idHuman = idHuman;
+  }
+
+  getiDHuman() {
+    return this.idHuman;
   }
 
   setAnatomy(anatomy) {
@@ -942,81 +949,88 @@ class Human {
   smileSimple() { }
   smileForTarget() { }
 
-  createHeadEl(idHeadEl) {
+  createFirtNameHTMLEl() {
+    this.firstNameHTMLEl = document.createElement('div');
+    let headerFirstNameHTMLEl = document.createElement('h4');
+    headerFirstNameHTMLEl.textContent = 'имя';
+    this.inputFirstNameHTMLEl = document.createElement('input');
+
+    this.firstNameHTMLEl.appendChild(headerFirstNameHTMLEl);
+    this.firstNameHTMLEl.appendChild(this.inputFirstNameHTMLEl);
+
+    return this.firstNameHTMLEl;
+  }
+
+  createHeadEl() {
     this.headEl = document.createElement('section');
-    this.headEl.id = idHeadEl;
-    this.renderCranium(this.headEl);
+    // this.renderCranium(this.headEl);
+    this.headEl.appendChild(this.createCraniumHTMLEl());
+
+    return this.headEl
   }
 
   getHeadEl() {
     return this.headEl;
   }
 
-  renderHead(parentEl) {
-    parentEl.appendChild(this.getHeadEl());
-  }
-
-  renderCranium(parentEl) {
-    let craniumEl = document.createElement('section');
-    craniumEl.id = `cranium${parentEl.id}`;
+  createCraniumHTMLEl() {
+    this.craniumEl = document.createElement('section');
     let { cranium } = this.anatomy.head;
 
-    if (!cranium.inStock) {
-      return
-    }
+    if (cranium.inStock) {
 
-    let headerCraniumEl = document.createElement('h4');
-    headerCraniumEl.textContent = cranium.nameRussian;
+      let headerCraniumEl = document.createElement('h4');
+      headerCraniumEl.textContent = cranium.nameRussian;
 
-    let headerDecriptionEl = document.createElement('p');
-    headerDecriptionEl.textContent = cranium.description;
+      let headerDecriptionEl = document.createElement('p');
+      headerDecriptionEl.textContent = cranium.description;
 
-    let craniumCheckBoxEl = document.createElement('input');
-    craniumCheckBoxEl.type = 'checkbox';
-    craniumCheckBoxEl.checked = true;
+      let craniumCheckBoxEl = document.createElement('input');
+      craniumCheckBoxEl.type = 'checkbox';
+      craniumCheckBoxEl.checked = true;
 
-    let craniumWrapForImgEl = document.createElement('p');
-    let craniumImgEl = new Image();
-    craniumImgEl.src = cranium.pathImg;
-    craniumImgEl.dataset.pathFullImg = cranium.pathFullImg;
-    craniumWrapForImgEl.appendChild(craniumImgEl);
+      let craniumWrapForImgEl = document.createElement('p');
+      let craniumImgEl = new Image();
+      craniumImgEl.src = cranium.pathImg;
+      craniumImgEl.dataset.pathFullImg = cranium.pathFullImg;
+      craniumWrapForImgEl.appendChild(craniumImgEl);
 
-    craniumEl.appendChild(headerCraniumEl);
-    craniumEl.appendChild(craniumWrapForImgEl);
-    craniumEl.appendChild(headerDecriptionEl);
-    craniumEl.appendChild(craniumCheckBoxEl);
+      this.craniumEl.appendChild(headerCraniumEl);
+      this.craniumEl.appendChild(craniumWrapForImgEl);
+      this.craniumEl.appendChild(headerDecriptionEl);
+      this.craniumEl.appendChild(craniumCheckBoxEl);
 
-    for (let craniumKey in cranium) {
-      if (typeof cranium[craniumKey] !== 'object' && !cranium[craniumKey].inStock) {
-        continue;
+      for (let craniumKey in cranium) {
+        if (typeof cranium[craniumKey] !== 'object' && !cranium[craniumKey].inStock) {
+          continue;
+        }
+
+        let craniumPartEl = document.createElement('section');
+
+        let headerCraniumPartEl = document.createElement('h5');
+        headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
+
+        let craniumPartDecriptionEl = document.createElement('p');
+        craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
+
+        let craniumPartCheckBoxEl = document.createElement('input');
+        craniumPartCheckBoxEl.type = 'checkbox';
+        craniumPartCheckBoxEl.checked = true;
+
+        let craniumPartWrapForImgEl = document.createElement('p');
+        let craniumPartImgEl = new Image();
+        craniumPartImgEl.src = cranium[craniumKey].pathImg;
+        craniumImgEl.dataset.pathFullImg = cranium[craniumKey].pathFullImg;
+        craniumPartWrapForImgEl.appendChild(craniumPartImgEl);
+
+        craniumPartEl.appendChild(headerCraniumPartEl);
+        craniumPartEl.appendChild(craniumPartWrapForImgEl);
+        craniumPartEl.appendChild(craniumPartDecriptionEl);
+        craniumPartEl.appendChild(craniumPartCheckBoxEl);
+        this.craniumEl.appendChild(craniumPartEl);
       }
-
-      let craniumPartEl = document.createElement('section');
-
-      let headerCraniumPartEl = document.createElement('h5');
-      headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
-
-      let craniumPartDecriptionEl = document.createElement('p');
-      craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
-
-      let craniumPartCheckBoxEl = document.createElement('input');
-      craniumPartCheckBoxEl.type = 'checkbox';
-      craniumPartCheckBoxEl.checked = true;
-
-      let craniumPartWrapForImgEl = document.createElement('p');
-      let craniumPartImgEl = new Image();
-      craniumPartImgEl.src = cranium[craniumKey].pathImg;
-      craniumImgEl.dataset.pathFullImg = cranium[craniumKey].pathFullImg;
-      craniumPartWrapForImgEl.appendChild(craniumPartImgEl);
-
-      craniumPartEl.appendChild(headerCraniumPartEl);
-      craniumPartEl.appendChild(craniumPartWrapForImgEl);
-      craniumPartEl.appendChild(craniumPartDecriptionEl);
-      craniumPartEl.appendChild(craniumPartCheckBoxEl);
-      craniumEl.appendChild(craniumPartEl);
     }
-
-    parentEl.appendChild(craniumEl);
+    return this.craniumEl;
   }
 
 
