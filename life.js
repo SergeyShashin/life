@@ -38,9 +38,9 @@ const life = {
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
 
-
       this.settings.getSettingsEl().appendChild(human.createFirtNameHTMLEl());
       this.settings.getSettingsEl().appendChild(human.createNumberDayLifeHTMLEl());
+      this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
       this.settings.getSettingsEl().appendChild(human.createHeadEl());
 
     }

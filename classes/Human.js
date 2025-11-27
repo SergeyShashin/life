@@ -775,18 +775,28 @@ class Human {
     }
 
   };
+  typesFamily = [
+    'программисты', 'инженеры', 'врачи', 'повара', 'дизайнеры', 'парикмахеры',
+    'агрономы', 'ветеренары', 'cтроители', 'ювелиры', 'писатели', 'музыканты', 'певцы', 'танцоры'
+  ];
+  typesFamilyHTMLEl;
+  inputTypesFamilyHTMLEl;
   relatives; // связи
   siblings = []; //родственники 
   dateBirth;
   coordinatesBirth;
   firstName;
   firstNameHTMLEl;
+  inputFirstNameHTMLEl;
   surName;
+  surNameHTMLEl;
   patronymic;
+  patronymicHTMLEl;
   idHuman;
   quantityDaysLife = 43800;
   numberDayLife = 1;
   numberDayLifeHTMLEl;
+  inputNumberDayLifeHTMLEl;
   acquiredHabbits = []; //привычки          
   experience = []; //опыт
   skills = []; //навыки
@@ -968,6 +978,25 @@ class Human {
     this.numberDayLifeHTMLEl.appendChild(this.inputNumberDayLifeHTMLEl);
 
     return this.numberDayLifeHTMLEl;
+  }
+
+  createTypesFamilyHTMLEl() {
+    this.typesFamilyHTMLEl = document.createElement('div');
+    let headerTypesFamilyHTMLEl = document.createElement('h4');
+    headerTypesFamilyHTMLEl.textContent = 'семья';
+    this.inputTypesFamilyHTMLEl = document.createElement('input');
+    this.inputTypesFamilyHTMLEl.name = 'inputTypesFamily';
+    // this.inputTypesFamilyHTMLEl.list = 'typesFamily';
+    this.inputTypesFamilyHTMLEl.type = 'search';
+    for (let typeFamily of this.typesFamily) {
+      let optionEl = document.createElement('option');
+
+    }
+
+    this.typesFamilyHTMLEl.appendChild(headerTypesFamilyHTMLEl);
+    this.typesFamilyHTMLEl.appendChild(this.inputTypesFamilyHTMLEl);
+
+    return this.typesFamilyHTMLEl;
   }
 
   setNumberDayLife(numberDayLife) {
