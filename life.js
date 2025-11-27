@@ -1,21 +1,12 @@
 'use strict';
 
-const settings = {
-  sizeTeam: 14, //120
-  getSizeTeam() {
-    return this.sizeTeam
-  },
-};
-
 const life = {
-  settings,
   containerEl: null,
-  settingsEl: null,
-  modelingEl: null,
-  btnAutomaticControlOrHandControlEl: null,
+  modelingEl: null, //переделать на класс, наверное, с другим названием.
   world: null,
   time: null,
   control: null,
+  settings: null,
 
   run() {
     this.init();
@@ -24,10 +15,15 @@ const life = {
 
   init() {
     this.containerEl = document.querySelector('.container');
+
     this.time = new Time();
     this.containerEl.appendChild(this.time.createTimeHTMLEl());
+
     this.control = new Control();
     this.containerEl.appendChild(this.control.createControlHTMLEl());
+
+    this.settings = new Settings();
+    this.containerEl.appendChild(this.settings.createSettingsHTMLEl());
 
     this.world = new World();
     this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
@@ -75,7 +71,7 @@ const life = {
         break;
     }
   },
- 
+
 };
 
 window.onload = life.run();
