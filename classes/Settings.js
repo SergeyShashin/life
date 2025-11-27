@@ -20,8 +20,6 @@ class Settings {
     this.inputSizeTeamEl.id = 'inputSizeTeamEl';
     this.inputSizeTeamEl.value = this.sizeTeam;
 
-    let nameEl
-
     this.sizeTeamEl.appendChild(headerSizeTeamEl);
     this.sizeTeamEl.appendChild(this.inputSizeTeamEl);
 
