@@ -963,7 +963,6 @@ class Human {
 
   createHeadEl() {
     this.headEl = document.createElement('section');
-    // this.renderCranium(this.headEl);
     this.headEl.appendChild(this.createCraniumHTMLEl());
 
     return this.headEl
