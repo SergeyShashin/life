@@ -39,7 +39,7 @@ const life = {
         '[00.000000, 00.000000]', '', '', '', i);
 
       human.createHeadEl(`head${i}`);
-      human.renderHead(this.settingsEl);
+      human.renderHead(this.settings.getSettingsEl());
 
     }
 
@@ -63,6 +63,7 @@ const life = {
         this.world.info.toggleInfoEl();
         break;
       case 'btnSettings':
+        this.settings.toggleSettingsEl();
         break;
       case 'btnMinusDay':
       case 'btnPlusDay':
