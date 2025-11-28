@@ -802,6 +802,7 @@ class Human {
   fears = [];//страхи
   emotions = []; //эмоции
   currentEmotion;
+  investingTimeHTMLEl;
 
   headEl;
   craniumEl;
@@ -1071,6 +1072,15 @@ class Human {
       }
     }
     return this.craniumEl;
+  }
+
+  createInvestingTimeHTMLEl() {
+    this.investingTimeHTMLEl = document.createElement('section');
+
+    let headerInvestingTimeHTMLEl = document.createElement('h4');
+    headerInvestingTimeHTMLEl.textContent = 'День жизни';
+
+    return this.investingTimeHTMLEl;
   }
 
 
