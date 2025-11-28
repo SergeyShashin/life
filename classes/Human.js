@@ -818,6 +818,16 @@ class Human {
     'русский язык' + this.frequentlyUsedPhrases[0], 'русский язык',
     'латинский язык' + this.frequentlyUsedPhrases[0], 'латинский язык',
     'английский язык' + this.frequentlyUsedPhrases[0], 'английский язык',
+    'китайский язык' + this.frequentlyUsedPhrases[0], 'китайский язык',
+    'арабский язык' + this.frequentlyUsedPhrases[0], 'арабский язык',
+    'французский язык' + this.frequentlyUsedPhrases[0], 'французский язык',
+    'анатомия' + this.frequentlyUsedPhrases[0], 'анатомия',
+    'биология' + this.frequentlyUsedPhrases[0], 'биология',
+    'астрономия' + this.frequentlyUsedPhrases[0], 'астрономия',
+    'физика' + this.frequentlyUsedPhrases[0], 'физика',
+    'химия' + this.frequentlyUsedPhrases[0], 'химия',
+    'география' + this.frequentlyUsedPhrases[0], 'география',
+    'история' + this.frequentlyUsedPhrases[0], 'история',
   ];
 
   headEl;
