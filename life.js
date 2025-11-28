@@ -33,15 +33,17 @@ const life = {
     this.modelingEl = document.getElementById('modeling');
     this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');
 
+    this.settings.getSettingsEl().appendChild(this.settings.createDatalistTypesFamilyHTMLEl());
+
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
 
-      this.settings.getSettingsEl().appendChild(human.createFirtNameHTMLEl());
-      this.settings.getSettingsEl().appendChild(human.createNumberDayLifeHTMLEl());
-      this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
-      this.settings.getSettingsEl().appendChild(human.createHeadEl());
+        this.settings.getSettingsEl().appendChild(human.createFirtNameHTMLEl());
+        this.settings.getSettingsEl().appendChild(human.createNumberDayLifeHTMLEl());
+        this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
+        this.settings.getSettingsEl().appendChild(human.createHeadEl());
 
     }
 

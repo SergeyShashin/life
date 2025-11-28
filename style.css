@@ -12,7 +12,7 @@ body {
 }
 
 input {
-  text-align: center;
+  width: 80%;
   color: crimson;
   border: none;
   background: none;
@@ -24,6 +24,10 @@ input {
 
 input:hover {
   border-bottom: 1px solid crimson;
+}
+
+option {
+  text-align: center;
 }
 
 fieldset {

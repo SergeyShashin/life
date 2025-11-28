@@ -5,9 +5,15 @@ class Settings {
   settingsEl;
   sizeTeamEl;
   inputSizeTeamEl;
+  typesFamily = [
+    'программисты', 'инженеры', 'врачи', 'повара', 'дизайнеры', 'парикмахеры',
+    'агрономы', 'ветеренары', 'cтроители', 'ювелиры', 'писатели', 'музыканты', 'певцы', 'танцоры'
+  ];
+  datalistTypesFamilyHTMLEl;
 
   createSettingsHTMLEl() {
     this.settingsEl = document.createElement('section');
+    this.settingsEl.id = 'settings';
 
     let headerSettingsEl = document.createElement('h2');
     headerSettingsEl.textContent = 'Настройки';
@@ -15,7 +21,7 @@ class Settings {
     this.sizeTeamEl = document.createElement('div');
     this.sizeTeamEl.id = 'sizeTeam';
     let headerSizeTeamEl = document.createElement('h4');
-     headerSizeTeamEl.textContent = 'размер группы';
+    headerSizeTeamEl.textContent = 'размер группы';
     this.inputSizeTeamEl = document.createElement('input');
     this.inputSizeTeamEl.name = 'inputSizeTeam';
     this.inputSizeTeamEl.type = 'number';
@@ -54,8 +60,21 @@ class Settings {
   hideSettingsEl() {
     this.settingsEl.style.display = 'none';
   }
-  
+
   showSettingsEl() {
     this.infoEl.style.display = 'inline-block';
   }
+
+  createDatalistTypesFamilyHTMLEl() {
+    this.datalistTypesFamilyHTMLEl = document.createElement('datalist');
+    this.datalistTypesFamilyHTMLEl.id = 'datalistTypesFamilyHTMLEl';
+
+    for (let typeFamily of this.typesFamily) {
+      let optionEl = document.createElement('option');
+      optionEl.value = typeFamily;
+      this.datalistTypesFamilyHTMLEl.appendChild(optionEl);
+    }
+
+    return this.datalistTypesFamilyHTMLEl
+  };
 }

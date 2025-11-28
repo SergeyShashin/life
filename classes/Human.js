@@ -775,12 +775,10 @@ class Human {
     }
 
   };
-  typesFamily = [
-    'программисты', 'инженеры', 'врачи', 'повара', 'дизайнеры', 'парикмахеры',
-    'агрономы', 'ветеренары', 'cтроители', 'ювелиры', 'писатели', 'музыканты', 'певцы', 'танцоры'
-  ];
+
   typesFamilyHTMLEl;
   inputTypesFamilyHTMLEl;
+
   relatives; // связи
   siblings = []; //родственники 
   dateBirth;
@@ -986,12 +984,9 @@ class Human {
     headerTypesFamilyHTMLEl.textContent = 'семья';
     this.inputTypesFamilyHTMLEl = document.createElement('input');
     this.inputTypesFamilyHTMLEl.name = 'inputTypesFamily';
-    // this.inputTypesFamilyHTMLEl.list = 'typesFamily';
+    this.inputTypesFamilyHTMLEl.setAttribute('list', 'datalistTypesFamilyHTMLEl')
     this.inputTypesFamilyHTMLEl.type = 'search';
-    for (let typeFamily of this.typesFamily) {
-      let optionEl = document.createElement('option');
 
-    }
 
     this.typesFamilyHTMLEl.appendChild(headerTypesFamilyHTMLEl);
     this.typesFamilyHTMLEl.appendChild(this.inputTypesFamilyHTMLEl);
