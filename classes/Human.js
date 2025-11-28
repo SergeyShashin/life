@@ -792,6 +792,7 @@ class Human {
   patronymicHTMLEl;
   idHuman;
   quantityDaysLife = 43800;
+  secondsInDay = 86400;
   numberDayLife = 1;
   numberDayLifeHTMLEl;
   inputNumberDayLifeHTMLEl;
@@ -804,14 +805,15 @@ class Human {
   currentEmotion;
   investingTimeHTMLEl;
   frequentlyUsedPhrases = ['c семьёй и друзьями'];
-  daysLife = [
-    // {
-    //   '0_0_0': 'программирование семьёй и друзьями',
-    //   '0_0_1': 'программирование семьёй и друзьями',
-    //   '...',
-    //   '23_59_59': 'программирование семьёй и друзьями',
-    // }
-  ];
+  // daysLife = [
+  // {
+  //   '0:0:0': 'программирование семьёй и друзьями',
+  //   '0:0:1': 'программирование семьёй и друзьями',
+  //   '...',
+  //   '23:59:59': 'программирование семьёй и друзьями',
+  // }
+  // ];
+  daysLifeHTMLEl;
   todoList = [
     'программирование' + this.frequentlyUsedPhrases[0], 'программирование',
     'математика' + this.frequentlyUsedPhrases[0], 'математика',
@@ -1146,8 +1148,49 @@ class Human {
   createInvestingTimeHTMLEl() {
     this.investingTimeHTMLEl = document.createElement('section');
 
-    let headerInvestingTimeHTMLEl = document.createElement('h4');
-    headerInvestingTimeHTMLEl.textContent = 'День жизни';
+    for (let numberDay = this.numberDayLife; numberDay < this.quantityDaysLife; numberDay++) {
+      this.dayLifeHTMLEl = document.createElement('div');
+      let headerInvestingTimeHTMLEl = document.createElement('h4');
+      headerInvestingTimeHTMLEl.textContent = 'День жизни' + numberDay;
+      let dayLife = {};
+
+      this.todoList.map(nameBusiness => {
+        let businessHTMLEl = document.createElement('div');
+        let headerbusinessHTMLEl = document.createElement('h4');
+        headerbusinessHTMLEl.textContent = nameBusiness;
+        let inputTypeBusinessHTMLEl = document.createElement('input');
+        inputTypeBusinessHTMLEl.type = 'search';
+        inputTypeBusinessHTMLEl.setAttribute('list', 'datalistTypesBusinessHTMLEl');
+        inputTypeBusinessHTMLEl.name = 'inputTypeSearchBusinessEl';
+
+        let inputTypeRangeBusinessHTMLEl = document.createElement('input');
+        inputTypeRangeBusinessHTMLEl.type = 'range';
+        inputTypeRangeBusinessHTMLEl.min = 0;
+        inputTypeRangeBusinessHTMLEl.min = this.secondsInDay;
+        inputTypeRangeBusinessHTMLEl.name = 'inputTypeRangeBusinessEl';
+
+        businessHTMLEl.appendChild(headerbusinessHTMLEl);
+        businessHTMLEl.appendChild(inputTypeBusinessHTMLEl);
+        businessHTMLEl.appendChild(inputTypeRangeBusinessHTMLEl);
+        this.dayLifeHTMLEl.appendChild(businessHTMLEl);
+      });
+
+
+
+
+      this.dayLifeHTMLEl.appendChild(headerInvestingTimeHTMLEl);
+
+      // for (let hour = 0; hour < 24; hour++) {
+      //   for (let minute = 0; minute < 60; minute++) {
+      //     for (let second = 0; second < 60; second++) {
+      //       dayLife[`${hour}:${minute}:${second}`] = 'какое-то дело из this.todoList';
+      //     }
+      //   }
+      // }      
+      // this.daysLife.push(dayLife);
+    }
+
+    this.investingTimeHTMLEl.appendChild(dayLifeHTMLEl);
 
     return this.investingTimeHTMLEl;
   }
