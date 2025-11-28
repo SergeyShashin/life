@@ -12,6 +12,7 @@ body {
 }
 
 input {
+  text-align: center;
   color: crimson;
   border: none;
   background: none;
