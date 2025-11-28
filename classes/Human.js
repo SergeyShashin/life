@@ -1157,8 +1157,6 @@ class Human {
 
       this.todoList.map(nameBusiness => {
         let businessHTMLEl = document.createElement('div');
-        let headerbusinessHTMLEl = document.createElement('h4');
-        headerbusinessHTMLEl.textContent = nameBusiness;
         let inputTypeBusinessHTMLEl = document.createElement('input');
         inputTypeBusinessHTMLEl.type = 'search';
         // inputTypeBusinessHTMLEl.setAttribute('list', 'datalistTypesBusinessHTMLEl');
@@ -1170,7 +1168,6 @@ class Human {
         inputTypeRangeBusinessHTMLEl.max = this.secondsInDay;
         inputTypeRangeBusinessHTMLEl.name = 'inputTypeRangeBusinessEl';
 
-        businessHTMLEl.appendChild(headerbusinessHTMLEl);
         businessHTMLEl.appendChild(inputTypeBusinessHTMLEl);
         businessHTMLEl.appendChild(inputTypeRangeBusinessHTMLEl);
         this.dayLifeHTMLEl.appendChild(businessHTMLEl);
