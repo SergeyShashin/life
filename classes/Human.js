@@ -803,6 +803,7 @@ class Human {
   emotions = []; //эмоции
   currentEmotion;
   investingTimeHTMLEl;
+  frequentlyUsedPhrases = ['c семьёй и друзьями'];
   daysLife = [
     // {
     //   '0_0_0': 'программирование семьёй и друзьями',
@@ -812,8 +813,11 @@ class Human {
     // }
   ];
   todoList = [
-    'программирование семьёй и друзьями', 'программирование',
-    'математика с семьёй и друзьями', 'математика',
+    'программирование' + this.frequentlyUsedPhrases[0], 'программирование',
+    'математика' + this.frequentlyUsedPhrases[0], 'математика',
+    'русский язык' + this.frequentlyUsedPhrases[0], 'русский язык',
+    'латинский язык' + this.frequentlyUsedPhrases[0], 'латинский язык',
+    'английский язык' + this.frequentlyUsedPhrases[0], 'английский язык',
   ];
 
   headEl;
@@ -1024,6 +1028,14 @@ class Human {
 
   getHeadEl() {
     return this.headEl;
+  }
+
+  addToDoList(business) {
+    this.todoList.push(business);
+  }
+
+  getToDoList() {
+    return this.todoList;
   }
 
   createCraniumHTMLEl() {
