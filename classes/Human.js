@@ -1148,10 +1148,11 @@ class Human {
   createInvestingTimeHTMLEl() {
     this.investingTimeHTMLEl = document.createElement('section');
 
-    for (let numberDay = this.numberDayLife; numberDay < this.quantityDaysLife; numberDay++) {
+    // не тянет столько for (let numberDay = this.numberDayLife; numberDay < this.quantityDaysLife; numberDay++) {
+    for (let numberDay = this.numberDayLife; numberDay < 8; numberDay++) {
       this.dayLifeHTMLEl = document.createElement('div');
       let headerInvestingTimeHTMLEl = document.createElement('h4');
-      headerInvestingTimeHTMLEl.textContent = 'День жизни' + numberDay;
+      headerInvestingTimeHTMLEl.textContent = 'День жизни ' + numberDay;
       let dayLife = {};
 
       this.todoList.map(nameBusiness => {
@@ -1160,13 +1161,13 @@ class Human {
         headerbusinessHTMLEl.textContent = nameBusiness;
         let inputTypeBusinessHTMLEl = document.createElement('input');
         inputTypeBusinessHTMLEl.type = 'search';
-        inputTypeBusinessHTMLEl.setAttribute('list', 'datalistTypesBusinessHTMLEl');
+        // inputTypeBusinessHTMLEl.setAttribute('list', 'datalistTypesBusinessHTMLEl');
         inputTypeBusinessHTMLEl.name = 'inputTypeSearchBusinessEl';
 
         let inputTypeRangeBusinessHTMLEl = document.createElement('input');
         inputTypeRangeBusinessHTMLEl.type = 'range';
         inputTypeRangeBusinessHTMLEl.min = 0;
-        inputTypeRangeBusinessHTMLEl.min = this.secondsInDay;
+        inputTypeRangeBusinessHTMLEl.max = this.secondsInDay;
         inputTypeRangeBusinessHTMLEl.name = 'inputTypeRangeBusinessEl';
 
         businessHTMLEl.appendChild(headerbusinessHTMLEl);
@@ -1174,9 +1175,6 @@ class Human {
         businessHTMLEl.appendChild(inputTypeRangeBusinessHTMLEl);
         this.dayLifeHTMLEl.appendChild(businessHTMLEl);
       });
-
-
-
 
       this.dayLifeHTMLEl.appendChild(headerInvestingTimeHTMLEl);
 
@@ -1190,7 +1188,7 @@ class Human {
       // this.daysLife.push(dayLife);
     }
 
-    this.investingTimeHTMLEl.appendChild(dayLifeHTMLEl);
+    this.investingTimeHTMLEl.appendChild(this.dayLifeHTMLEl);
 
     return this.investingTimeHTMLEl;
   }

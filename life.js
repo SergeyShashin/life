@@ -45,6 +45,8 @@ const life = {
         this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
         this.settings.getSettingsEl().appendChild(human.createHeadEl());
 
+        this.settings.getSettingsEl().appendChild(human.createInvestingTimeHTMLEl());
+
     }
 
   },
