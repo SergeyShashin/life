@@ -41,7 +41,7 @@ const life = {
     this.containerEl.appendChild(this.control.createControlHTMLEl());
 
     //Создаёт объект класса Settings.    
-    this.settings = new Settings();
+    this.settings = new Settings();    
     //Создаёт HTML элемент объекта setttings и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.settings.createSettingsHTMLEl());
 
@@ -52,9 +52,9 @@ const life = {
 
     //переделать на класс. Сделать создание в JS. Сейчас черновик в HTML.
     this.modelingEl = document.getElementById('modeling');
-
     //Добавляет в HTML элемент settings тэг datlist с данными о профилях семей. Для выбора в инпуте профиля семьи. ('программисты', 'инженеры', 'врачи', 'повара', ...)
     this.settings.getSettingsEl().appendChild(this.settings.createDatalistTypesFamilyHTMLEl());
+
     //Добавляет в HTML элемент settings тэг datlist с данными о делах. Для выбора в инпуте дела. ('программирование c семьёй и друзьями, ...приём пищи c семьёй и друзьями, ...')
     this.settings.getSettingsEl().appendChild(this.settings.createDatalistInvestingTimeHTMLEl());
 
