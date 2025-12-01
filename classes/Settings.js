@@ -82,20 +82,33 @@ class Settings {
    * @returns {HTMLElement} HTML элемент c настройками игры
    */
   createSettingsHTMLEl() {
+    //создание HTML элемента с настройками
     this.settingsEl = document.createElement('section');
+    //установка id для HTML элемента с настройками
     this.settingsEl.id = 'settings';
 
+    //создание заголовка для настроек
     let headerSettingsEl = document.createElement('h2');
+    //установка текста для заголовка настроек
     headerSettingsEl.textContent = 'Настройки';
 
+    //создание HTML элемента для заголовка и инпута размера группы
     this.sizeTeamEl = document.createElement('div');
+    //установка id для HTML элмента с размером группы
     this.sizeTeamEl.id = 'sizeTeam';
+    //создание HTML элемента заголовка размера группы
     let headerSizeTeamEl = document.createElement('h4');
+    //установка текста в заголовок размера группы
     headerSizeTeamEl.textContent = 'размер группы';
+    //создание HTMl элемента input
     this.inputSizeTeamEl = document.createElement('input');
+    //установка инпуту name
     this.inputSizeTeamEl.name = 'inputSizeTeam';
+    //установка типа инпута
     this.inputSizeTeamEl.type = 'number';
+    //установка минимального значения инпута
     this.inputSizeTeamEl.min = 1;
+    //установка максимального значения инпута
     this.inputSizeTeamEl.value = this.sizeTeam;
 
     this.sizeTeamEl.appendChild(headerSizeTeamEl);
