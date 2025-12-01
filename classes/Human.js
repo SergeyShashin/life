@@ -804,7 +804,7 @@ class Human {
   emotions = []; //эмоции
   currentEmotion;
   investingTimeHTMLEl;
-  frequentlyUsedPhrases = ['c семьёй и друзьями'];
+ 
   // daysLife = [
   // {
   //   '0:0:0': 'программирование семьёй и друзьями',
@@ -814,58 +814,7 @@ class Human {
   // }
   // ];
   daysLifeHTMLEl;
-  todoList = [
-    'программирование' + this.frequentlyUsedPhrases[0], 'программирование',
-    'математика' + this.frequentlyUsedPhrases[0], 'математика',
-    'русский язык' + this.frequentlyUsedPhrases[0], 'русский язык',
-    'латинский язык' + this.frequentlyUsedPhrases[0], 'латинский язык',
-    'английский язык' + this.frequentlyUsedPhrases[0], 'английский язык',
-    'китайский язык' + this.frequentlyUsedPhrases[0], 'китайский язык',
-    'арабский язык' + this.frequentlyUsedPhrases[0], 'арабский язык',
-    'французский язык' + this.frequentlyUsedPhrases[0], 'французский язык',
-    'анатомия' + this.frequentlyUsedPhrases[0], 'анатомия',
-    'биология' + this.frequentlyUsedPhrases[0], 'биология',
-    'астрономия' + this.frequentlyUsedPhrases[0], 'астрономия',
-    'физика' + this.frequentlyUsedPhrases[0], 'физика',
-    'химия' + this.frequentlyUsedPhrases[0], 'химия',
-    'география' + this.frequentlyUsedPhrases[0], 'география',
-    'история' + this.frequentlyUsedPhrases[0], 'история',
-    'живопись' + this.frequentlyUsedPhrases[0], 'живопись',
-    'скульптура' + this.frequentlyUsedPhrases[0], 'скульптура',
-    'немецкий язык' + this.frequentlyUsedPhrases[0], 'немецкий язык',
-    'итальянский язык' + this.frequentlyUsedPhrases[0], 'итальянский язык',
-    'японский язык' + this.frequentlyUsedPhrases[0], 'японский язык',
-    'иврит' + this.frequentlyUsedPhrases[0], 'иврит',
-    'арамейский язык' + this.frequentlyUsedPhrases[0], 'арамейский язык',
-    'армянский язык' + this.frequentlyUsedPhrases[0], 'армянский язык',
-    'греческий язык' + this.frequentlyUsedPhrases[0], 'греческий язык',
-    'хинди' + this.frequentlyUsedPhrases[0], 'хинди',
-    'чтение художественной литературы' + this.frequentlyUsedPhrases[0], 'чтение художественной литературы',
-    'создание продуктов питания' + this.frequentlyUsedPhrases[0], 'создание продуктов питания',
-    'создание одежды' + this.frequentlyUsedPhrases[0], 'создание одежды',
-    'создание посуды' + this.frequentlyUsedPhrases[0], 'создание посуды',
-    'создание мебели' + this.frequentlyUsedPhrases[0], 'создание мебели',
-    'создание инструментов' + this.frequentlyUsedPhrases[0], 'создание инструментов',
-    'создание оборудования' + this.frequentlyUsedPhrases[0], 'создание оборудования',
-    'создание роботов' + this.frequentlyUsedPhrases[0], 'создание роботов',
-    'создание постельных принадлежностей' + this.frequentlyUsedPhrases[0], 'создание постельных принадлежностей',
-    'строительство зданий' + this.frequentlyUsedPhrases[0], 'строительство зданий',
-    'монтаж' + this.frequentlyUsedPhrases[0] + 'систем электроснабжения, систем водоснабжения,  систем отопления, систем газоснабжения, электроустановочных изделий,  ЛВС, линий для перемещения людей', 'монтаж систем электроснабжения, систем водоснабжения,  систем отопления, систем газоснабжения, электроустановочных изделий,  ЛВС, линий для перемещения людей.',
-    'создание средств связи' + this.frequentlyUsedPhrases[0], 'создание средств связи',
-    'создание компьютеров' + this.frequentlyUsedPhrases[0], 'создание компьютеров',
-    'создание, ' + this.frequentlyUsedPhrases[0] + ', капсул для перемещения людей', 'создание капсул для перемещения людей и грузов',
-    'создание, ' + this.frequentlyUsedPhrases[0] + ', рельс по которым будут передвигаться капсулы', 'создание рельс по которым будут передвигаться капсулы',
-    'произвдоство бетона' + this.frequentlyUsedPhrases[0], 'произвдоство бетона',
-    'приготовление пищи' + this.frequentlyUsedPhrases[0], 'приготовление пищи',
-    'приём пищи' + this.frequentlyUsedPhrases[0], 'приём пищи',
-    'душ',
-    'туалет',
-    'стирка',
-    'глажка',
-    'мойка',
-    'уборка',
-    'сон' + this.frequentlyUsedPhrases[0], 'сон',
-  ];
+  
 
   headEl;
   craniumEl;
@@ -1075,15 +1024,7 @@ class Human {
 
   getHeadEl() {
     return this.headEl;
-  }
-
-  addToDoList(business) {
-    this.todoList.push(business);
-  }
-
-  getToDoList() {
-    return this.todoList;
-  }
+  } 
 
   createCraniumHTMLEl() {
     this.craniumEl = document.createElement('section');
@@ -1145,7 +1086,7 @@ class Human {
     return this.craniumEl;
   }
 
-  createInvestingTimeHTMLEl() {
+  createInvestingTimeHTMLEl(todoList) {
     this.investingTimeHTMLEl = document.createElement('section');
 
     // не тянет столько for (let numberDay = this.numberDayLife; numberDay < this.quantityDaysLife; numberDay++) {
@@ -1155,11 +1096,11 @@ class Human {
       headerInvestingTimeHTMLEl.textContent = 'День жизни ' + numberDay;
       let dayLife = {};
 
-      this.todoList.map(nameBusiness => {
+      todoList.map(nameBusiness => {
         let businessHTMLEl = document.createElement('div');
         let inputTypeBusinessHTMLEl = document.createElement('input');
         inputTypeBusinessHTMLEl.type = 'search';
-        // inputTypeBusinessHTMLEl.setAttribute('list', 'datalistTypesBusinessHTMLEl');
+        inputTypeBusinessHTMLEl.setAttribute('list', 'datalistInvestingTimeHTMLEl');
         inputTypeBusinessHTMLEl.name = 'inputTypeSearchBusinessEl';
 
         let inputTypeRangeBusinessHTMLEl = document.createElement('input');
@@ -1178,7 +1119,7 @@ class Human {
       // for (let hour = 0; hour < 24; hour++) {
       //   for (let minute = 0; minute < 60; minute++) {
       //     for (let second = 0; second < 60; second++) {
-      //       dayLife[`${hour}:${minute}:${second}`] = 'какое-то дело из this.todoList';
+      //       dayLife[`${hour}:${minute}:${second}`] = 'какое-то дело из todoList';
       //     }
       //   }
       // }      

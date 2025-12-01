@@ -34,6 +34,7 @@ const life = {
     this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');
 
     this.settings.getSettingsEl().appendChild(this.settings.createDatalistTypesFamilyHTMLEl());
+    this.settings.getSettingsEl().appendChild(this.settings.createDatalistInvestingTimeHTMLEl());
 
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
       const human = new Human(
@@ -45,7 +46,7 @@ const life = {
         this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
         this.settings.getSettingsEl().appendChild(human.createHeadEl());
 
-        this.settings.getSettingsEl().appendChild(human.createInvestingTimeHTMLEl());
+        this.settings.getSettingsEl().appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
 
     }
 
