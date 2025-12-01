@@ -5,7 +5,7 @@ class Settings {
   settingsEl;
   sizeTeamEl;
   inputSizeTeamEl;
-  frequentlyUsedPhrases = ['c семьёй и друзьями'];
+  frequentlyUsedPhrases = [' c семьёй и друзьями'];
   typesFamily = [
     'программисты', 'инженеры', 'врачи', 'повара', 'дизайнеры', 'парикмахеры',
     'агрономы', 'ветеренары', 'cтроители', 'ювелиры', 'писатели', 'музыканты', 'певцы', 'танцоры'
@@ -118,7 +118,7 @@ class Settings {
     this.infoEl.style.display = 'inline-block';
   }
 
-   addToDoList(business) {
+  addToDoList(business) {
     this.todoList.push(business);
   }
 
@@ -145,11 +145,11 @@ class Settings {
   // createInvestingTimeHTMLEl()
   createDatalistInvestingTimeHTMLEl() {
     this.datalistInvestingTimeHTMLEl = document.createElement('datalist');
-    this.datalistTypesFamilyHTMLEl.id = 'datalistInvestingTimeHTMLEl';
+    this.datalistInvestingTimeHTMLEl.id = 'datalistInvestingTimeHTMLEl';
 
     for (let business of this.todoList) {
       let optionEl = document.createElement('option');
-      optionEl.value = business;
+      optionEl.value = business;      
       this.datalistInvestingTimeHTMLEl.appendChild(optionEl);
     }
 

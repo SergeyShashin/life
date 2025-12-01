@@ -12,7 +12,7 @@ body {
 }
 
 input {
-  width: 80%;
+  width: 95%;
   color: crimson;
   border: none;
   background: none;
@@ -20,6 +20,7 @@ input {
   outline: none;
   cursor: pointer;
   border-bottom: 1px solid beige;
+  margin-bottom: 10px;
 }
 
 input:hover {
@@ -50,7 +51,7 @@ section {
   margin: 10px 0;
 }
 
-.container {
+#life {
   width: 320px;
   text-align: center;
   margin: auto;
@@ -138,7 +139,6 @@ td {
   width: 320px;
 }
 
-#life {}
 
 #btnStartGame {}
 

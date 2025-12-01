@@ -804,7 +804,7 @@ class Human {
   emotions = []; //эмоции
   currentEmotion;
   investingTimeHTMLEl;
- 
+
   // daysLife = [
   // {
   //   '0:0:0': 'программирование семьёй и друзьями',
@@ -814,7 +814,7 @@ class Human {
   // }
   // ];
   daysLifeHTMLEl;
-  
+
 
   headEl;
   craniumEl;
@@ -962,6 +962,10 @@ class Human {
   smileSimple() { }
   smileForTarget() { }
 
+  /**
+   * Cоздаёт HTML элемент для ввода имени
+   * @returns HTML элемент для ввода имени
+   */
   createFirtNameHTMLEl() {
     this.firstNameHTMLEl = document.createElement('div');
     let headerFirstNameHTMLEl = document.createElement('h4');
@@ -975,6 +979,13 @@ class Human {
     return this.firstNameHTMLEl;
   }
 
+
+  /**
+   * Cоздаёт HTML элемент для ввода номера дня жизни
+   * Например для человека с датой рождения 01.01.2000
+   * при старте игры 01.01.2004 номер дня жизни = 1461
+   * @returns HTML элемент для выбора элемент для ввода номера дня жизни
+   */
   createNumberDayLifeHTMLEl() {
     this.numberDayLifeHTMLEl = document.createElement('div');
     let headerNumberDayLifeHTMLEl = document.createElement('h4');
@@ -991,6 +1002,10 @@ class Human {
     return this.numberDayLifeHTMLEl;
   }
 
+  /**
+   * создаёт HTML элемент для выбора профиля семьи
+   * @returns {HTMLElement} HTML элемент для выбора для выбора профиля семьи
+   */
   createTypesFamilyHTMLEl() {
     this.typesFamilyHTMLEl = document.createElement('div');
     let headerTypesFamilyHTMLEl = document.createElement('h4');
@@ -1024,7 +1039,7 @@ class Human {
 
   getHeadEl() {
     return this.headEl;
-  } 
+  }
 
   createCraniumHTMLEl() {
     this.craniumEl = document.createElement('section');
@@ -1086,6 +1101,11 @@ class Human {
     return this.craniumEl;
   }
 
+  /**
+   * создаёт HTML элемент для выбора дел и продолжительности
+   * @param {Array} todoList 
+   * @returns {HTMLElement} HTML элемент для выбора дел и продолжительности
+   */
   createInvestingTimeHTMLEl(todoList) {
     this.investingTimeHTMLEl = document.createElement('section');
 
@@ -1094,6 +1114,8 @@ class Human {
       this.dayLifeHTMLEl = document.createElement('div');
       let headerInvestingTimeHTMLEl = document.createElement('h4');
       headerInvestingTimeHTMLEl.textContent = 'День жизни ' + numberDay;
+      this.dayLifeHTMLEl.appendChild(headerInvestingTimeHTMLEl);
+
       let dayLife = {};
 
       todoList.map(nameBusiness => {
@@ -1102,7 +1124,6 @@ class Human {
         inputTypeBusinessHTMLEl.type = 'search';
         inputTypeBusinessHTMLEl.setAttribute('list', 'datalistInvestingTimeHTMLEl');
         inputTypeBusinessHTMLEl.name = 'inputTypeSearchBusinessEl';
-
         let inputTypeRangeBusinessHTMLEl = document.createElement('input');
         inputTypeRangeBusinessHTMLEl.type = 'range';
         inputTypeRangeBusinessHTMLEl.min = 0;
@@ -1114,19 +1135,9 @@ class Human {
         this.dayLifeHTMLEl.appendChild(businessHTMLEl);
       });
 
-      this.dayLifeHTMLEl.appendChild(headerInvestingTimeHTMLEl);
+      this.investingTimeHTMLEl.appendChild(this.dayLifeHTMLEl);
 
-      // for (let hour = 0; hour < 24; hour++) {
-      //   for (let minute = 0; minute < 60; minute++) {
-      //     for (let second = 0; second < 60; second++) {
-      //       dayLife[`${hour}:${minute}:${second}`] = 'какое-то дело из todoList';
-      //     }
-      //   }
-      // }      
-      // this.daysLife.push(dayLife);
     }
-
-    this.investingTimeHTMLEl.appendChild(this.dayLifeHTMLEl);
 
     return this.investingTimeHTMLEl;
   }

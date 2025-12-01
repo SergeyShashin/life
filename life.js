@@ -1,5 +1,7 @@
 'use strict';
-
+/**
+ * Объект игры
+ */
 const life = {
   containerEl: null,
   modelingEl: null, //переделать на класс, наверное, с другим названием.
@@ -8,17 +10,29 @@ const life = {
   control: null,
   settings: null,
 
+  /**
+   * Запуск игры
+   */
   run() {
+    //инициализация
     this.init();
+    //установка слушателей событий
     this.setEventHandlers(this.settingsEl);
   },
 
+  /**
+   * Инициализация при старте игры
+   */
   init() {
-    this.containerEl = document.querySelector('.container');
-
+    //Находит HTML элемент игры
+    this.containerEl = document.getElementById('life');
+    
+    //Создаёт объект класса Time. Текущая дата с возможностью передвигать день
     this.time = new Time();
+    //Создаёт HTML элемент объекта time и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.time.createTimeHTMLEl());
 
+    
     this.control = new Control();
     this.containerEl.appendChild(this.control.createControlHTMLEl());
 
@@ -41,21 +55,28 @@ const life = {
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
 
-        this.settings.getSettingsEl().appendChild(human.createFirtNameHTMLEl());
-        this.settings.getSettingsEl().appendChild(human.createNumberDayLifeHTMLEl());
-        this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
-        this.settings.getSettingsEl().appendChild(human.createHeadEl());
+      this.settings.getSettingsEl().appendChild(human.createFirtNameHTMLEl());
+      this.settings.getSettingsEl().appendChild(human.createNumberDayLifeHTMLEl());
+      this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
+      this.settings.getSettingsEl().appendChild(human.createHeadEl());
 
-        this.settings.getSettingsEl().appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
+      this.settings.getSettingsEl().appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
 
     }
 
   },
 
+  /**
+   * Устанавливает слушатели событий
+   */
   setEventHandlers() {
     window.addEventListener('click', e => this.handlerClickBtn(e));
   },
 
+  /**
+   * При клике мышкой вызывает соответствующий обработчики
+   * @param {Event} Событие при клике в WINDOW
+   */
   handlerClickBtn(e) {
     switch (e.target.id) {
       case 'btnStartGame':
@@ -81,4 +102,7 @@ const life = {
 
 };
 
+/**
+ * Запуск игры
+ */
 window.onload = life.run();
