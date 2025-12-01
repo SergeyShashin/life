@@ -139,6 +139,13 @@ td {
   width: 320px;
 }
 
+.headEl {
+  overflow-y: scroll;
+  height: 28vh;
+  scrollbar-color: beige lightseagreen;
+  scrollbar-width: thin;
+}
+
 
 #btnStartGame {}
 

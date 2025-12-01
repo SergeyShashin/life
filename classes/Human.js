@@ -6,7 +6,7 @@ class Human {
       inStock: true,
       nameLatin: '',
       nameRussian: 'голова',
-      description: '',
+      description: 'Очень нужна любому человеку.',
       pathImg: 'img/small/smile.png',
       brain: {
         quantity: null,
@@ -1031,9 +1031,33 @@ class Human {
   }
 
   createHeadEl() {
+    let { head } = this.anatomy;
     this.headEl = document.createElement('section');
-    this.headEl.appendChild(this.createCraniumHTMLEl());
+    if (head.inStock) {
+      let headerHeadEl = document.createElement('h4');
+      headerHeadEl.textContent = head.nameRussian;
 
+      let headerDecriptionEl = document.createElement('p');
+      headerDecriptionEl.textContent = head.description;
+
+      let headCheckBoxEl = document.createElement('input');
+      headCheckBoxEl.type = 'checkbox';
+      headCheckBoxEl.checked = true;
+
+      let headWrapForImgEl = document.createElement('p');
+      let headImgEl = new Image();
+      headImgEl.src = head.pathImg;
+      headImgEl.dataset.pathFullImg = head.pathFullImg;
+      headWrapForImgEl.appendChild(headImgEl);
+
+      this.headEl.className = 'headEl';
+
+      this.headEl.appendChild(headerHeadEl);
+      this.headEl.appendChild(headerDecriptionEl);
+      this.headEl.appendChild(headCheckBoxEl);
+      this.headEl.appendChild(headWrapForImgEl);
+      this.headEl.appendChild(this.createCraniumHTMLEl());
+    }
     return this.headEl
   }
 
@@ -1045,7 +1069,7 @@ class Human {
     this.craniumEl = document.createElement('section');
     let { cranium } = this.anatomy.head;
 
-    if (cranium.inStock) {
+    if (cranium.inStock && this.anatomy.head.inStock) {
 
       let headerCraniumEl = document.createElement('h4');
       headerCraniumEl.textContent = cranium.nameRussian;
