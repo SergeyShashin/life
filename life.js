@@ -50,7 +50,7 @@ const life = {
     //Создаёт HTML элемент объекта world.info и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
 
-    //переделать на класс о сделать.
+    //переделать на класс. Сделать создание в JS. Сейчас черновик в HTML.
     this.modelingEl = document.getElementById('modeling');
 
     //Добавляет в HTML элемент settings тэг datlist с данными о профилях семей. Для выбора в инпуте профиля семьи. ('программисты', 'инженеры', 'врачи', 'повара', ...)

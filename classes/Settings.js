@@ -1,15 +1,25 @@
 'use strict';
 
+/**
+ * Настройки игры
+ */
 class Settings {
+  //размер гуппы
   sizeTeam = 14; //120
+  //HTML элемент настроек
   settingsEl;
+  //HTML элемент с заголовком и инпутом для просмотра и редактирования размера группы
   sizeTeamEl;
+  //HTML элемент input с для просмотра и редактирования размера группы
   inputSizeTeamEl;
+  //Часто используемые сочетания слов
   frequentlyUsedPhrases = [' c семьёй и друзьями'];
+  //Профили семей
   typesFamily = [
     'программисты', 'инженеры', 'врачи', 'повара', 'дизайнеры', 'парикмахеры',
     'агрономы', 'ветеренары', 'cтроители', 'ювелиры', 'писатели', 'музыканты', 'певцы', 'танцоры'
   ];
+  //Список возможных дел человека
   todoList = [
     'программирование' + this.frequentlyUsedPhrases[0], 'программирование',
     'математика' + this.frequentlyUsedPhrases[0], 'математика',
@@ -62,8 +72,15 @@ class Settings {
     'уборка',
     'сон' + this.frequentlyUsedPhrases[0], 'сон',
   ];
+  //HTML элемент с типами профилей семей
   datalistTypesFamilyHTMLEl;
+  //HTML элемент с возможными делами
+  datalistInvestingTimeHTMLEl;
 
+  /**
+   * Создаёт HTML элемент с настройками игры
+   * @returns {HTMLElement} HTML элемент c настроками игры
+   */
   createSettingsHTMLEl() {
     this.settingsEl = document.createElement('section');
     this.settingsEl.id = 'settings';
@@ -126,8 +143,11 @@ class Settings {
     return this.todoList;
   }
 
-  //Создаёт datalist для выбора типа семьи в инпуте, который создаётся в
-  //human.createTypesFamilyHTMLEl()
+  /**
+   * Создаёт datalist для выбора типа семьи в инпуте, который создаётся в
+   * human.createTypesFamilyHTMLEl()
+   * @returns {HTMLElement} datalist для выбора типа семьи в инпуте
+   */
   createDatalistTypesFamilyHTMLEl() {
     this.datalistTypesFamilyHTMLEl = document.createElement('datalist');
     this.datalistTypesFamilyHTMLEl.id = 'datalistTypesFamilyHTMLEl';
@@ -138,22 +158,34 @@ class Settings {
       this.datalistTypesFamilyHTMLEl.appendChild(optionEl);
     }
 
-    return this.datalistTypesFamilyHTMLEl
+    return this.datalistTypesFamilyHTMLEl;
   };
 
-  //Создаёт datalist для выбора дела в инпуте, который создаётся в 
-  // createInvestingTimeHTMLEl()
+  getDatalistTypesFamilyHTMLEl() {
+    return this.datalistTypesFamilyHTMLEl;
+  }
+
+  /**
+   * Создаёт datalist для выбора дела в инпуте, который создаётся в
+   * createInvestingTimeHTMLEl()
+   * @returns {HTMLElement} datalist для выбора для выбора дела в инпуте
+   */
   createDatalistInvestingTimeHTMLEl() {
     this.datalistInvestingTimeHTMLEl = document.createElement('datalist');
     this.datalistInvestingTimeHTMLEl.id = 'datalistInvestingTimeHTMLEl';
 
     for (let business of this.todoList) {
       let optionEl = document.createElement('option');
-      optionEl.value = business;      
+      optionEl.value = business;
       this.datalistInvestingTimeHTMLEl.appendChild(optionEl);
     }
 
-    return this.datalistInvestingTimeHTMLEl
+    return this.datalistInvestingTimeHTMLEl;
+  };
+
+  //HTML элемент с возможными делами
+  getDatalistInvestingTimeHTMLEl() {
+    return this.datalistInvestingTimeHTMLEl;
   };
 
 
