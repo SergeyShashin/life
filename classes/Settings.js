@@ -79,7 +79,7 @@ class Settings {
 
   /**
    * Создаёт HTML элемент с настройками игры
-   * @returns {HTMLElement} HTML элемент c настроками игры
+   * @returns {HTMLElement} HTML элемент c настройками игры
    */
   createSettingsHTMLEl() {
     this.settingsEl = document.createElement('section');
