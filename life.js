@@ -44,19 +44,28 @@ const life = {
     this.settings = new Settings();
     //Создаёт HTML элемент объекта setttings и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.settings.createSettingsHTMLEl());
-    
+
     //Создаёт объект класса Word.
     this.world = new World();
     //Создаёт HTML элемент объекта world.info и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
 
-    this.settingsEl = document.getElementById('settings');
+    //переделать на класс о сделать.
     this.modelingEl = document.getElementById('modeling');
-    this.btnAutomaticControlOrHandControlEl = document.getElementById('btnAutomaticControlOrHandControl');
 
+    //Добавляет в HTML элемент settings тэг datlist с данными о профилях семей. Для выбора в инпуте профиля семьи. ('программисты', 'инженеры', 'врачи', 'повара', ...)
     this.settings.getSettingsEl().appendChild(this.settings.createDatalistTypesFamilyHTMLEl());
+    //Добавляет в HTML элемент settings тэг datlist с данными о делах. Для выбора в инпуте дела. ('программирование c семьёй и друзьями, ...приём пищи c семьёй и друзьями, ...')
     this.settings.getSettingsEl().appendChild(this.settings.createDatalistInvestingTimeHTMLEl());
 
+    //Создает заданное количество людей для группы и добавляет их параметры в HTML элемент settings.
+    this.createHumanForGroup()
+  },
+
+  /**
+   * Создает заданное количество людей для группы и добавляет их параметры в HTML элемент settings.
+   */
+  createHumanForGroup() {
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
@@ -68,7 +77,6 @@ const life = {
       this.settings.getSettingsEl().appendChild(human.createHeadEl());
 
       this.settings.getSettingsEl().appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
-
     }
 
   },
