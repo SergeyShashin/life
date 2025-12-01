@@ -41,7 +41,7 @@ const life = {
     this.containerEl.appendChild(this.control.createControlHTMLEl());
 
     //Создаёт объект класса Settings.    
-    this.settings = new Settings();    
+    this.settings = new Settings();
     //Создаёт HTML элемент объекта setttings и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.settings.createSettingsHTMLEl());
 
@@ -70,13 +70,15 @@ const life = {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
+      let humanHTMLEl = human.createHumanHTMLEl();
 
-      this.settings.getSettingsEl().appendChild(human.createFirtNameHTMLEl());
-      this.settings.getSettingsEl().appendChild(human.createNumberDayLifeHTMLEl());
-      this.settings.getSettingsEl().appendChild(human.createTypesFamilyHTMLEl());
-      this.settings.getSettingsEl().appendChild(human.createHeadEl());
+      humanHTMLEl.appendChild(human.createFirtNameHTMLEl());
+      humanHTMLEl.appendChild(human.createNumberDayLifeHTMLEl());
+      humanHTMLEl.appendChild(human.createTypesFamilyHTMLEl());
+      humanHTMLEl.appendChild(human.createHeadEl());
+      humanHTMLEl.appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
 
-      this.settings.getSettingsEl().appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
+      this.settings.getSettingsEl().appendChild(humanHTMLEl);
     }
 
   },

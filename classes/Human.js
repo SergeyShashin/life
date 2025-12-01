@@ -1,6 +1,8 @@
 'use strict';
 
 class Human {
+  humanHTMLEl;
+
   anatomy = {
     head: {
       inStock: true,
@@ -815,7 +817,6 @@ class Human {
   // ];
   daysLifeHTMLEl;
 
-
   headEl;
   craniumEl;
 
@@ -961,6 +962,25 @@ class Human {
   speakForTarget() { }
   smileSimple() { }
   smileForTarget() { }
+
+  /**
+   * Создаёт HTML элемент
+   * @returns {HTMLElement} HTML элемент
+   */
+  createHumanHTMLEl() {
+    this.humanHTMLEl = document.createElement('section');
+    this.humanHTMLEl.className = 'humanHTMLEl';
+
+    return this.humanHTMLEl;
+  }
+
+  /**
+   * Отдаёт HTML элемент
+   * @returns {HTMLElement} HTML элемент
+   */
+  getHumanHTMLEl() {
+    return this.humanHTMLEl;
+  }
 
   /**
    * Cоздаёт HTML элемент для ввода имени
@@ -1132,6 +1152,7 @@ class Human {
    */
   createInvestingTimeHTMLEl(todoList) {
     this.investingTimeHTMLEl = document.createElement('section');
+    this.investingTimeHTMLEl.className = 'investingTimeHTMLEl';
 
     // не тянет столько for (let numberDay = this.numberDayLife; numberDay < this.quantityDaysLife; numberDay++) {
     for (let numberDay = this.numberDayLife; numberDay < 8; numberDay++) {

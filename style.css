@@ -139,9 +139,20 @@ td {
   width: 320px;
 }
 
+.humanHTMLEl {
+  margin: 20px 0;
+}
+
 .headEl {
   overflow-y: scroll;
-  height: 28vh;
+  height: 35vh;
+  scrollbar-color: beige lightseagreen;
+  scrollbar-width: thin;
+}
+
+.investingTimeHTMLEl {
+  overflow-y: scroll;
+  height: 45vh;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
 }
