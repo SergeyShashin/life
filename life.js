@@ -26,22 +26,29 @@ const life = {
   init() {
     //Находит HTML элемент игры
     this.containerEl = document.getElementById('life');
-    
+
     //Создаёт объект класса Time. Текущая дата с возможностью передвигать день
     this.time = new Time();
     //Создаёт HTML элемент объекта time и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.time.createTimeHTMLEl());
 
-    
+    /*Создаёт объект класса Control. Кнопки: кнопка переключения ручного 
+    или автоматического режима игры, кнопка включения/отключения карты, 
+    кнопка включения/отключения настроек. В дальнейшем и другие кнопки.*/
+    //todo перекинуть в этот блок кнопку старт, которая сейчас в HTML
     this.control = new Control();
+    //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.control.createControlHTMLEl());
 
+    //Создаёт объект класса Settings.    
     this.settings = new Settings();
+    //Создаёт HTML элемент объекта setttings и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.settings.createSettingsHTMLEl());
-
+    
+    //Создаёт объект класса Word.
     this.world = new World();
+    //Создаёт HTML элемент объекта world.info и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
-    this.world.info.renderInfoHTMLEl();
 
     this.settingsEl = document.getElementById('settings');
     this.modelingEl = document.getElementById('modeling');
