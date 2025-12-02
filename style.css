@@ -48,7 +48,6 @@ h5 {
 }
 
 section {
-  margin: 10px 0;
 }
 
 #life {
@@ -143,16 +142,20 @@ td {
   margin: 20px 0;
 }
 
+.inputGorup{
+  /* margin: 20px 0; */
+}
+
 .headEl {
-  /* display: flex; */
   overflow-x: scroll;
-  height: 35vh;
+  height: 38vh;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
 }
 
 .partHuman {
   display: flex;
+  margin: 0 5px;
 }
 
 .investingTimeHTMLEl {

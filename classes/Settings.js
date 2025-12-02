@@ -93,7 +93,9 @@ class Settings {
     headerSettingsEl.textContent = 'Настройки';
 
     //создание HTML элемента для заголовка и инпута размера группы
-    this.sizeTeamEl = document.createElement('div');
+    this.sizeTeamEl = document.createElement('section');
+    
+    this.sizeTeamEl.classList.add('inputGroup');
     //установка id для HTML элмента с размером группы
     this.sizeTeamEl.id = 'sizeTeam';
     //создание HTML элемента заголовка размера группы
