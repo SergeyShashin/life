@@ -144,14 +144,19 @@ td {
 }
 
 .headEl {
-  overflow-y: scroll;
+  /* display: flex; */
+  overflow-x: scroll;
   height: 35vh;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
 }
 
+.partHuman {
+  display: flex;
+}
+
 .investingTimeHTMLEl {
-  overflow-y: scroll;
+  overflow-x: scroll;
   height: 45vh;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;

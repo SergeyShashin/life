@@ -1054,6 +1054,7 @@ class Human {
     let { head } = this.anatomy;
     this.headEl = document.createElement('section');
     if (head.inStock) {
+      let sectionEl = document.createElement('section');
       let headerHeadEl = document.createElement('h4');
       headerHeadEl.textContent = head.nameRussian;
 
@@ -1070,12 +1071,14 @@ class Human {
       headImgEl.dataset.pathFullImg = head.pathFullImg;
       headWrapForImgEl.appendChild(headImgEl);
 
-      this.headEl.className = 'headEl';
+      this.headEl.classList.add('headEl');
+      this.headEl.classList.add('partHuman');
 
-      this.headEl.appendChild(headerHeadEl);
-      this.headEl.appendChild(headerDecriptionEl);
-      this.headEl.appendChild(headCheckBoxEl);
-      this.headEl.appendChild(headWrapForImgEl);
+      sectionEl.appendChild(headerHeadEl);
+      sectionEl.appendChild(headWrapForImgEl);
+      sectionEl.appendChild(headerDecriptionEl);
+      sectionEl.appendChild(headCheckBoxEl);
+      this.headEl.appendChild(sectionEl);
       this.headEl.appendChild(this.createCraniumHTMLEl());
     }
     return this.headEl
@@ -1087,6 +1090,7 @@ class Human {
 
   createCraniumHTMLEl() {
     this.craniumEl = document.createElement('section');
+    this.craniumEl.classList.add('partHuman');
     let { cranium } = this.anatomy.head;
 
     if (cranium.inStock && this.anatomy.head.inStock) {
@@ -1118,6 +1122,7 @@ class Human {
         }
 
         let craniumPartEl = document.createElement('section');
+        craniumPartEl.classList.add('partHuman');
 
         let headerCraniumPartEl = document.createElement('h5');
         headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
