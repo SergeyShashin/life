@@ -75,6 +75,9 @@ const life = {
       humanHTMLEl.appendChild(human.createFirtNameHTMLEl());
       humanHTMLEl.appendChild(human.createNumberDayLifeHTMLEl());
       humanHTMLEl.appendChild(human.createTypesFamilyHTMLEl());
+      
+      //создать секцию для отображения/ввода координат места рождения
+
       humanHTMLEl.appendChild(human.createHeadEl());
       humanHTMLEl.appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
 
