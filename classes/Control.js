@@ -3,7 +3,7 @@
 class Control {
   controlHTMLEl;
   buttons = [
-    { class: 'btn', id: 'btnAutomaticControlOrHandControl', textRu: 'Ручное' },
+    { class: 'btn', id: 'btnAutomaticControlOrHandControl', textRu: 'Ручной' },
     { class: 'btn', id: 'btnMap', textRu: 'Карта' },
     { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
     { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
@@ -25,6 +25,6 @@ class Control {
     return this.controlHTMLEl;
   }
   toggleBtnAutomaticControlOrHandControlEl() {
-    this.btnAutomaticControlOrHandControlEl.textContent = this.btnAutomaticControlOrHandControlEl.textContent === 'Ручное' ? 'Автоматическое' : 'Ручное';
+    this.btnAutomaticControlOrHandControlEl.textContent = this.btnAutomaticControlOrHandControlEl.textContent === 'Ручной' ? 'Автоматический' : 'Ручной';
   }
 }

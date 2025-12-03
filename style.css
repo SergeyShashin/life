@@ -199,3 +199,17 @@ td {
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
 }
+
+th {
+  padding: 5px;
+}
+
+td {
+  text-align: left;
+  padding: 5px;
+}
+
+td:hover {
+  color: crimson;
+  cursor: pointer;
+}

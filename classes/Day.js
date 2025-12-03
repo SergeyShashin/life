@@ -15,14 +15,17 @@ class Day {
   }
 
   createDayHTMLEl() {
-    this.dayHTMLEl = document.createElement('table');
+    this.dayHTMLEl = document.createElement('section');
     this.dayHTMLEl.classList.add('dayFromClassDayHTMLEl');
     let h3HTMLEl = document.createElement('h3');
     h3HTMLEl.textContent = `${this.numberHuman} человек`;
     let h4HTMLEl = document.createElement('h3');
     h4HTMLEl.textContent = `${this.numberDay} день`;
+
     this.dayHTMLEl.appendChild(h3HTMLEl);
     this.dayHTMLEl.appendChild(h4HTMLEl);
+
+    let tableDayHTMLEl = document.createElement('table');
 
     let trEl = document.createElement('tr');
     let thHourEl = document.createElement('th');
@@ -37,7 +40,7 @@ class Day {
     trEl.appendChild(thMinuteEl);
     trEl.appendChild(thSecondEl);
     trEl.appendChild(thBusinessEl);
-    this.dayHTMLEl.appendChild(trEl);
+    tableDayHTMLEl.appendChild(trEl);
 
     for (let { hour, minute, second, business } of this.toDoList) {
       let trHTMLEl = document.createElement('tr');
@@ -53,8 +56,10 @@ class Day {
       trHTMLEl.appendChild(minuteHTMLEl);
       trHTMLEl.appendChild(secondHTMLEl);
       trHTMLEl.appendChild(businessHTMLEl);
-      this.dayHTMLEl.appendChild(trHTMLEl);
+      tableDayHTMLEl.appendChild(trHTMLEl);
     }
+    this.dayHTMLEl.appendChild(tableDayHTMLEl);
+
 
     return this.dayHTMLEl;
   }
