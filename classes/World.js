@@ -1,5 +1,7 @@
 'use strict';
-
+/**
+ * Класс Мир
+ */
 class World {
   infoEl;
   info = {

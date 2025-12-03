@@ -9,6 +9,10 @@ class Control {
     { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
   ];
   btnAutomaticControlOrHandControlEl;
+  /**
+   * Создаёт HTML элемент с кнопками управления
+   * @returns {HTMLElement} HTML элемент с кнопками управления
+   */
   createControlHTMLEl() {
     this.controlHTMLEl = document.createElement('section');
     for (let button of this.buttons) {
@@ -24,6 +28,9 @@ class Control {
 
     return this.controlHTMLEl;
   }
+  /**
+   * Меняет текст кнопки
+   */
   toggleBtnAutomaticControlOrHandControlEl() {
     this.btnAutomaticControlOrHandControlEl.textContent = this.btnAutomaticControlOrHandControlEl.textContent === 'Ручной' ? 'Автоматический' : 'Ручной';
   }
