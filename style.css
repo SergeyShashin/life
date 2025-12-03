@@ -11,15 +11,44 @@ body {
   overflow: scroll;
 }
 
+input,
+h4,
+h5,
+td:hover {
+  color: crimson;
+}
+
+time,
+.controlTime,
+.baseEl_monitor,
+.btn {
+  background: crimson;
+}
+
+.btn:hover,
+td, input {
+  border: 1px solid beige;
+}
+
+h3 {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+h4,
+h5 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  height: 20px;
+}
+
 input {
   width: 95%;
-  color: crimson;
   border: none;
   background: none;
   padding: 5px;
   outline: none;
   cursor: pointer;
-  border-bottom: 1px solid beige;
   margin-bottom: 10px;
 }
 
@@ -36,20 +65,6 @@ fieldset {
   padding: 5px;
 }
 
-h3 {
-  margin: 10px 0;
-  text-transform: uppercase;
-}
-
-h4,
-h5 {
-  text-transform: uppercase;
-  color: crimson;
-  margin-top: 10px;
-  height: 20px;
-}
-
-section {}
 
 #life {
   width: 320px;
@@ -66,7 +81,6 @@ section {}
 }
 
 time {
-  background: crimson;
   border-radius: 20px;
   padding: 10px;
 }
@@ -93,7 +107,6 @@ time {
   align-items: center;
   height: 30px;
   border-radius: 20px;
-  background: crimson;
   padding: 10px;
 }
 
@@ -107,7 +120,6 @@ time {
   border-radius: 10px;
   width: 30px;
   height: 30px;
-  background: crimson;
 }
 
 .controlTime:hover {
@@ -119,14 +131,14 @@ time {
   height: 50px;
   margin: 5px;
   border-radius: 20px;
-  background: crimson;
   border: 1px solid crimson;
   text-transform: uppercase;
 }
 
+
+
 .btn:hover {
   cursor: pointer;
-  border: 1px solid beige;
 }
 
 #modeling {
@@ -135,7 +147,6 @@ time {
 
 td {
   margin: 2px;
-  border: 1px solid beige;
 }
 
 #map img {
@@ -169,7 +180,6 @@ td {
 .investingTimeHTMLEl {
   display: flex;
   overflow-x: scroll;
-  /* height: 35vh; */
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
 }
@@ -192,6 +202,9 @@ td {
 
 #control {}
 
+section {}
+
+
 .dayFromClassDayHTMLEl {
   width: 300px;
   text-align: center;
@@ -210,6 +223,5 @@ td {
 }
 
 td:hover {
-  color: crimson;
   cursor: pointer;
 }
