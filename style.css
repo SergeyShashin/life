@@ -195,4 +195,7 @@ td {
 .dayFromClassDayHTMLEl {
   width: 300px;
   text-align: center;
+  overflow-x: scroll;
+  scrollbar-color: beige lightseagreen;
+  scrollbar-width: thin;
 }

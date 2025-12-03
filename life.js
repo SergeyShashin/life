@@ -111,8 +111,20 @@ const life = {
           { hour: 0, minute: 0, second: 2, business: 'сон' },
           { hour: 0, minute: 0, second: 3, business: 'сон' },
           { hour: 0, minute: 0, second: 4, business: 'сон' },
-          { hour: 0, minute: 0, second: 5, business: 'сон' },
-          //.... создать дефолтные списки под каждого человека
+          { hour: 0, minute: 0, second: 5, business: '\
+          *создать дефолтные списки под каждого человека life/databases/json/softwareEngineerList.json и др.\
+          * при размере группы 14 человек \
+          * 86400 секунд в сутках\
+          * 43800 суток за 120 лет\
+          * \
+          * 3 784 320 000 секунд/записей для одного человека\
+          * 52 980 480 000 секунд/записей для группы из 14 человек\
+          * \
+          * для одной записи без заголовка таблицы 5 тегов\
+          * 264 902 400 000 тегов для группы из 14 человек\
+          * \
+          * нет знаний, как это всё структурировать\
+          */' },          
         ]).createDayHTMLEl());
         break;
       case 'btnAutomaticControlOrHandControl':
