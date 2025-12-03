@@ -88,7 +88,7 @@ class Settings {
     this.settingsEl.id = 'settings';
 
     //создание заголовка для настроек
-    let headerSettingsEl = document.createElement('h2');
+    let headerSettingsEl = document.createElement('h3');
     //установка текста для заголовка настроек
     headerSettingsEl.textContent = 'Настройки';
 

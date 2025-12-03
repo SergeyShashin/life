@@ -36,8 +36,9 @@ fieldset {
   padding: 5px;
 }
 
-h2 {
+h3 {
   margin: 10px 0;
+  text-transform: uppercase;
 }
 
 h4,
@@ -71,21 +72,23 @@ time {
 }
 
 .worldInfo {
+  margin: 20px 0;
   display: flex;
-  flex-flow: wrap;
-  /* flex-wrap: wrap; */
-  justify-content: center;
+  overflow-x: scroll;
+  height: 15vh;
+  scrollbar-color: beige lightseagreen;
+  scrollbar-width: thin;
 }
 
 .baseEl {
   display: flex;
   flex-direction: column;
-  width: 150px;
   margin: 5px;
 }
 
 .baseEl_monitor {
   display: flex;
+  width: 150px;
   justify-content: space-around;
   align-items: center;
   height: 30px;
@@ -118,6 +121,7 @@ time {
   border-radius: 20px;
   background: crimson;
   border: 1px solid crimson;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -147,8 +151,9 @@ td {
 }
 
 .headEl {
+  margin: 20px 0;
   overflow-x: scroll;
-  height: 30vh;
+  height: 36vh;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
 }
