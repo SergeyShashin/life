@@ -19,7 +19,7 @@ class Settings {
     'программисты', 'инженеры', 'врачи', 'повара', 'дизайнеры', 'парикмахеры',
     'агрономы', 'ветеренары', 'cтроители', 'ювелиры', 'писатели', 'музыканты', 'певцы', 'танцоры'
   ];
-  //Список возможных дел человека
+  //Список возможных дел человека.
   todoList = [
     'программирование' + this.frequentlyUsedPhrases[0], 'программирование',
     'математика' + this.frequentlyUsedPhrases[0], 'математика',
@@ -72,45 +72,45 @@ class Settings {
     'уборка',
     'сон' + this.frequentlyUsedPhrases[0], 'сон',
   ];
-  //HTML элемент с типами профилей семей
+  //HTML элемент с типами профилей семей.
   datalistTypesFamilyHTMLEl;
-  //HTML элемент с возможными делами
+  //HTML элемент с возможными делами.
   datalistInvestingTimeHTMLEl;
 
   /**
-   * Создаёт HTML элемент с настройками игры
-   * @returns {HTMLElement} HTML элемент c настройками игры
+   * Создаёт HTML элемент с настройками игры.
+   * @returns {HTMLElement} HTML элемент c настройками игры.
    */
   createSettingsHTMLEl() {
-    //создание HTML элемента с настройками
+    //создание HTML элемента с настройками.
     this.settingsEl = document.createElement('section');
     //установка id для HTML элемента с настройками
     this.settingsEl.id = 'settings';
 
-    //создание заголовка для настроек
+    //создание заголовка для настроек.
     let headerSettingsEl = document.createElement('h3');
-    //установка текста для заголовка настроек
+    //установка текста для заголовка настроек.
     headerSettingsEl.textContent = 'Настройки';
 
-    //создание HTML элемента для заголовка и инпута размера группы
+    //создание HTML элемента для заголовка и инпута размера группы.
     this.sizeTeamEl = document.createElement('section');
     
     this.sizeTeamEl.classList.add('inputGroup');
-    //установка id для HTML элмента с размером группы
+    //установка id для HTML элмента с размером группы.
     this.sizeTeamEl.id = 'sizeTeam';
-    //создание HTML элемента заголовка размера группы
+    //создание HTML элемента заголовка размера группы.
     let headerSizeTeamEl = document.createElement('h4');
-    //установка текста в заголовок размера группы
+    //установка текста в заголовок размера группы.
     headerSizeTeamEl.textContent = 'размер группы';
-    //создание HTMl элемента input
+    //создание HTMl элемента input.
     this.inputSizeTeamEl = document.createElement('input');
-    //установка инпуту name
+    //установка инпуту name.
     this.inputSizeTeamEl.name = 'inputSizeTeam';
-    //установка типа инпута
+    //установка типа инпута.
     this.inputSizeTeamEl.type = 'number';
-    //установка минимального значения инпута
+    //установка минимального значения инпута.
     this.inputSizeTeamEl.min = 1;
-    //установка максимального значения инпута
+    //установка максимального значения инпута.
     this.inputSizeTeamEl.value = this.sizeTeam;
 
     this.sizeTeamEl.appendChild(headerSizeTeamEl);
@@ -161,7 +161,7 @@ class Settings {
   /**
    * Создаёт datalist для выбора типа семьи в инпуте, который создаётся в
    * human.createTypesFamilyHTMLEl()
-   * @returns {HTMLElement} datalist для выбора типа семьи в инпуте
+   * @returns {HTMLElement} datalist для выбора типа семьи в инпуте.
    */
   createDatalistTypesFamilyHTMLEl() {
     this.datalistTypesFamilyHTMLEl = document.createElement('datalist');
@@ -183,7 +183,7 @@ class Settings {
   /**
    * Создаёт datalist для выбора дела в инпуте, который создаётся в
    * createInvestingTimeHTMLEl()
-   * @returns {HTMLElement} datalist для выбора для выбора дела в инпуте
+   * @returns {HTMLElement} datalist для выбора для выбора дела в инпуте.
    */
   createDatalistInvestingTimeHTMLEl() {
     this.datalistInvestingTimeHTMLEl = document.createElement('datalist');
@@ -198,7 +198,7 @@ class Settings {
     return this.datalistInvestingTimeHTMLEl;
   };
 
-  //HTML элемент с возможными делами
+  //HTML элемент с возможными делами.
   getDatalistInvestingTimeHTMLEl() {
     return this.datalistInvestingTimeHTMLEl;
   };
