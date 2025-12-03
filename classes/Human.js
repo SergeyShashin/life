@@ -810,14 +810,6 @@ class Human {
   inputCoordinatesStartingPointHTMLEl;
   coordinatesStartingPointDefault = '54.61731283340977, 39.68856205239361';
 
-  // daysLife = [
-  // {
-  //   '0:0:0': 'программирование семьёй и друзьями',
-  //   '0:0:1': 'программирование семьёй и друзьями',
-  //   '...',
-  //   '23:59:59': 'программирование семьёй и друзьями',
-  // }
-  // ];
   daysLifeHTMLEl;
 
   headEl;
@@ -832,7 +824,7 @@ class Human {
     this.idHuman = idHuman;
   }
 
-  getiDHuman() {
+  getIDHuman() {
     return this.idHuman;
   }
 
@@ -986,8 +978,8 @@ class Human {
   }
 
   /**
-   * Cоздаёт HTML элемент для ввода имени
-   * @returns HTML элемент для ввода имени
+   * Cоздаёт HTML элемент для ввода имени.
+   * @returns {HTMLElement} HTML элемент для ввода имени.
    */
   createFirtNameHTMLEl() {
     this.firstNameHTMLEl = document.createElement('section');
@@ -1008,7 +1000,7 @@ class Human {
    * Cоздаёт HTML элемент для ввода номера дня жизни.
    * Например для человека с датой рождения 01.01.2000
    * при старте игры 01.01.2004 номер дня жизни = 1461.
-   * @returns HTML элемент для ввода номера дня жизни.
+   * @returns {HTMLElement} HTML элемент для ввода номера дня жизни.
    */
   createNumberDayLifeHTMLEl() {
     this.numberDayLifeHTMLEl = document.createElement('section');
@@ -1030,7 +1022,7 @@ class Human {
   /**
    * Cоздаёт HTML элемент для выбора координат места старта.
    * Пример 54.61731283340977, 39.68856205239361 (Рязань, ул. Островского 111)
-   * @returns HTML элемент для выбора координат места старта.
+   * @returns {HTMLElement} HTML элемент для выбора координат места старта.
    */
   createCoordinatesStartingPointHTMLEl() {
     this.сoordinatesStartingPointHTMLEl = document.createElement('section');
@@ -1043,7 +1035,7 @@ class Human {
 
     this.сoordinatesStartingPointHTMLEl.appendChild(headerCoordinatesStartingPointHTMLEl);
     this.сoordinatesStartingPointHTMLEl.appendChild(this.inputCoordinatesStartingPointHTMLEl);
-    
+
     return this.сoordinatesStartingPointHTMLEl;
   }
 
@@ -1069,14 +1061,25 @@ class Human {
     return this.typesFamilyHTMLEl;
   }
 
+  /**
+   * Устанавливает номер дня жизни.
+   * @param {number} numberDayLife 
+   */
   setNumberDayLife(numberDayLife) {
     this.numberDayLife = numberDayLife;
   }
 
+  /**
+   * @returns {number} Возвращает номер дня жизни.
+   */
   getNumberDayLife() {
     return this.numberDayLife;
   }
 
+  /**
+   * Создаёт HTML элемент головы.
+   * @returns {HTMLElement} HTML элемент головы.
+   */
   createHeadEl() {
     let { head } = this.anatomy;
     this.headEl = document.createElement('section');
@@ -1084,9 +1087,6 @@ class Human {
       let sectionEl = document.createElement('section');
       let headerHeadEl = document.createElement('h4');
       headerHeadEl.textContent = head.nameRussian;
-
-      // let headerDecriptionEl = document.createElement('p');
-      // headerDecriptionEl.textContent = head.description;
 
       let headCheckBoxEl = document.createElement('input');
       headCheckBoxEl.type = 'checkbox';
@@ -1107,17 +1107,24 @@ class Human {
       sectionEl.appendChild(headerHeadEl);
       sectionEl.appendChild(headWrapForImgEl);
       sectionEl.appendChild(headCheckBoxEl);
-      // sectionEl.appendChild(headerDecriptionEl);
       this.headEl.appendChild(sectionEl);
       this.headEl.appendChild(this.createCraniumHTMLEl());
     }
     return this.headEl
   }
 
+  /**
+   * 
+   * @returns {HTMLElement} Возвращает HTML элемент головы.
+   */
   getHeadEl() {
     return this.headEl;
   }
 
+  /**
+   * Создаёт HTML элемент черепа.
+   * @returns {HTMLElement} HTML элемент черепа.
+   */
   createCraniumHTMLEl() {
     this.craniumEl = document.createElement('section');
     this.craniumEl.classList.add('partHuman');
@@ -1127,9 +1134,6 @@ class Human {
       let sectionEl = document.createElement('section');
       let headerCraniumEl = document.createElement('h4');
       headerCraniumEl.textContent = cranium.nameRussian;
-
-      // let headerDecriptionEl = document.createElement('p');
-      // headerDecriptionEl.textContent = cranium.description;
 
       let craniumCheckBoxEl = document.createElement('input');
       craniumCheckBoxEl.type = 'checkbox';
@@ -1146,7 +1150,6 @@ class Human {
       sectionEl.appendChild(headerCraniumEl);
       sectionEl.appendChild(craniumWrapForImgEl);
       sectionEl.appendChild(craniumCheckBoxEl);
-      // sectionEl.appendChild(headerDecriptionEl);
       this.craniumEl.appendChild(sectionEl);
 
       for (let craniumKey in cranium) {
@@ -1158,9 +1161,6 @@ class Human {
 
         let headerCraniumPartEl = document.createElement('h5');
         headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
-
-        // let craniumPartDecriptionEl = document.createElement('p');
-        // craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
 
         let craniumPartCheckBoxEl = document.createElement('input');
         craniumPartCheckBoxEl.type = 'checkbox';
@@ -1177,7 +1177,6 @@ class Human {
         craniumPartEl.appendChild(headerCraniumPartEl);
         craniumPartEl.appendChild(craniumPartWrapForImgEl);
         craniumPartEl.appendChild(craniumPartCheckBoxEl);
-        // craniumPartEl.appendChild(craniumPartDecriptionEl);
         this.craniumEl.appendChild(craniumPartEl);
       }
     }
