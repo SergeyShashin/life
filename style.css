@@ -48,8 +48,7 @@ h5 {
   height: 20px;
 }
 
-section {
-}
+section {}
 
 #life {
   width: 320px;
@@ -143,27 +142,38 @@ td {
   margin: 20px 0;
 }
 
-.inputGorup{
+.inputGorup {
   /* margin: 20px 0; */
 }
 
 .headEl {
   overflow-x: scroll;
-  height: 38vh;
+  height: 30vh;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
 }
 
+.headEl h4 {
+  text-align: center;
+}
+
 .partHuman {
+  width: 310px;
   display: flex;
   /* margin: 0 5px; */
 }
 
 .investingTimeHTMLEl {
+  display: flex;
   overflow-x: scroll;
-  height: 45vh;
+  /* height: 35vh; */
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
+}
+
+.dayLife div {
+  width: 300px;
+  margin: 0 10px;
 }
 
 

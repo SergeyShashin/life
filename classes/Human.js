@@ -1031,7 +1031,7 @@ class Human {
   createTypesFamilyHTMLEl() {
     this.typesFamilyHTMLEl = document.createElement('section');
     this.typesFamilyHTMLEl.classList.add('inputGroup');
-    
+
     let headerTypesFamilyHTMLEl = document.createElement('h4');
     headerTypesFamilyHTMLEl.textContent = 'семья';
     this.inputTypesFamilyHTMLEl = document.createElement('input');
@@ -1062,8 +1062,8 @@ class Human {
       let headerHeadEl = document.createElement('h4');
       headerHeadEl.textContent = head.nameRussian;
 
-      let headerDecriptionEl = document.createElement('p');
-      headerDecriptionEl.textContent = head.description;
+      // let headerDecriptionEl = document.createElement('p');
+      // headerDecriptionEl.textContent = head.description;
 
       let headCheckBoxEl = document.createElement('input');
       headCheckBoxEl.type = 'checkbox';
@@ -1073,6 +1073,9 @@ class Human {
       let headImgEl = new Image();
       headImgEl.src = head.pathImg;
       headImgEl.dataset.pathFullImg = head.pathFullImg;
+      headImgEl.title = head.description;
+      headImgEl.alt = head.nameRussian;
+
       headWrapForImgEl.appendChild(headImgEl);
 
       this.headEl.classList.add('headEl');
@@ -1081,7 +1084,7 @@ class Human {
       sectionEl.appendChild(headerHeadEl);
       sectionEl.appendChild(headWrapForImgEl);
       sectionEl.appendChild(headCheckBoxEl);
-      sectionEl.appendChild(headerDecriptionEl);
+      // sectionEl.appendChild(headerDecriptionEl);
       this.headEl.appendChild(sectionEl);
       this.headEl.appendChild(this.createCraniumHTMLEl());
     }
@@ -1102,8 +1105,8 @@ class Human {
       let headerCraniumEl = document.createElement('h4');
       headerCraniumEl.textContent = cranium.nameRussian;
 
-      let headerDecriptionEl = document.createElement('p');
-      headerDecriptionEl.textContent = cranium.description;
+      // let headerDecriptionEl = document.createElement('p');
+      // headerDecriptionEl.textContent = cranium.description;
 
       let craniumCheckBoxEl = document.createElement('input');
       craniumCheckBoxEl.type = 'checkbox';
@@ -1113,12 +1116,14 @@ class Human {
       let craniumImgEl = new Image();
       craniumImgEl.src = cranium.pathImg;
       craniumImgEl.dataset.pathFullImg = cranium.pathFullImg;
+      craniumImgEl.title = cranium.description;
+      craniumImgEl.alt = cranium.nameRussian;
       craniumWrapForImgEl.appendChild(craniumImgEl);
 
       sectionEl.appendChild(headerCraniumEl);
       sectionEl.appendChild(craniumWrapForImgEl);
       sectionEl.appendChild(craniumCheckBoxEl);
-      sectionEl.appendChild(headerDecriptionEl);
+      // sectionEl.appendChild(headerDecriptionEl);
       this.craniumEl.appendChild(sectionEl);
 
       for (let craniumKey in cranium) {
@@ -1131,8 +1136,8 @@ class Human {
         let headerCraniumPartEl = document.createElement('h5');
         headerCraniumPartEl.textContent = cranium[craniumKey].nameRussian;
 
-        let craniumPartDecriptionEl = document.createElement('p');
-        craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
+        // let craniumPartDecriptionEl = document.createElement('p');
+        // craniumPartDecriptionEl.textContent = cranium[craniumKey].description;
 
         let craniumPartCheckBoxEl = document.createElement('input');
         craniumPartCheckBoxEl.type = 'checkbox';
@@ -1141,13 +1146,15 @@ class Human {
         let craniumPartWrapForImgEl = document.createElement('p');
         let craniumPartImgEl = new Image();
         craniumPartImgEl.src = cranium[craniumKey].pathImg;
-        craniumImgEl.dataset.pathFullImg = cranium[craniumKey].pathFullImg;
+        craniumPartImgEl.dataset.pathFullImg = cranium[craniumKey].pathFullImg;
+        craniumPartImgEl.title = cranium[craniumKey].description;
+        craniumPartImgEl.alt = cranium[craniumKey].nameRussian;
         craniumPartWrapForImgEl.appendChild(craniumPartImgEl);
 
         craniumPartEl.appendChild(headerCraniumPartEl);
         craniumPartEl.appendChild(craniumPartWrapForImgEl);
         craniumPartEl.appendChild(craniumPartCheckBoxEl);
-        craniumPartEl.appendChild(craniumPartDecriptionEl);
+        // craniumPartEl.appendChild(craniumPartDecriptionEl);
         this.craniumEl.appendChild(craniumPartEl);
       }
     }
@@ -1165,7 +1172,8 @@ class Human {
 
     // не тянет столько for (let numberDay = this.numberDayLife; numberDay < this.quantityDaysLife; numberDay++) {
     for (let numberDay = this.numberDayLife; numberDay < 8; numberDay++) {
-      this.dayLifeHTMLEl = document.createElement('div');
+      this.dayLifeHTMLEl = document.createElement('section');
+      this.dayLifeHTMLEl.classList.add('dayLife');
       let headerInvestingTimeHTMLEl = document.createElement('h4');
       headerInvestingTimeHTMLEl.textContent = 'День жизни ' + numberDay;
       this.dayLifeHTMLEl.appendChild(headerInvestingTimeHTMLEl);
