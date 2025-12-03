@@ -40,7 +40,7 @@ const life = {
     //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.control.createControlHTMLEl());
 
-     //Создаёт объект класса Word.
+    //Создаёт объект класса Word.
     this.world = new World();
     //Создаёт HTML элемент объекта world.info и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.world.info.createInfoHTMLEl());
@@ -48,7 +48,7 @@ const life = {
     //Создаёт объект класса Settings.    
     this.settings = new Settings();
     //Создаёт HTML элемент объекта setttings и добавляет его в HTML элемент игры
-    this.containerEl.appendChild(this.settings.createSettingsHTMLEl());   
+    this.containerEl.appendChild(this.settings.createSettingsHTMLEl());
 
     //переделать на класс. Сделать создание в JS. Сейчас черновик в HTML.
     this.modelingEl = document.getElementById('modeling');
@@ -70,16 +70,20 @@ const life = {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
+      let headerHTMLEl = document.createElement('h3');
+      headerHTMLEl.textContent = `${i+1} человек`;
+
       let humanHTMLEl = human.createHumanHTMLEl();
 
       humanHTMLEl.appendChild(human.createFirtNameHTMLEl());
       humanHTMLEl.appendChild(human.createNumberDayLifeHTMLEl());
       humanHTMLEl.appendChild(human.createCoordinatesStartingPointHTMLEl());
       humanHTMLEl.appendChild(human.createTypesFamilyHTMLEl());
-      
+
       humanHTMLEl.appendChild(human.createHeadEl());
       humanHTMLEl.appendChild(human.createInvestingTimeHTMLEl(this.settings.getToDoList()));
 
+      this.settings.getSettingsEl().appendChild(headerHTMLEl);
       this.settings.getSettingsEl().appendChild(humanHTMLEl);
     }
 
