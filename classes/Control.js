@@ -6,6 +6,7 @@ class Control {
     { class: 'btn', id: 'btnAutomaticControlOrHandControl', textRu: 'Ручное' },
     { class: 'btn', id: 'btnMap', textRu: 'Карта' },
     { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
+    { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
   ];
   btnAutomaticControlOrHandControlEl;
   createControlHTMLEl() {
@@ -21,7 +22,7 @@ class Control {
       }
     }
 
-    return this.controlHTMLEl
+    return this.controlHTMLEl;
   }
   toggleBtnAutomaticControlOrHandControlEl() {
     this.btnAutomaticControlOrHandControlEl.textContent = this.btnAutomaticControlOrHandControlEl.textContent === 'Ручное' ? 'Автоматическое' : 'Ручное';

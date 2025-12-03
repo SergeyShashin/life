@@ -806,6 +806,9 @@ class Human {
   emotions = []; //эмоции
   currentEmotion;
   investingTimeHTMLEl;
+  сoordinatesStartingPointHTMLEl;
+  inputCoordinatesStartingPointHTMLEl;
+  coordinatesStartingPointDefault = '54.61731283340977, 39.68856205239361';
 
   // daysLife = [
   // {
@@ -1002,10 +1005,10 @@ class Human {
 
 
   /**
-   * Cоздаёт HTML элемент для ввода номера дня жизни
+   * Cоздаёт HTML элемент для ввода номера дня жизни.
    * Например для человека с датой рождения 01.01.2000
-   * при старте игры 01.01.2004 номер дня жизни = 1461
-   * @returns HTML элемент для выбора элемент для ввода номера дня жизни
+   * при старте игры 01.01.2004 номер дня жизни = 1461.
+   * @returns HTML элемент для ввода номера дня жизни.
    */
   createNumberDayLifeHTMLEl() {
     this.numberDayLifeHTMLEl = document.createElement('section');
@@ -1025,8 +1028,28 @@ class Human {
   }
 
   /**
-   * создаёт HTML элемент для выбора профиля семьи
-   * @returns {HTMLElement} HTML элемент для выбора для выбора профиля семьи
+   * Cоздаёт HTML элемент для выбора координат места старта.
+   * Пример 54.61731283340977, 39.68856205239361 (Рязань, ул. Островского 111)
+   * @returns HTML элемент для выбора координат места старта.
+   */
+  createCoordinatesStartingPointHTMLEl() {
+    this.сoordinatesStartingPointHTMLEl = document.createElement('section');
+    this.сoordinatesStartingPointHTMLEl.classList.add('inputGroup');
+    let headerCoordinatesStartingPointHTMLEl = document.createElement('h4');
+    headerCoordinatesStartingPointHTMLEl.textContent = 'координаты места старта';
+    this.inputCoordinatesStartingPointHTMLEl = document.createElement('input');
+    this.inputCoordinatesStartingPointHTMLEl.name = 'inputCoordinatesStartingPointHTMLEl';
+    this.inputCoordinatesStartingPointHTMLEl.value = this.coordinatesStartingPointDefault;
+
+    this.сoordinatesStartingPointHTMLEl.appendChild(headerCoordinatesStartingPointHTMLEl);
+    this.сoordinatesStartingPointHTMLEl.appendChild(this.inputCoordinatesStartingPointHTMLEl);
+    
+    return this.сoordinatesStartingPointHTMLEl;
+  }
+
+  /**
+   * Создаёт HTML элемент для выбора профиля семьи.
+   * @returns {HTMLElement} HTML элемент для выбора профиля семьи.
    */
   createTypesFamilyHTMLEl() {
     this.typesFamilyHTMLEl = document.createElement('section');
