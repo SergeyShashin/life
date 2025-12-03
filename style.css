@@ -146,9 +146,7 @@ td {
   margin: 20px 0;
 }
 
-.inputGorup {
-  /* margin: 20px 0; */
-}
+.inputGorup {}
 
 .headEl {
   margin: 20px 0;
@@ -177,7 +175,6 @@ td {
 }
 
 .dayLife div {
-  width: 300px;
   margin: 0 10px;
 }
 
@@ -193,3 +190,8 @@ td {
 #btnSettings {}
 
 #control {}
+
+.dayFromClassDayHTMLEl {
+  width: 300px;
+  text-align: center;
+}

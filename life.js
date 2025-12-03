@@ -71,7 +71,7 @@ const life = {
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         '[00.000000, 00.000000]', '', '', '', i);
       let headerHTMLEl = document.createElement('h3');
-      headerHTMLEl.textContent = `${i+1} человек`;
+      headerHTMLEl.textContent = `${i + 1} человек`;
 
       let humanHTMLEl = human.createHumanHTMLEl();
 
@@ -105,7 +105,15 @@ const life = {
       case 'btnStartGame':
         this.world.info.hideInfoEl();
         this.settings.hideSettingsEl();
-        this.modelingEl.style.display = 'block'; // переделать на show после создания класса
+        this.containerEl.appendChild(new Day(1, 1, [
+          { hour: 0, minute: 0, second: 0, business: 'сон' },
+          { hour: 0, minute: 0, second: 1, business: 'сон' },
+          { hour: 0, minute: 0, second: 2, business: 'сон' },
+          { hour: 0, minute: 0, second: 3, business: 'сон' },
+          { hour: 0, minute: 0, second: 4, business: 'сон' },
+          { hour: 0, minute: 0, second: 5, business: 'сон' },
+          //.... создать дефолтные списки под каждого человека
+        ]).createDayHTMLEl());
         break;
       case 'btnAutomaticControlOrHandControl':
         this.control.toggleBtnAutomaticControlOrHandControlEl();
