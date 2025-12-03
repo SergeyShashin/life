@@ -14,6 +14,10 @@ class Day {
     this.toDoList = toDoList;
   }
 
+  /**
+   * Создаёт HTML элемент
+   * @returns {HTMLElement} Возвращает HTML элемент.
+   */
   createDayHTMLEl() {
     this.dayHTMLEl = document.createElement('section');
     this.dayHTMLEl.classList.add('dayFromClassDayHTMLEl');
