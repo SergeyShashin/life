@@ -139,7 +139,7 @@ class Settings {
   }
 
   toggleSettingsEl() {
-    this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'inline-block' : 'none';
+    this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'block' : 'none';
   }
 
   hideSettingsEl() {
@@ -147,7 +147,7 @@ class Settings {
   }
 
   showSettingsEl() {
-    this.infoEl.style.display = 'inline-block';
+    this.infoEl.style.display = 'block';
   }
 
   addToDoList(business) {
