@@ -209,6 +209,11 @@ class Settings {
     return this.datalistTypesFamilyHTMLEl;
   };
 
+  /**
+   * Возвращает datalist для выбора типа семьи в инпуте, который создаётся в
+   * human.createTypesFamilyHTMLEl()
+   * @returns {HTMLElement} datalist для выбора типа семьи в инпуте.
+   */
   getDatalistTypesFamilyHTMLEl() {
     return this.datalistTypesFamilyHTMLEl;
   }
@@ -231,7 +236,11 @@ class Settings {
     return this.datalistInvestingTimeHTMLEl;
   };
 
-  //HTML элемент с возможными делами.
+  /**
+ * Возвращает datalist для выбора дела в инпуте, который создаётся в
+ * createInvestingTimeHTMLEl()
+ * @returns {HTMLElement} datalist для выбора для выбора дела в инпуте.
+ */
   getDatalistInvestingTimeHTMLEl() {
     return this.datalistInvestingTimeHTMLEl;
   };
