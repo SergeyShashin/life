@@ -161,14 +161,24 @@ class Settings {
     this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'block' : 'none';
   }
 
+  /**
+   * Отключение видимости HTML элемента настроек. 
+   */
   hideSettingsEl() {
     this.settingsEl.style.display = 'none';
   }
 
+  /**
+   * Включение видимости HTML элемента настроек.
+   */
   showSettingsEl() {
     this.infoEl.style.display = 'block';
   }
 
+  /**
+   * Добавление дела в список дел человека. Пример { hour: 8, minute: 0, second: 0, business: 'Программирование с семьёй и друзьями.' }.
+   * @param {Object} business
+   */
   addToDoList(business) {
     this.todoList.push(business);
   }

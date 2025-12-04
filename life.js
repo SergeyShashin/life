@@ -111,7 +111,17 @@ const life = {
           { hour: 0, minute: 0, second: 2, business: 'сон' },
           { hour: 0, minute: 0, second: 3, business: 'сон' },
           { hour: 0, minute: 0, second: 4, business: 'сон' },
-          { hour: 0, minute: 0, second: 5, business: '\
+          { hour: 0, minute: 0, second: 5, business: 'сон' },
+          { hour: 0, minute: 0, second: 7, business: 'сон' },
+          { hour: 0, minute: 0, second: 8, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 9, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 10, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 11, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 12, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 13, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 14, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 15, business: 'Программирование с семьёй и друзьями.' },
+          { hour: 0, minute: 0, second: 16, business: '\
           *создать дефолтные списки под каждого человека life/databases/json/softwareEngineerList.json и др.\
           * при размере группы 14 человек \
           * 86400 секунд в сутках\
@@ -124,7 +134,7 @@ const life = {
           * 264 902 400 000 тегов для группы из 14 человек\
           * \
           * нет знаний или опыта, как это структурировать\
-          */' },          
+          */' },
         ]).createDayHTMLEl());
         break;
       case 'btnAutomaticControlOrHandControl':
