@@ -1,13 +1,18 @@
 'use strict';
 
 /**
- * День жизни * 
+ * День жизни
  */
 class Day {
   numberDay;
   toDoList;
   dayHTMLEl;
-
+  /**
+   * Конструктор класса
+   * @param {number} numberDay Номер дня жизни.
+   * @param {number} numberHuman Номер человека в группе.
+   * @param {Array} toDoList Расписаниние дня жизни под этим номером.
+   */
   constructor(numberDay, numberHuman, toDoList) {
     this.numberDay = numberDay;
     this.numberHuman = numberHuman;
@@ -15,7 +20,7 @@ class Day {
   }
 
   /**
-   * Создаёт HTML элемент
+   * Создаёт HTML элемент дня жизни.
    * @returns {HTMLElement} Возвращает HTML элемент.
    */
   createDayHTMLEl() {
@@ -40,10 +45,12 @@ class Day {
     thSecondEl.textContent = 'секунды';
     let thBusinessEl = document.createElement('th');
     thBusinessEl.textContent = 'дело';
+
     trEl.appendChild(thHourEl);
     trEl.appendChild(thMinuteEl);
     trEl.appendChild(thSecondEl);
     trEl.appendChild(thBusinessEl);
+    
     tableDayHTMLEl.appendChild(trEl);
 
     for (let { hour, minute, second, business } of this.toDoList) {
@@ -62,8 +69,8 @@ class Day {
       trHTMLEl.appendChild(businessHTMLEl);
       tableDayHTMLEl.appendChild(trHTMLEl);
     }
-    this.dayHTMLEl.appendChild(tableDayHTMLEl);
 
+    this.dayHTMLEl.appendChild(tableDayHTMLEl);
 
     return this.dayHTMLEl;
   }

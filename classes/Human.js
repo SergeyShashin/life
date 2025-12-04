@@ -1,8 +1,13 @@
 'use strict';
 
+/**
+ * Класс Человек
+ */
 class Human {
+  //HTML элемент человека.
   humanHTMLEl;
 
+  //Анатомия человека
   anatomy = {
     head: {
       inStock: true,
@@ -778,25 +783,49 @@ class Human {
 
   };
 
+  //HTML элемент выбора семьи
   typesFamilyHTMLEl;
+  //HTML элемент ввода/вывода семьи
   inputTypesFamilyHTMLEl;
-
-  relatives; // связи
-  siblings = []; //родственники 
+  // связи
+  relatives;
+  //родственники
+  siblings = [];
+  //дата рождения
   dateBirth;
-  coordinatesBirth;
+  //Координаты старта человека
+  coordinatesStartingPoint;
+  //HTML элементы координат старта человека
+  сoordinatesStartingPointHTMLEl;
+  //HTML элемент координат старта человека
+  inputCoordinatesStartingPointHTMLEl;
+  //координаты старта человека по умолчанию
+  coordinatesStartingPointDefault = '54.61731283340977, 39.68856205239361';
+  //имя
   firstName;
+  //HTML элементы для имени
   firstNameHTMLEl;
+  //HTML элемент для имени
   inputFirstNameHTMLEl;
+  //фамилия
   surName;
+  //HTML элемент для фамилии
   surNameHTMLEl;
+  //отчество
   patronymic;
+  //HTML элемент для отчества
   patronymicHTMLEl;
+  //id человека
   idHuman;
+  //количество дней жизни человека
   quantityDaysLife = 43800;
+  //количество секунд в сутках
   secondsInDay = 86400;
+  //номер дня жизни
   numberDayLife = 1;
+  //HTML элементы номера дня жизни
   numberDayLifeHTMLEl;
+  //HTML элемент номера дня жизни
   inputNumberDayLifeHTMLEl;
   acquiredHabbits = []; //привычки          
   experience = []; //опыт
@@ -804,26 +833,40 @@ class Human {
   beliefs = []; //убеждения
   fears = [];//страхи
   emotions = []; //эмоции
-  currentEmotion;
+  currentEmotion; //текущая эмоция
+  //HTML элемент инвестирования времени
   investingTimeHTMLEl;
-  сoordinatesStartingPointHTMLEl;
-  inputCoordinatesStartingPointHTMLEl;
-  coordinatesStartingPointDefault = '54.61731283340977, 39.68856205239361';
 
-  daysLifeHTMLEl;
 
+  // daysLifeHTMLEl;
+
+  //HTML элемент для головы.
   headEl;
+  //HTML элемент для черепа.
   craniumEl;
 
-  constructor(dateBirth, coordinatesBirth, firstName, surname, patronymic, idHuman) {
+  /**
+   * Конструктор базового класса.
+   * @param {Object} dateBirth Дата рождения. { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 }
+   * @param {Array} coordinatesBirth '[00.000000, 00.000000]'
+   * @param {String} firstName Имя
+   * @param {String} surname Фамилия
+   * @param {String} patronymic Отчество
+   * @param {Number} idHuman id
+   */
+  constructor(dateBirth, coordinatesStartingPoint, firstName, surname, patronymic, idHuman) {
     this.dateBirth = dateBirth;
-    this.coordinatesBirth = coordinatesBirth;
+    this.coordinatesBirth = coordinatesStartingPoint;
     this.firstName = firstName;
     this.surname = surname;
     this.patronymic = patronymic;
     this.idHuman = idHuman;
   }
 
+  /**
+   * Возвращает id человека.
+   * @returns {Number} Id человека.
+   */
   getIDHuman() {
     return this.idHuman;
   }
@@ -849,7 +892,7 @@ class Human {
   }
 
   getCoordinatesBirth() {
-    return this.coordinatesBirth;
+    return this.coordinatesStartingPoint;
   }
 
   setFirstName(firstName) {
@@ -959,8 +1002,8 @@ class Human {
   smileForTarget() { }
 
   /**
-   * Создаёт HTML элемент
-   * @returns {HTMLElement} HTML элемент
+   * Создаёт HTML элемент.
+   * @returns {HTMLElement} HTML элемент.
    */
   createHumanHTMLEl() {
     this.humanHTMLEl = document.createElement('section');
@@ -970,8 +1013,8 @@ class Human {
   }
 
   /**
-   * Отдаёт HTML элемент
-   * @returns {HTMLElement} HTML элемент
+   * Отдаёт HTML элемент.
+   * @returns {HTMLElement} HTML элемент.
    */
   getHumanHTMLEl() {
     return this.humanHTMLEl;
@@ -994,7 +1037,6 @@ class Human {
 
     return this.firstNameHTMLEl;
   }
-
 
   /**
    * Cоздаёт HTML элемент для ввода номера дня жизни.
@@ -1021,7 +1063,7 @@ class Human {
 
   /**
    * Cоздаёт HTML элемент для выбора координат места старта.
-   * Пример 54.61731283340977, 39.68856205239361 (Рязань, ул. Островского 111)
+   * Пример 54.61731283340977, 39.68856205239361 (Рязань, ул. Островского 111).
    * @returns {HTMLElement} HTML элемент для выбора координат места старта.
    */
   createCoordinatesStartingPointHTMLEl() {
@@ -1184,9 +1226,9 @@ class Human {
   }
 
   /**
-   * создаёт HTML элемент для выбора дел и продолжительности
+   * Cоздаёт HTML элемент для выбора дел и их длительности.
    * @param {Array} todoList 
-   * @returns {HTMLElement} HTML элемент для выбора дел и продолжительности
+   * @returns {HTMLElement} HTML элемент для выбора дел и длительности.
    */
   createInvestingTimeHTMLEl(todoList) {
     this.investingTimeHTMLEl = document.createElement('section');

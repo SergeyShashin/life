@@ -1,5 +1,7 @@
 'use strict';
-
+/**
+ * Класс Время.
+ */
 class Time {
   date;
   timeEl;
