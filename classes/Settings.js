@@ -94,7 +94,7 @@ class Settings {
 
     //создание HTML элемента для заголовка и инпута размера группы.
     this.sizeTeamEl = document.createElement('section');
-    
+    //установка класса 
     this.sizeTeamEl.classList.add('inputGroup');
     //установка id для HTML элмента с размером группы.
     this.sizeTeamEl.id = 'sizeTeam';
@@ -122,22 +122,41 @@ class Settings {
     return this.settingsEl
   }
 
+  /**
+   * Возвращает HTML элемент настроек игры.
+   * @returns {HTMLElement} HTML элемент настроек игры.
+   */
   getSettingsEl() {
     return this.settingsEl;
   }
 
+  /**
+   * Возвращает размер группы.
+   * @returns {Number} 
+   */
   getSizeTeam() {
     return this.sizeTeam;
   }
 
+  /**
+   * Возвращает HTML элементы группы.
+   * @returns {HTMLElement}
+   */
   getSizeTeamEl() {
     return this.sizeTeamEl;
   }
 
+  /**
+   * Возвращает HTML элемент группы.
+   * @returns {HTMLElement}
+   */
   getInputSizeTeamEl() {
     return this.inputSizeTeamEl;
   }
 
+  /**
+   * Включение/отключение видимости HTML элемента настроек.
+   */
   toggleSettingsEl() {
     this.settingsEl.style.display = this.settingsEl.style.display === 'none' ? 'block' : 'none';
   }
