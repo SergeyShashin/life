@@ -10,6 +10,10 @@ class Time {
   tagTimeEl;
   btnPlusDayEl;
 
+  /**
+   * Создаёт HTML элемент времени.
+   * @returns {HTMLElement} HTML элемент времени.
+   */
   createTimeHTMLEl() {
     this.date = new Date();
     this.timeEl = document.createElement('section');
@@ -25,22 +29,32 @@ class Time {
     this.btnPlusDayEl.className = 'controlTime';
     this.btnPlusDayEl.dataset.dayvalue = '1';
     this.btnPlusDayEl.textContent = '>';
+
     this.timeEl.appendChild(this.btnMinusDayEl);
     this.timeEl.appendChild(this.tagTimeEl);
     this.timeEl.appendChild(this.btnPlusDayEl);
+
     this.interval = setInterval(() => {
       this.date.setSeconds(this.date.getSeconds() + 1);
       this.renderTimeHTMLEl();
     }, 1000);
+
     return this.timeEl
   }
 
+  /**
+   * Обновляет время в HTML элементе времени.
+   */
   renderTimeHTMLEl() {
     this.tagTimeEl.textContent = `${this.date.getFullYear()}:${this.date.getMonth() + 1}:${this.date.getDate()} ${this.date.toTimeString()}`;
   }
 
   setTime() { }
 
+  /**
+   * Увеличивает/уменьшает текущее время на quantityDay.
+   * @param {string} quantityDay Количество дней на которое нужно обновить время.
+   */
   updateTime(quantityDay) {
     this.date.setDate(this.date.getDate() + Number(quantityDay));
     this.renderTimeHTMLEl();
