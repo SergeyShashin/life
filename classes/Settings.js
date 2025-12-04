@@ -176,13 +176,17 @@ class Settings {
   }
 
   /**
-   * Добавление дела в список дел человека. Пример { hour: 8, minute: 0, second: 0, business: 'Программирование с семьёй и друзьями.' }.
+   * Добавление дела в список дел человека. Пример { day: 1, hour: 0, minute: 0, second: 8, business: 'Программирование с семьёй и друзьями.' },.
    * @param {Object} business
    */
   addToDoList(business) {
     this.todoList.push(business);
   }
 
+  /**
+   * Возвращает список дел человека.
+   * @returns {Array} Список дел человека.
+   */
   getToDoList() {
     return this.todoList;
   }

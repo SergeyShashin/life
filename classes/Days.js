@@ -1,22 +1,20 @@
 'use strict';
 
 /**
- * День жизни
+ * Дни жизни
  */
-class Day {
-  numberDay;
+class Days {
   toDoList;
-  dayHTMLEl;
+  daysHTMLEl;
   /**
    * Конструктор класса
-   * @param {number} numberDay Номер дня жизни.
    * @param {number} numberHuman Номер человека в группе.
-   * @param {Array} toDoList Расписаниние дня жизни под этим номером.
+   * @param {Array} toDoList Расписаниние дней жизни под этим номером.
    */
-  constructor(numberDay, numberHuman, toDoList) {
-    this.numberDay = numberDay;
+  constructor(numberHuman, toDoList) {
     this.numberHuman = numberHuman;
     this.toDoList = toDoList;
+    console.log(toDoList);
   }
 
   /**
@@ -24,19 +22,18 @@ class Day {
    * @returns {HTMLElement} Возвращает HTML элемент.
    */
   createDayHTMLEl() {
-    this.dayHTMLEl = document.createElement('section');
-    this.dayHTMLEl.classList.add('dayFromClassDayHTMLEl');
+    this.daysHTMLEl = document.createElement('section');
+    this.daysHTMLEl.classList.add('dayFromClassDayHTMLEl');
     let h3HTMLEl = document.createElement('h3');
     h3HTMLEl.textContent = `${this.numberHuman} человек`;
-    let h4HTMLEl = document.createElement('h3');
-    h4HTMLEl.textContent = `${this.numberDay} день`;
 
-    this.dayHTMLEl.appendChild(h3HTMLEl);
-    this.dayHTMLEl.appendChild(h4HTMLEl);
+    this.daysHTMLEl.appendChild(h3HTMLEl);
 
     let tableDayHTMLEl = document.createElement('table');
 
     let trEl = document.createElement('tr');
+    let thDaysEl = document.createElement('th');
+    thDaysEl.textContent = 'день';
     let thHourEl = document.createElement('th');
     thHourEl.textContent = 'часы';
     let thMinuteEl = document.createElement('th');
@@ -46,15 +43,18 @@ class Day {
     let thBusinessEl = document.createElement('th');
     thBusinessEl.textContent = 'дело';
 
+    trEl.appendChild(thDaysEl);
     trEl.appendChild(thHourEl);
     trEl.appendChild(thMinuteEl);
     trEl.appendChild(thSecondEl);
     trEl.appendChild(thBusinessEl);
-    
+
     tableDayHTMLEl.appendChild(trEl);
 
-    for (let { hour, minute, second, business } of this.toDoList) {
+    for (let {day, hour, minute, second, business } of this.toDoList) {
       let trHTMLEl = document.createElement('tr');
+      let dayHTMLEl = document.createElement('td');
+      dayHTMLEl.textContent = day;
       let hourHTMLEl = document.createElement('td');
       hourHTMLEl.textContent = hour;
       let minuteHTMLEl = document.createElement('td');
@@ -63,15 +63,18 @@ class Day {
       secondHTMLEl.textContent = second;
       let businessHTMLEl = document.createElement('td');
       businessHTMLEl.textContent = business;
+
+      trHTMLEl.appendChild(dayHTMLEl);
       trHTMLEl.appendChild(hourHTMLEl);
       trHTMLEl.appendChild(minuteHTMLEl);
       trHTMLEl.appendChild(secondHTMLEl);
       trHTMLEl.appendChild(businessHTMLEl);
+
       tableDayHTMLEl.appendChild(trHTMLEl);
     }
 
-    this.dayHTMLEl.appendChild(tableDayHTMLEl);
+    this.daysHTMLEl.appendChild(tableDayHTMLEl);
 
-    return this.dayHTMLEl;
+    return this.daysHTMLEl;
   }
 }
