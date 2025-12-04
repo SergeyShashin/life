@@ -104,24 +104,26 @@ const life = {
     switch (e.target.id) {
       case 'btnStartGame':
         this.world.info.hideInfoEl();
-        this.settings.hideSettingsEl();        
-        this.containerEl.appendChild(new Days(1, [
-          { day: 1, hour: 0, minute: 0, second: 0, business: 'сон' },
-          { day: 1, hour: 0, minute: 0, second: 1, business: 'сон' },
-          { day: 1, hour: 0, minute: 0, second: 2, business: 'сон' },
-          { day: 1, hour: 0, minute: 0, second: 3, business: 'сон' },
-          { day: 1, hour: 0, minute: 0, second: 4, business: 'сон' },
-          { day: 1, hour: 0, minute: 0, second: 5, business: 'сон' },
-          { day: 1, hour: 0, minute: 0, second: 7, business: 'сон' },
-          { day: 1, hour: 0, minute: 0, second: 8, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 9, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 10, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 11, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 12, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 13, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 14, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 15, business: 'Программирование с семьёй и друзьями.' },
-          { day: 1, hour: 0, minute: 0, second: 16, business: '\
+        this.settings.hideSettingsEl();
+        for (let i = 1; i < this.settings.getSizeTeam() + 2; i++) {
+          this.containerEl.appendChild(new Days(i, [
+            { day: 1, hour: 0, minute: 0, second: 0, business: 'сон' },
+            { day: 1, hour: 0, minute: 0, second: 1, business: 'сон' },
+            { day: 1, hour: 0, minute: 0, second: 2, business: 'сон' },
+            { day: 1, hour: 0, minute: 0, second: 3, business: 'сон' },
+            { day: 1, hour: 0, minute: 0, second: 4, business: 'сон' },
+            { day: 1, hour: 0, minute: 0, second: 5, business: 'сон' },
+            { day: 1, hour: 0, minute: 0, second: 7, business: 'сон' },
+            { day: 1, hour: 0, minute: 0, second: 8, business: 'Программирование с семьёй и друзьями.' },
+            { day: 1, hour: 0, minute: 0, second: 9, business: 'Программирование с семьёй и друзьями.' },
+            { day: 1, hour: 0, minute: 0, second: 10, business: 'Программирование с семьёй и друзьями.' },
+            { day: 1, hour: 0, minute: 0, second: 11, business: 'Программирование с семьёй и друзьями.' },
+            { day: 1, hour: 0, minute: 0, second: 12, business: 'Программирование с семьёй и друзьями.' },
+            { day: 1, hour: 0, minute: 0, second: 13, business: 'Программирование с семьёй и друзьями.' },
+            { day: 1, hour: 0, minute: 0, second: 14, business: 'Программирование с семьёй и друзьями.' },
+            { day: 1, hour: 0, minute: 0, second: 15, business: 'Программирование с семьёй и друзьями.' },
+            {
+              day: 1, hour: 0, minute: 0, second: 16, business: '\
           *создать дефолтные списки под каждого человека life/databases/json/softwareEngineerList.json и др.\
           * при размере группы 14 человек \
           * 86400 секунд в сутках\
@@ -135,7 +137,9 @@ const life = {
           * \
           * нет знаний или опыта, как это структурировать\
           */' },
-        ]).createDayHTMLEl());
+          ]).createDayHTMLEl());
+        }
+
         break;
       case 'btnAutomaticControlOrHandControl':
         this.control.toggleBtnAutomaticControlOrHandControlEl();

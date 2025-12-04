@@ -14,7 +14,6 @@ class Days {
   constructor(numberHuman, toDoList) {
     this.numberHuman = numberHuman;
     this.toDoList = toDoList;
-    console.log(toDoList);
   }
 
   /**
