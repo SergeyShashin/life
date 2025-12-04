@@ -7,6 +7,8 @@ class Control {
     { class: 'btn', id: 'btnMap', textRu: 'Карта' },
     { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
     { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
+    // { class: 'btn', id: 'btnChange', textRu: 'Менялка' },
+    // { class: 'btn', id: 'btnVote', textRu: 'Голосовалка' },
   ];
   btnAutomaticControlOrHandControlEl;
   /**
