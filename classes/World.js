@@ -3,7 +3,9 @@
  * Класс Мир
  */
 class World {
+  //HTML элемент с количеством ресурсов мира
   infoEl;
+  //ресурсах мира
   info = {
     populationSize: {
       number: 8341290530,
