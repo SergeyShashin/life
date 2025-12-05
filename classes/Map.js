@@ -25,19 +25,32 @@ class Map {
     this.mapHTMLEl.id = 'mapHTMLEl';
     let headerHTMLEl = document.createElement('h3');
     headerHTMLEl.textContent = 'Карта';
+    let wrapImgHTMLEl = document.createElement('div');
+    wrapImgHTMLEl.classList.add('wrapImgHTMLEl');
     let mapImgHTMLEl = new Image();
     mapImgHTMLEl.src = 'img/карта.jpg';
 
     this.control = new Control([
       { class: 'btn', id: 'btnAddNewElement', textRu: '+ новый' },
       { class: 'btn', id: 'btnAddExistElement', textRu: '+ существующиий' },
+      { class: 'btn', id: 'btnMapSun', textRu: 'Солнце' },
+      { class: 'btn', id: 'btnMapMercury', textRu: 'Меркурий' },
+      { class: 'btn', id: 'btnMapVenus', textRu: 'Венера' },
       { class: 'btn', id: 'btnMapEarth', textRu: 'Земля' },
       { class: 'btn', id: 'btnMapMoon', textRu: 'Луна' },
+      { class: 'btn', id: 'btnMapMars', textRu: 'Марс' },
+      { class: 'btn', id: 'btnMapJupiter', textRu: 'Юпитер' },
+      { class: 'btn', id: 'btnMapSaturn', textRu: 'Сатурн' },
+      { class: 'btn', id: 'btnMapUranus', textRu: 'Уран' },
+      { class: 'btn', id: 'btnMapNeptune', textRu: 'Нептун' },
+      { class: 'btn', id: 'btnMapPluto', textRu: 'Плутон' },
     ]);
+
+    wrapImgHTMLEl.appendChild(mapImgHTMLEl);
 
     this.mapHTMLEl.appendChild(headerHTMLEl);
     this.mapHTMLEl.appendChild(this.control.createControlHTMLEl());
-    this.mapHTMLEl.appendChild(mapImgHTMLEl);
+    this.mapHTMLEl.appendChild(wrapImgHTMLEl);
 
     return this.mapHTMLEl
   }
@@ -81,11 +94,15 @@ class Map {
   }
 
   mapSun() {
-    alert('Отображается карта на Солнце');
+    alert('Отображается карта на Солнце.');
   }
-  
+
   mapMercury() {
-    alert('Отображается карта на Меркурии');
+    alert('Отображается карта на Меркурии.');
+  }
+
+  mapVenus() {
+    alert('Отображается карта на Венере.');
   }
 
   mapEarth() {
@@ -94,5 +111,29 @@ class Map {
 
   mapMoon() {
     alert('Отображается карта на Луне');
+  }
+
+  mapMars() {
+    alert('Отображается карта на Марсе.');
+  }
+
+  mapJupiter() {
+    alert('Отображается карта на Юпитере.');
+  }
+
+  mapSaturn() {
+    alert('Отображается карта на Сатурне.');
+  }
+
+  mapUranus() {
+    alert('Отображается карта на Уране.');
+  }
+
+  mapNeptune() {
+    alert('Отображается карта на Нептун.');
+  }
+
+  mapPluto() {
+    alert('Отображается карта на Плутоне.');
   }
 }

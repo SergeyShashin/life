@@ -227,8 +227,10 @@ td:hover {
   cursor: pointer;
 }
 
-#mapHTMLEl{
+.wrapImgHTMLEl {
+  margin-top: 20px;
   overflow-x: scroll;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
+  border-radius: 50px;
 }

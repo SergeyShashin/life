@@ -184,11 +184,38 @@ const life = {
       case 'btnAddExistElement':
         this.map.addExistElement();
         break;
+      case 'btnMapSun':
+        this.map.mapSun();
+        break;
+      case 'btnMapMercury':
+        this.map.mapMercury();
+        break;
+      case 'btnMapVenus':
+        this.map.mapVenus();
+        break;
       case 'btnMapEarth':
         this.map.mapEarth();
         break;
       case 'btnMapMoon':
         this.map.mapMoon();
+        break;
+      case 'btnMapMars':
+        this.map.mapMars();
+        break;
+      case 'btnMapJupiter':
+        this.map.mapJupiter();
+        break;
+      case 'btnMapSaturn':
+        this.map.mapSaturn();
+        break;
+      case 'btnMapUranus':
+        this.map.mapUranus();
+        break;
+      case 'btnMapNeptune':
+        this.map.mapNeptune();
+        break;
+      case 'btnMapPluto':
+        this.map.mapPluto();
         break;
     }
   },
