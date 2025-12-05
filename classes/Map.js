@@ -15,6 +15,10 @@ class Map {
 
   }
 
+  /**
+  * Создаёт HTML элемент карты.
+  * @returns {HTMLElement} HTML элемент карты.
+  */
   createMapHTMLEl() {
     this.mapHTMLEl = document.createElement('section');
     this.mapHTMLEl.id = 'mapHTMLEl';
@@ -27,11 +31,32 @@ class Map {
     return this.mapHTMLEl
   }
 
+  /**
+   * Включение/отключение видимости HTML элемента карты.
+   */
   toggleMapHTMLEl() {
     this.mapHTMLEl.style.display = this.mapHTMLEl.style.display === 'none' ? 'block' : 'none';
   }
 
+  /**
+  * Отключение видимости HTML элемента карты. 
+  */
   hideMapHTMLEl() {
     this.mapHTMLEl.style.display = 'none';
+  }
+
+  /**
+  * Отключение видимости HTML элемента карты. 
+  */
+  showMapHTMLEl() {
+    this.mapHTMLEl.style.display = 'block';
+  }
+
+  /**
+  * Возвращает HTML элемент карты.
+  * @returns {HTMLElement}
+  */
+  getInputSizeTeamEl() {
+    return this.mapHTMLEl;
   }
 }
