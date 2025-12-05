@@ -4,6 +4,7 @@ class Control {
   controlHTMLEl;
   buttons = [
     { class: 'btn', id: 'btnAutomaticControlOrHandControl', textRu: 'Ручной' },
+    { class: 'btn', id: 'btnResources', textRu: 'Ресурсы' },
     { class: 'btn', id: 'btnMap', textRu: 'Карта' },
     { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
     { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
@@ -17,6 +18,7 @@ class Control {
    */
   createControlHTMLEl() {
     this.controlHTMLEl = document.createElement('section');
+    
     for (let button of this.buttons) {
       let btnEl = document.createElement('button');
       btnEl.className = button.class;

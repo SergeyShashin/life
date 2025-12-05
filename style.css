@@ -226,3 +226,9 @@ td {
 td:hover {
   cursor: pointer;
 }
+
+#mapHTMLEl{
+  overflow-x: scroll;
+  scrollbar-color: beige lightseagreen;
+  scrollbar-width: thin;
+}

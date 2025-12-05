@@ -6,6 +6,7 @@ const life = {
   containerEl: null,
   modelingEl: null, //переделать на класс, наверное, с другим названием.
   world: null,
+  map: null,
   time: null,
   control: null,
   settings: null,
@@ -58,6 +59,11 @@ const life = {
     //Добавляет в HTML элемент settings тэг datlist с данными о делах. Для выбора в инпуте дела. ('программирование c семьёй и друзьями, ...приём пищи c семьёй и друзьями, ...')
     this.settings.getSettingsEl().appendChild(this.settings.createDatalistInvestingTimeHTMLEl());
 
+    //Создаёт объект класса Map.
+    this.map = new Map();
+    //Создаёт HTML элемент объекта  и добавляет его в HTML элемент игры
+    this.containerEl.appendChild(this.map.createMapHTMLEl());
+
     //Создает заданное количество людей для группы и добавляет их параметры в HTML элемент settings.
     this.createHumanForGroup()
   },
@@ -102,9 +108,11 @@ const life = {
    */
   handlerClickBtn(e) {
     switch (e.target.id) {
-      case 'btnStartGame':
+      case 'btnStartGame':        
         this.world.info.hideInfoEl();
         this.settings.hideSettingsEl();
+        this.map.hideMapHTMLEl();
+        
         for (let i = 1; i < this.settings.getSizeTeam() + 2; i++) {
           this.containerEl.appendChild(new Days(i, [
             { day: 1, hour: 0, minute: 0, second: 0, business: 'сон' },
@@ -144,8 +152,11 @@ const life = {
       case 'btnAutomaticControlOrHandControl':
         this.control.toggleBtnAutomaticControlOrHandControlEl();
         break;
-      case 'btnMap':
+      case 'btnResources':
         this.world.info.toggleInfoEl();
+        break;
+      case 'btnMap':
+        this.map.toggleMapHTMLEl();
         break;
       case 'btnSettings':
         this.settings.toggleSettingsEl();
