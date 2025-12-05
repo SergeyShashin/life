@@ -234,3 +234,7 @@ td:hover {
   scrollbar-width: thin;
   border-radius: 50px;
 }
+.wrapImgHTMLEl img {
+  display: block;
+  height: 75vh;
+}

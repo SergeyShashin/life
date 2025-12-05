@@ -15,7 +15,13 @@ class Map {
   control;
   //HTML элемент изображения карты
   mapImgHTMLEl;
-  pathEarthIMG = 'img/карта.jpg';
+  pathEarthIMG = [
+    'img/карта.jpg', 'img/карта19.jpg', 'img/карта18.jpg', 'img/карта17.jpg', 'img/карта16.jpg', 'img/карта15.jpg',
+    'img/карта14.jpg', 'img/карта13.jpg', 'img/карта12.jpg', 'img/карта11.jpg', 'img/карта10.jpg', 'img/карта9.jpg',
+    'img/карта8.jpg', 'img/карта7.jpg', 'img/карта6.jpg', 'img/карта5.jpg', 'img/карта4.jpg', 'img/карта3.jpg',
+    'img/карта2.jpg', 'img/карта1.jpg'
+  ];
+  scaleCounter = 0;
 
   /**
    * Конструктор базового класса
@@ -37,7 +43,7 @@ class Map {
     let wrapImgHTMLEl = document.createElement('div');
     wrapImgHTMLEl.classList.add('wrapImgHTMLEl');
     this.mapImgHTMLEl = new Image();
-    this.mapImgHTMLEl.src = this.pathEarthIMG;
+    this.mapImgHTMLEl.src = this.pathEarthIMG[this.scaleCounter];
 
     this.control = new Control([
       { class: 'btn', id: 'btnAddNewElement', textRu: '+ новый' },
@@ -149,9 +155,26 @@ class Map {
   }
 
   mapIncrease() {
-    alert('Увеличиваем масштаб.')
+
+    if (this.scaleCounter > 18) {
+      return
+    }
+
+    this.scaleCounter++;
+    this.renderMapImgHTMLElSrc();
   }
+
   mapDecrease() {
-    alert('Уменьшаем масштаб.')
+
+    if (this.scaleCounter === 0) {
+      return
+    }
+
+    this.scaleCounter--;
+    this.renderMapImgHTMLElSrc();
+  }
+
+  renderMapImgHTMLElSrc() {
+    this.mapImgHTMLEl.src = this.pathEarthIMG[this.scaleCounter];
   }
 }
