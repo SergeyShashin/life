@@ -42,8 +42,9 @@ const life = {
       { class: 'btn', id: 'btnMap', textRu: 'Карта' },
       { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
       { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
-      // { class: 'btn', id: 'btnChange', textRu: 'Менялка' },
-      // { class: 'btn', id: 'btnVote', textRu: 'Голосовалка' },
+      { class: 'btn', id: 'btnChange', textRu: 'Менялка' },
+      { class: 'btn', id: 'btnVote', textRu: 'Голосовалка' },
+      { class: 'btn', id: 'btnTasksHumanityUp4050', textRu: 'Задачи до 4050' },
     ]);
     //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.control.createControlHTMLEl());
@@ -177,6 +178,12 @@ const life = {
         break;
       case 'btnAddExistElement':
         this.map.addExistElement();
+        break;
+      case 'btnMapEarth':
+        this.map.mapEarth();
+        break;
+      case 'btnMapMoon':
+        this.map.mapMoon();
         break;
     }
   },

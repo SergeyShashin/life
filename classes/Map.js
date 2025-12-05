@@ -31,6 +31,8 @@ class Map {
     this.control = new Control([
       { class: 'btn', id: 'btnAddNewElement', textRu: '+ новый' },
       { class: 'btn', id: 'btnAddExistElement', textRu: '+ существующиий' },
+      { class: 'btn', id: 'btnMapEarth', textRu: 'Земля' },
+      { class: 'btn', id: 'btnMapMoon', textRu: 'Луна' },
     ]);
 
     this.mapHTMLEl.appendChild(headerHTMLEl);
@@ -76,5 +78,21 @@ class Map {
 
   addExistElement() {
     alert('Существующие объекты. Варианты: здание, дерево ....');
+  }
+
+  mapSun() {
+    alert('Отображается карта на Солнце');
+  }
+  
+  mapMercury() {
+    alert('Отображается карта на Меркурии');
+  }
+
+  mapEarth() {
+    alert('Отображается карта на Земле');
+  }
+
+  mapMoon() {
+    alert('Отображается карта на Луне');
   }
 }
