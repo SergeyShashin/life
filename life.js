@@ -36,8 +36,15 @@ const life = {
     /*Создаёт объект класса Control. Кнопки: кнопка переключения ручного 
     или автоматического режима игры, кнопка включения/отключения карты, 
     кнопка включения/отключения настроек. В дальнейшем и другие кнопки.*/
-    //todo перекинуть в этот блок кнопку старт, которая сейчас в HTML
-    this.control = new Control();
+    this.control = new Control([
+      { class: 'btn', id: 'btnAutomaticControlOrHandControl', textRu: 'Ручной' },
+      { class: 'btn', id: 'btnResources', textRu: 'Ресурсы' },
+      { class: 'btn', id: 'btnMap', textRu: 'Карта' },
+      { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
+      { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
+      // { class: 'btn', id: 'btnChange', textRu: 'Менялка' },
+      // { class: 'btn', id: 'btnVote', textRu: 'Голосовалка' },
+    ]);
     //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.control.createControlHTMLEl());
 
@@ -108,11 +115,11 @@ const life = {
    */
   handlerClickBtn(e) {
     switch (e.target.id) {
-      case 'btnStartGame':        
+      case 'btnStartGame':
         this.world.info.hideInfoEl();
         this.settings.hideSettingsEl();
         this.map.hideMapHTMLEl();
-        
+
         for (let i = 1; i < this.settings.getSizeTeam() + 2; i++) {
           this.containerEl.appendChild(new Days(i, [
             { day: 1, hour: 0, minute: 0, second: 0, business: 'сон' },
@@ -150,7 +157,7 @@ const life = {
 
         break;
       case 'btnAutomaticControlOrHandControl':
-        this.control.toggleBtnAutomaticControlOrHandControlEl();
+        this.control.toggleTextBtn(e.target, 'автоматический', 'ручной');
         break;
       case 'btnResources':
         this.world.info.toggleInfoEl();
