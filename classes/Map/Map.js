@@ -16,10 +16,10 @@ class Map {
   //HTML элемент изображения карты
   mapImgHTMLEl;
   pathEarthIMG = [
-    'img/карта.jpg', 'img/карта19.jpg', 'img/карта18.jpg', 'img/карта17.jpg', 'img/карта16.jpg', 'img/карта15.jpg',
-    'img/карта14.jpg', 'img/карта13.jpg', 'img/карта12.jpg', 'img/карта11.jpg', 'img/карта10.jpg', 'img/карта9.jpg',
-    'img/карта8.jpg', 'img/карта7.jpg', 'img/карта6.jpg', 'img/карта5.jpg', 'img/карта4.jpg', 'img/карта3.jpg',
-    'img/карта2.jpg', 'img/карта1.jpg'
+    'img/map/карта.jpg', 'img/map/карта19.jpg', 'img/map/карта18.jpg', 'img/map/карта17.jpg', 'img/map/карта16.jpg', 'img/map/карта15.jpg',
+    'img/map/карта14.jpg', 'img/map/карта13.jpg', 'img/map/карта12.jpg', 'img/map/карта11.jpg', 'img/map/карта10.jpg', 'img/map/карта9.jpg',
+    'img/map/карта8.jpg', 'img/map/карта7.jpg', 'img/map/карта6.jpg', 'img/map/карта5.jpg', 'img/map/карта4.jpg', 'img/map/карта3.jpg',
+    'img/map/карта2.jpg', 'img/map/карта1.jpg'
   ];
   scaleCounter = 0;
 
