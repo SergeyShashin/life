@@ -9,8 +9,17 @@
  * Возможность оставить комментарии или проголосовать за добавление, удаление, изменение другими пользователями.
  */
 class Map {
+  //HTML элемент карты
   mapHTMLEl;
+  //Кнопки
   control;
+  //HTML элемент изображения карты
+  mapImgHTMLEl;
+  pathEarthIMG = 'img/карта.jpg';
+
+  /**
+   * Конструктор базового класса
+   */
   constructor() {
 
   }
@@ -27,8 +36,8 @@ class Map {
     headerHTMLEl.textContent = 'Карта';
     let wrapImgHTMLEl = document.createElement('div');
     wrapImgHTMLEl.classList.add('wrapImgHTMLEl');
-    let mapImgHTMLEl = new Image();
-    mapImgHTMLEl.src = 'img/карта.jpg';
+    this.mapImgHTMLEl = new Image();
+    this.mapImgHTMLEl.src = this.pathEarthIMG;
 
     this.control = new Control([
       { class: 'btn', id: 'btnAddNewElement', textRu: '+ новый' },
@@ -44,9 +53,11 @@ class Map {
       { class: 'btn', id: 'btnMapUranus', textRu: 'Уран' },
       { class: 'btn', id: 'btnMapNeptune', textRu: 'Нептун' },
       { class: 'btn', id: 'btnMapPluto', textRu: 'Плутон' },
+      { class: 'btn', id: 'btnMapIncrease', textRu: '+' },
+      { class: 'btn', id: 'btnMapDecrease', textRu: '-' },
     ]);
 
-    wrapImgHTMLEl.appendChild(mapImgHTMLEl);
+    wrapImgHTMLEl.appendChild(this.mapImgHTMLEl);
 
     this.mapHTMLEl.appendChild(headerHTMLEl);
     this.mapHTMLEl.appendChild(this.control.createControlHTMLEl());
@@ -135,5 +146,12 @@ class Map {
 
   mapPluto() {
     alert('Отображается карта на Плутоне.');
+  }
+
+  mapIncrease() {
+    alert('Увеличиваем масштаб.')
+  }
+  mapDecrease() {
+    alert('Уменьшаем масштаб.')
   }
 }

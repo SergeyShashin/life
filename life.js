@@ -217,6 +217,12 @@ const life = {
       case 'btnMapPluto':
         this.map.mapPluto();
         break;
+      case 'btnMapIncrease':
+        this.map.mapIncrease();
+        break;
+      case 'btnMapDecrease':
+        this.map.mapDecrease();
+        break;
     }
   },
 
