@@ -29,15 +29,17 @@ class Map {
     mapImgHTMLEl.src = 'img/карта.jpg';
 
     this.control = new Control([
-      { class: 'btn', id: 'btnAddObject', textRu: 'Добавить' },
+      { class: 'btn', id: 'btnAddNewElement', textRu: '+ новый' },
+      { class: 'btn', id: 'btnAddExistElement', textRu: '+ существующиий' },
     ]);
 
     this.mapHTMLEl.appendChild(headerHTMLEl);
     this.mapHTMLEl.appendChild(this.control.createControlHTMLEl());
     this.mapHTMLEl.appendChild(mapImgHTMLEl);
-    
+
     return this.mapHTMLEl
   }
+
 
   /**
    * Включение/отключение видимости HTML элемента карты.
@@ -66,5 +68,13 @@ class Map {
   */
   getInputSizeTeamEl() {
     return this.mapHTMLEl;
+  }
+
+  addNewElement() {
+    alert('Добавление нового элемента. Варианты: здание, дерево ....');
+  }
+
+  addExistElement() {
+    alert('Существующие объекты. Варианты: здание, дерево ....');
   }
 }

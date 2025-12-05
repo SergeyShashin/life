@@ -172,6 +172,12 @@ const life = {
       case 'btnPlusDay':
         this.time.updateTime(e.target.dataset.dayvalue);
         break;
+      case 'btnAddNewElement':
+        this.map.addNewElement();
+        break;
+      case 'btnAddExistElement':
+        this.map.addExistElement();
+        break;
     }
   },
 
