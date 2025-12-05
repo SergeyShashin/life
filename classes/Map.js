@@ -10,10 +10,11 @@
  */
 class Map {
   mapHTMLEl;
-
+  control;
   constructor() {
 
   }
+
 
   /**
   * Создаёт HTML элемент карты.
@@ -26,8 +27,15 @@ class Map {
     headerHTMLEl.textContent = 'Карта';
     let mapImgHTMLEl = new Image();
     mapImgHTMLEl.src = 'img/карта.jpg';
+
+    this.control = new Control([
+      { class: 'btn', id: 'btnAddObject', textRu: 'Добавить' },
+    ]);
+
     this.mapHTMLEl.appendChild(headerHTMLEl);
+    this.mapHTMLEl.appendChild(this.control.createControlHTMLEl());
     this.mapHTMLEl.appendChild(mapImgHTMLEl);
+    
     return this.mapHTMLEl
   }
 
