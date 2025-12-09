@@ -234,7 +234,19 @@ td:hover {
   scrollbar-width: thin;
   border-radius: 50px;
 }
+
 .wrapImgHTMLEl img {
   display: block;
   height: 75vh;
+}
+
+.capsuleHTMLEl {
+  margin: 20px 0;
+  overflow-x: scroll;
+  scrollbar-color: beige lightseagreen;
+  scrollbar-width: thin;
+}
+
+.capsuleHTMLEl th {
+  vertical-align: top;
 }

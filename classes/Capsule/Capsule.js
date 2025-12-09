@@ -5,8 +5,9 @@ class Capsule {
   constructor() {
   }
 
-  createHTMLEl() {
+  createCapsuleHTMLEl() {
     this.capsuleHTMLEl = document.createElement('section');
+    this.capsuleHTMLEl.classList.add('capsuleHTMLEl');
 
     let headerCapsuleHTMLEl = document.createElement('h3');
     headerCapsuleHTMLEl.textContent = 'Капсула';
@@ -35,15 +36,55 @@ class Capsule {
     let thSizeEl = document.createElement('th');
     thSizeEl.textContent = 'размер';
 
+    //HTML элемент. Кнопка для добавления нового маршрута.
+    let thAddEl = document.createElement('th');
+    let btnEl = document.createElement('button');
+    btnEl.classList.add('btn');
+    btnEl.id = 'btnAddRoute';
+    btnEl.textContent = '+ маршрут';
+    thAddEl.appendChild(btnEl);
+
     trEl.appendChild(thDestinationEl);
     trEl.appendChild(thTimeDestinationEl);
     trEl.appendChild(thStartingPointEl);
     trEl.appendChild(thTimeStartingPointEl);
+    trEl.appendChild(thSizeEl);
+    trEl.appendChild(thAddEl);
 
-    this.tableHTMLEl.appendChild(trEl);
+    tableHTMLEl.appendChild(trEl);
+
     this.capsuleHTMLEl.appendChild(headerCapsuleHTMLEl);
     this.capsuleHTMLEl.appendChild(tableHTMLEl);
 
+    return this.capsuleHTMLEl;
+  }
+
+  /**
+   * Включение/отключение видимости HTML элемента capsule.
+   */
+  toggleCapsuleHTMLEl() {
+    this.capsuleHTMLEl.style.display = this.capsuleHTMLEl.style.display === 'none' ? 'block' : 'none';
+  }
+
+  /**
+  * Отключение видимости HTML элемента capsule. 
+  */
+  hideMapHTMLEl() {
+    this.capsuleHTMLEl.style.display = 'none';
+  }
+
+  /**
+  * Отключение видимости HTML элемента capsule. 
+  */
+  showMapHTMLEl() {
+    this.capsuleHTMLEl.style.display = 'block';
+  }
+
+  /**
+  * Возвращает HTML элемент карты.
+  * @returns {HTMLElement}
+  */
+  getCapsuleHTMLEl() {
     return this.capsuleHTMLEl;
   }
 }

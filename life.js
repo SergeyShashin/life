@@ -72,6 +72,11 @@ const life = {
     //Создаёт HTML элемент объекта  и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.map.createMapHTMLEl());
 
+    //Создаёт объект класса Map.
+    this.capsule = new Capsule();
+    //Создаёт HTML элемент объекта  и добавляет его в HTML элемент игры
+    this.containerEl.appendChild(this.capsule.createCapsuleHTMLEl());
+
     //Создает заданное количество людей для группы и добавляет их параметры в HTML элемент settings.
     this.createHumanForGroup()
   },
@@ -120,6 +125,7 @@ const life = {
         this.world.info.hideInfoEl();
         this.settings.hideSettingsEl();
         this.map.hideMapHTMLEl();
+        this.capsule.hideMapHTMLEl();
 
         for (let i = 1; i < this.settings.getSizeTeam() + 2; i++) {
           this.containerEl.appendChild(new Days(i, [
@@ -226,6 +232,9 @@ const life = {
         break;
       case 'btnMapDecrease':
         this.map.mapDecrease();
+        break;
+      case 'btnAddRoute':
+        alert('Добавление нового маршрута.');
         break;
     }
   },
