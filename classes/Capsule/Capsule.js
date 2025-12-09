@@ -88,7 +88,7 @@ class Capsule {
 
         if (col === 1) {
           inputForTdEl.type = 'time';
-          inputForTdEl.valu = '07:00';
+          inputForTdEl.value = '08:00';
         }
 
         if (col === 4) {
