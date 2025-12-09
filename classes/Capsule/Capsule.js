@@ -40,6 +40,10 @@ class Capsule {
     let thSizeEl = document.createElement('th');
     thSizeEl.textContent = 'размер';
 
+    //HTML элемент. Размер капсулы. Выбирается. 1-12
+    let thRepeatEl = document.createElement('th');
+    thRepeatEl.textContent = 'переодичность';
+
     //HTML элемент. Кнопка для добавления нового маршрута.
     let thAddEl = document.createElement('th');
     let btnEl = document.createElement('button');
@@ -53,6 +57,7 @@ class Capsule {
     trEl.appendChild(thStartingPointEl);
     trEl.appendChild(thTimeStartingPointEl);
     trEl.appendChild(thSizeEl);
+    trEl.appendChild(thRepeatEl);
     trEl.appendChild(thAddEl);
 
     this.routesTableHTMLEl.appendChild(trEl);
@@ -80,6 +85,18 @@ class Capsule {
       } else {
         let inputForTdEl = document.createElement('input');
         tdEl.appendChild(inputForTdEl);
+
+        if (col === 1) {
+          inputForTdEl.type = 'time';
+          inputForTdEl.valu = '07:00';
+        }
+
+        if (col === 4) {
+          inputForTdEl.type = 'number';
+          inputForTdEl.value = 4;
+          inputForTdEl.min = 1;
+          inputForTdEl.max = 12;
+        }
       }
 
       trEl.appendChild(tdEl);

@@ -240,7 +240,7 @@ td:hover {
 
 .capsuleHTMLEl {
   margin: 20px 0;
-  height: 50vh;
+  height: 30vh;
   overflow-x: scroll;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
