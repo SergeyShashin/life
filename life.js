@@ -43,6 +43,7 @@ const life = {
       { class: 'btn', id: 'btnSettings', textRu: 'Настройки' },
       { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
       { class: 'btn', id: 'btnChange', textRu: 'Менялка' },
+      { class: 'btn', id: 'btnCapsule', textRu: 'Капсула' },
       { class: 'btn', id: 'btnTasksHumanityUp4050', textRu: 'Задачи до 4050' },
     ]);
     //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
@@ -177,6 +178,9 @@ const life = {
         break;
       case 'btnChange':
         alert('Будет менялка. Лист "экономика_потребление" из файла "возможно будет лучше.xlsx".');
+        break;
+      case 'btnCapsule':
+        alert('Установка расписания для перемещения на капсулах.');
         break;
       case 'btnTasksHumanityUp4050':
         alert('Добавление, удаление, редактирование, просмотр,  голосование, сделаю.');
