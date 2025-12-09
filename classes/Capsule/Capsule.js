@@ -31,7 +31,7 @@ class Capsule {
     let thTimeStartingPointEl = document.createElement('th');
     thTimeStartingPointEl.textContent = 'время в точке отправления';
 
-    //HTML элемент. Размер капсулы. Выбирается. 1-12 
+    //HTML элемент. Размер капсулы. Выбирается. 1-12
     let thSizeEl = document.createElement('th');
     thSizeEl.textContent = 'размер';
 
@@ -40,8 +40,10 @@ class Capsule {
     trEl.appendChild(thStartingPointEl);
     trEl.appendChild(thTimeStartingPointEl);
 
+    this.tableHTMLEl.appendChild(trEl);
     this.capsuleHTMLEl.appendChild(headerCapsuleHTMLEl);
     this.capsuleHTMLEl.appendChild(tableHTMLEl);
+
     return this.capsuleHTMLEl;
   }
 }
