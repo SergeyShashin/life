@@ -215,11 +215,8 @@ section {}
   scrollbar-width: thin;
 }
 
+th,
 th {
-  padding: 5px;
-}
-
-td {
   text-align: left;
   padding: 5px;
 }
@@ -233,7 +230,7 @@ td:hover {
   overflow-x: scroll;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
 .wrapImgHTMLEl img {
@@ -251,4 +248,12 @@ td:hover {
 
 .capsuleHTMLEl th {
   vertical-align: top;
+}
+
+
+
+#btnApproveRoute,
+#btnDeleteRoute {
+  width: 50px;
+  height: 25px;
 }

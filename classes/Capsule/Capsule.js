@@ -4,7 +4,7 @@ class Capsule {
   capsuleHTMLEl;
   routesTableHTMLEl;
   counterRoutes = 0;
-  routes = [];
+  routes = {};
 
   constructor() {
   }
@@ -65,20 +65,31 @@ class Capsule {
 
   addRouteHTMLEl() {
     let trEl = document.createElement('tr');
-    trEl.dataset.idRoutes = `route${this.counterRoutes}`;
+    trEl.dataset.idRoute = `route${this.counterRoutes}`;
     let quantityColums = this.routesTableHTMLEl.querySelectorAll('th').length;
 
     for (let col = 0; col < quantityColums; col++) {
       let tdEl = document.createElement('td');
-      let inputForTdEl = document.createElement('input');
 
-      tdEl.appendChild(inputForTdEl);
+      if (col === quantityColums - 1) {
+        let buttons = new Control([
+          { class: 'btn', id: 'btnApproveRoute', textRu: 'ага' },
+          { class: 'btn', id: 'btnDeleteRoute', textRu: '-' },
+        ]);
+        tdEl.appendChild(buttons.createControlHTMLEl());
+      } else {
+        let inputForTdEl = document.createElement('input');
+        tdEl.appendChild(inputForTdEl);
+      }
+
       trEl.appendChild(tdEl);
     }
 
-    this.counterRoutes++;
 
     this.routesTableHTMLEl.appendChild(trEl);
+    this.routes[`route${this.counterRoutes}`] = trEl;
+
+    this.counterRoutes++;
   }
 
   /**
@@ -108,5 +119,11 @@ class Capsule {
   */
   getCapsuleHTMLEl() {
     return this.capsuleHTMLEl;
+  }
+
+  removeRoute(idRoute) {
+    console.log(idRoute);
+    console.dir(this.routes[idRoute]).remove();
+    // this.renderRoutes();
   }
 }

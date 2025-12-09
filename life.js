@@ -234,8 +234,13 @@ const life = {
         this.capsule.toggleCapsuleHTMLEl();
         break;
       case 'btnAddRoute':
-        alert('Добавление нового маршрута.');
         this.capsule.addRouteHTMLEl();
+        break;
+      case 'btnApproveRoute':
+        alert('Сделать обновление маршрутов.');
+        break;
+      case 'btnDeleteRoute':
+        this.capsule.removeRoute(e.target.parentElement.parentElement.parentElement.dataset.idRoute);
         break;
     }
   },
