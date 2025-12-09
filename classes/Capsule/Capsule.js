@@ -69,19 +69,19 @@ class Capsule {
   /**
   * Отключение видимости HTML элемента capsule. 
   */
-  hideMapHTMLEl() {
+  hideCapsuleHTMLEl() {
     this.capsuleHTMLEl.style.display = 'none';
   }
 
   /**
   * Отключение видимости HTML элемента capsule. 
   */
-  showMapHTMLEl() {
+  showCapsuleHTMLEl() {
     this.capsuleHTMLEl.style.display = 'block';
   }
 
   /**
-  * Возвращает HTML элемент карты.
+  * Возвращает HTML элемент capsule.
   * @returns {HTMLElement}
   */
   getCapsuleHTMLEl() {

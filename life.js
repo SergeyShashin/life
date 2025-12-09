@@ -125,7 +125,7 @@ const life = {
         this.world.info.hideInfoEl();
         this.settings.hideSettingsEl();
         this.map.hideMapHTMLEl();
-        this.capsule.hideMapHTMLEl();
+        this.capsule.hideCapsuleHTMLEl();
 
         for (let i = 1; i < this.settings.getSizeTeam() + 2; i++) {
           this.containerEl.appendChild(new Days(i, [
@@ -185,9 +185,6 @@ const life = {
       case 'btnChange':
         alert('Будет менялка. Лист "экономика_потребление" из файла "возможно будет лучше.xlsx".');
         break;
-      case 'btnCapsule':
-        alert('Установка расписания для перемещения на капсулах.');
-        break;
       case 'btnTasksHumanityUp4050':
         alert('Добавление, удаление, редактирование, просмотр,  голосование, сделаю.');
         break;
@@ -232,6 +229,9 @@ const life = {
         break;
       case 'btnMapDecrease':
         this.map.mapDecrease();
+        break;
+      case 'btnCapsule':
+        this.capsule.toggleCapsuleHTMLEl();
         break;
       case 'btnAddRoute':
         alert('Добавление нового маршрута.');
