@@ -235,6 +235,7 @@ const life = {
         break;
       case 'btnAddRoute':
         alert('Добавление нового маршрута.');
+        this.capsule.addRouteHTMLEl();
         break;
     }
   },

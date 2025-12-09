@@ -2,6 +2,10 @@
 
 class Capsule {
   capsuleHTMLEl;
+  routesTableHTMLEl;
+  counterRoutes = 0;
+  routes = [];
+
   constructor() {
   }
 
@@ -12,7 +16,7 @@ class Capsule {
     let headerCapsuleHTMLEl = document.createElement('h3');
     headerCapsuleHTMLEl.textContent = 'Капсула';
 
-    let tableHTMLEl = document.createElement('table');
+    this.routesTableHTMLEl = document.createElement('table');
 
     let trEl = document.createElement('tr');
 
@@ -51,12 +55,30 @@ class Capsule {
     trEl.appendChild(thSizeEl);
     trEl.appendChild(thAddEl);
 
-    tableHTMLEl.appendChild(trEl);
+    this.routesTableHTMLEl.appendChild(trEl);
 
     this.capsuleHTMLEl.appendChild(headerCapsuleHTMLEl);
-    this.capsuleHTMLEl.appendChild(tableHTMLEl);
+    this.capsuleHTMLEl.appendChild(this.routesTableHTMLEl);
 
     return this.capsuleHTMLEl;
+  }
+
+  addRouteHTMLEl() {
+    let trEl = document.createElement('tr');
+    trEl.dataset.idRoutes = `route${this.counterRoutes}`;
+    let quantityColums = this.routesTableHTMLEl.querySelectorAll('th').length;
+
+    for (let col = 0; col < quantityColums; col++) {
+      let tdEl = document.createElement('td');
+      let inputForTdEl = document.createElement('input');
+
+      tdEl.appendChild(inputForTdEl);
+      trEl.appendChild(tdEl);
+    }
+
+    this.counterRoutes++;
+
+    this.routesTableHTMLEl.appendChild(trEl);
   }
 
   /**

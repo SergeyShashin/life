@@ -41,6 +41,7 @@ time,
 }
 
 .btn:hover,
+th,
 td {
   border: 1px solid beige;
 }
@@ -242,6 +243,7 @@ td:hover {
 
 .capsuleHTMLEl {
   margin: 20px 0;
+  height: 50vh;
   overflow-x: scroll;
   scrollbar-color: beige lightseagreen;
   scrollbar-width: thin;
