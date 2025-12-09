@@ -125,6 +125,5 @@ class Capsule {
     console.log(idRoute);
     let route = this.routes[idRoute];
     route.remove();
-    // this.renderRoutes();
   }
 }
