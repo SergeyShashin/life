@@ -1093,9 +1093,8 @@ class Human {
     headerTypesFamilyHTMLEl.textContent = 'семья';
     this.inputTypesFamilyHTMLEl = document.createElement('input');
     this.inputTypesFamilyHTMLEl.name = 'inputTypesFamily';
-    this.inputTypesFamilyHTMLEl.setAttribute('list', 'datalistTypesFamilyHTMLEl')
+    this.inputTypesFamilyHTMLEl.setAttribute('list', 'datalistTypesFamilyHTMLEl');
     this.inputTypesFamilyHTMLEl.type = 'search';
-
 
     this.typesFamilyHTMLEl.appendChild(headerTypesFamilyHTMLEl);
     this.typesFamilyHTMLEl.appendChild(this.inputTypesFamilyHTMLEl);
