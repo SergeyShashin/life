@@ -81,6 +81,8 @@ class Capsule {
     this.capsuleHTMLEl.appendChild(headerCapsuleHTMLEl);
     this.capsuleHTMLEl.appendChild(this.routesTableHTMLEl);
 
+    this.capsuleHTMLEl.appendChild(this.createDatalistCapsuleStartingPointAndDestinationHTMLEl());
+
     return this.capsuleHTMLEl;
   }
 
@@ -102,17 +104,25 @@ class Capsule {
         let inputForTdEl = document.createElement('input');
         tdEl.appendChild(inputForTdEl);
 
-        if (col === 1) {
-          inputForTdEl.type = 'time';
-          inputForTdEl.value = '08:00';
+        switch (col) {
+          case 1:
+            inputForTdEl.type = 'time';
+            inputForTdEl.value = '08:00';
+            break;
+          case 4:
+            inputForTdEl.type = 'number';
+            inputForTdEl.value = 4;
+            inputForTdEl.min = 1;
+            inputForTdEl.max = 12;
+            break;
+          case 0:
+          case 2:
+            inputForTdEl.setAttribute('list', 'datalistCapsuleStartingPointAndDestinationHTMLEl');
+            break;
+
         }
 
-        if (col === 4) {
-          inputForTdEl.type = 'number';
-          inputForTdEl.value = 4;
-          inputForTdEl.min = 1;
-          inputForTdEl.max = 12;
-        }
+
       }
 
       trEl.appendChild(tdEl);
@@ -155,8 +165,25 @@ class Capsule {
   }
 
   removeRoute(idRoute) {
-    console.log(idRoute);
     let route = this.routes[idRoute];
     route.remove();
   }
+
+  /**
+  * Создаёт datalist для выбора для выбора пунктов назначения/отправления в инпутах.
+  * 
+  * @returns {HTMLElement} datalist для выбора для выбора пунктов назначения/отправления в инпутах.
+  */
+  createDatalistCapsuleStartingPointAndDestinationHTMLEl() {
+    this.datalistCapsuleStartingPointAndDestinationHTMLEl = document.createElement('datalist');
+    this.datalistCapsuleStartingPointAndDestinationHTMLEl.id = 'datalistCapsuleStartingPointAndDestinationHTMLEl';
+
+    for (let point of this.coordinates) {
+      let optionEl = document.createElement('option');
+      optionEl.value = point;
+      this.datalistCapsuleStartingPointAndDestinationHTMLEl.appendChild(optionEl);
+    }
+
+    return this.datalistCapsuleStartingPointAndDestinationHTMLEl;
+  };
 }
