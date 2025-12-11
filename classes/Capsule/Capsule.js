@@ -118,6 +118,7 @@ class Capsule {
           case 0:
           case 2:
             inputForTdEl.setAttribute('list', 'datalistCapsuleStartingPointAndDestinationHTMLEl');
+            inputForTdEl.type='search';
             break;
 
         }
