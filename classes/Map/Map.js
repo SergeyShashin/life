@@ -11,10 +11,47 @@
 class Map {
   //HTML элемент карты
   mapHTMLEl;
+
   //Кнопки
   control;
+
   //HTML элемент изображения карты
   mapImgHTMLEl;
+
+  settingsMap = {
+    minValueRowsCount: -90, //latitude 
+    maxValueRowsCount: 90,  //latitude
+    minValueColsCount: -180, //longitude 
+    maxValueСolsCount: -180,  //longitude
+    //возможно на будущее, масштаб scale:
+    //возможно на будущее, масштаб speed:
+
+    getMinValueRowsCount() {
+      return this.minValueRowsCount;
+    },
+
+    getMaxValueRowsCount() {
+      return this.maxValueRowsCount;
+    },
+
+    getMinValueColsCount() {
+      return this.minValueColsCount;
+    },
+
+    getMaxValueColsCount() {
+      return this.maxValueColsCount;
+    }
+  };
+
+  //HTMl элмента карты в таблице. Для добавления/удаления объектов (Человек1, человек2..., человекN. Остальные объекты реального мира.). 
+  //Перемещения объектов по карте и т.д.
+  tableHTMLEl;
+  //Все ячейки tableHTMLEl
+  cels = {};
+  //Задейстованные ячейки tableHTMLEl
+  usedCels = [];
+
+
   pathEarthIMG = [
     'img/map/карта.jpg', 'img/map/карта19.jpg', 'img/map/карта18.jpg', 'img/map/карта17.jpg', 'img/map/карта16.jpg', 'img/map/карта15.jpg',
     'img/map/карта14.jpg', 'img/map/карта13.jpg', 'img/map/карта12.jpg', 'img/map/карта11.jpg', 'img/map/карта10.jpg', 'img/map/карта9.jpg',
@@ -138,13 +175,37 @@ class Map {
       { class: 'btn', id: 'btnMapDecrease', textRu: '-' },
     ]);
 
+
     wrapImgHTMLEl.appendChild(this.mapImgHTMLEl);
 
     this.mapHTMLEl.appendChild(headerHTMLEl);
     this.mapHTMLEl.appendChild(this.control.createControlHTMLEl());
     this.mapHTMLEl.appendChild(wrapImgHTMLEl);
+    this.mapHTMLEl.appendChild(this.createTableHTMLEl());
 
     return this.mapHTMLEl
+  }
+
+  createTableHTMLEl() {
+
+    this.tableHTMLEl = document.createElement('table');
+
+    for (let row = this.settingsMap.getMinValueRowsCount(); row < this.settingsMap.getMaxValueRowsCount(); row++) {
+      let trHTMLEl = document.createElement('tr');
+      for (let col = this.settingsMap.getMinValueColsCount(); col < this.settingsMap.getMaxValueColsCount(); col++) {
+        let tdHTMLEl = document.createElement('td');
+        console.log(tdHTMLEl);
+        trHTMLEl.appendChild(tdHTMLEl);
+        this.cels[`latitude${row}longitude${col}`] = tdHTMLEl;
+      }
+
+      this.tableHTMLEl.appendChild(trHTMLEl);
+    }
+
+    console.log(this.cels);
+
+    return this.tableHTMLEl;
+
   }
 
 
