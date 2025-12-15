@@ -22,7 +22,7 @@ class Map {
     minValueRowsCount: -90, //latitude 
     maxValueRowsCount: 90,  //latitude
     minValueColsCount: -180, //longitude 
-    maxValueСolsCount: -180,  //longitude
+    maxValueСolsCount: 180,  //longitude
     //возможно на будущее, масштаб scale:
     //возможно на будущее, масштаб speed:
 
@@ -39,7 +39,7 @@ class Map {
     },
 
     getMaxValueColsCount() {
-      return this.maxValueColsCount;
+      return this.maxValueСolsCount;
     }
   };
 
@@ -188,19 +188,21 @@ class Map {
 
   createTableHTMLEl() {
 
-    this.tableHTMLEl = document.createElement('table');
+    this.tableHTMLEl = document.createElement('section');
+    let tableEl = document.createElement('table');
+    this.tableHTMLEl.id = 'tableHTMLElInMapHTMLEl';
 
-    for (let row = this.settingsMap.getMinValueRowsCount(); row < this.settingsMap.getMaxValueRowsCount(); row++) {
+    for (let row = this.settingsMap.getMinValueRowsCount(); row < this.settingsMap.getMaxValueRowsCount() + 1; row++) {
       let trHTMLEl = document.createElement('tr');
-      for (let col = this.settingsMap.getMinValueColsCount(); col < this.settingsMap.getMaxValueColsCount(); col++) {
+      for (let col = this.settingsMap.getMinValueColsCount(); col < this.settingsMap.getMaxValueColsCount() + 1; col++) {
         let tdHTMLEl = document.createElement('td');
-        console.log(tdHTMLEl);
         trHTMLEl.appendChild(tdHTMLEl);
-        this.cels[`latitude${row}longitude${col}`] = tdHTMLEl;
+        this.cels[`latitude${row}_longitude${col}`] = tdHTMLEl;
       }
-
-      this.tableHTMLEl.appendChild(trHTMLEl);
+      tableEl.appendChild(trHTMLEl);
     }
+
+    this.tableHTMLEl.appendChild(tableEl);
 
     console.log(this.cels);
 

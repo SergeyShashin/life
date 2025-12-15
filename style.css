@@ -255,3 +255,20 @@ td:hover {
   width: 50px;
   height: 25px;
 }
+
+#tableHTMLElInMapHTMLEl {
+  margin: 20px 0;
+  height: 50vh;
+  overflow-x: scroll;
+  scrollbar-color: beige lightseagreen;
+  scrollbar-width: thin;
+}
+
+#tableHTMLElInMapHTMLEl table {
+  width: 3700px;
+}
+
+#tableHTMLElInMapHTMLEl td {
+  width: 10px;
+  height: 10px;
+}
