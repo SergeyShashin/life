@@ -137,8 +137,6 @@ time {
   text-transform: uppercase;
 }
 
-
-
 .btn:hover {
   cursor: pointer;
 }
@@ -159,7 +157,7 @@ td {
   margin: 20px 0;
 }
 
-.inputGorup {}
+/* .inputGorup {} */
 
 .headEl {
   margin: 20px 0;
@@ -192,7 +190,7 @@ td {
 }
 
 
-#btnStartGame {}
+/* #btnStartGame {}
 
 #btnAutomaticControlOrHandControl {}
 
@@ -204,7 +202,7 @@ td {
 
 #control {}
 
-section {}
+section {} */
 
 
 .dayFromClassDayHTMLEl {
@@ -264,11 +262,11 @@ td:hover {
   scrollbar-width: thin;
 }
 
-#tableHTMLElInMapHTMLEl table {
-}
+/* #tableHTMLElInMapHTMLEl table {
+} */
 
-#tableHTMLElInMapHTMLEl td {
-}
+/* #tableHTMLElInMapHTMLEl td {
+} */
 
 /* земля */
 .land {
