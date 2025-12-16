@@ -814,8 +814,8 @@ class Human {
   сoordinatesStartingPointHTMLEl;
   //HTML элемент координат старта человека
   inputCoordinatesStartingPointHTMLEl;
-  //координаты старта человека по умолчанию
-  coordinatesStartingPointDefault = '54.61731283340977, 39.68856205239361';
+  //координаты старта человека по умолчанию.
+  coordinatesStartingPointDefault = '54, 39';
 
   /**
    * Широта. Минимальное значение -90. Максимальное значение 90.   54.61731283340977
@@ -1110,7 +1110,7 @@ class Human {
    * Cоздаёт HTML элемент для ввода имени.
    * @returns {HTMLElement} HTML элемент для ввода имени.
    */
-  createFirtNameHTMLEl() {
+  createFirstNameHTMLEl() {
     this.firstNameHTMLEl = document.createElement('section');
     this.firstNameHTMLEl.classList.add('inputGroup');
     let headerFirstNameHTMLEl = document.createElement('h4');
