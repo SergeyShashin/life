@@ -779,7 +779,22 @@ class Human {
           }
         },
       ]
-    }
+    },
+
+    //рост
+    height: null,
+
+    /**
+       * Масса.
+       *  @type {number}
+       */
+    weightM: null,
+
+    /**
+     * Вес.
+     *  @type {number}
+     */
+    weightP: null,
 
   };
 
