@@ -265,10 +265,17 @@ td:hover {
 }
 
 #tableHTMLElInMapHTMLEl table {
-  width: 3700px;
 }
 
 #tableHTMLElInMapHTMLEl td {
-  width: 10px;
-  height: 10px;
+}
+
+/* земля */
+.land {
+  background: brown;
+}
+
+/* вода */
+.water {
+  background: lightblue;
 }

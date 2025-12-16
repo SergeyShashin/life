@@ -192,30 +192,36 @@ class Map {
     let tableEl = document.createElement('table');
     this.tableHTMLEl.id = 'tableHTMLElInMapHTMLEl';
 
-    for (let row = this.settingsMap.getMinValueRowsCount(); row < this.settingsMap.getMaxValueRowsCount() + 1; row++) {
+    for (let row = this.settingsMap.getMaxValueRowsCount(); row > this.settingsMap.getMinValueRowsCount() - 1; row--) {
       let trHTMLEl = document.createElement('tr');
-      for (let col = this.settingsMap.getMinValueColsCount(); col < this.settingsMap.getMaxValueColsCount() + 1; col++) {
-        let tdHTMLEl = document.createElement('td');
-        trHTMLEl.appendChild(tdHTMLEl);
-        this.cels[`latitude${row}_longitude${col}`] = tdHTMLEl;
-        this.createAddTd(row, col);
-      }
-      tableEl.appendChild(trHTMLEl);
-    }
 
-    createAddTd(row, col){
-      let tdHTMLEl = document.createElement('td');
-        trHTMLEl.appendChild(tdHTMLEl);
-        this.cels[`latitude${row}_longitude${col}`] = tdHTMLEl;
-        this.createAddTd(row, col);
+      for (let col = this.settingsMap.getMinValueColsCount(); col < 1; col++) {
+        trHTMLEl.appendChild(this.createAddTd(row, col));
+      }
+
+      for (let col = 1; col < this.settingsMap.getMaxValueColsCount() + 1; col++) {
+        trHTMLEl.appendChild(this.createAddTd(row, col));
+      }
+
+      tableEl.appendChild(trHTMLEl);
     }
 
     this.tableHTMLEl.appendChild(tableEl);
 
-    console.log(this.cels);
+    console.log(this.cels[`latitude${0}_longitude${0}`]);
+    this.cels[`latitude${0}_longitude${0}`].classList.add('water');
+    this.cels[`latitude${0}_longitude${0}`].textContent = 'latitude${0}_longitude${0}';
+    this.cels[`latitude${1}_longitude${1}`].classList.add('land');
 
     return this.tableHTMLEl;
 
+  }
+
+  createAddTd(row, col) {
+    let tdEl = document.createElement('td');
+    tdEl.dataset.coordinates = `latitude${row}_longitude${col}`;
+    this.cels[`latitude${row}_longitude${col}`] = tdEl;
+    return tdEl
   }
 
 
