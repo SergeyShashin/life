@@ -198,8 +198,16 @@ class Map {
         let tdHTMLEl = document.createElement('td');
         trHTMLEl.appendChild(tdHTMLEl);
         this.cels[`latitude${row}_longitude${col}`] = tdHTMLEl;
+        this.createAddTd(row, col);
       }
       tableEl.appendChild(trHTMLEl);
+    }
+
+    createAddTd(row, col){
+      let tdHTMLEl = document.createElement('td');
+        trHTMLEl.appendChild(tdHTMLEl);
+        this.cels[`latitude${row}_longitude${col}`] = tdHTMLEl;
+        this.createAddTd(row, col);
     }
 
     this.tableHTMLEl.appendChild(tableEl);
