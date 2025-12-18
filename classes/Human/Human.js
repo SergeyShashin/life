@@ -934,8 +934,8 @@ class Human {
   /**
    * Конструктор базового класса.
    * @param {Object} dateBirth Дата рождения. { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 }
-   * @param {string} latitude '00.000000'
-   * @param {string} longitude '00.000000'
+   * @param {number} latitude '00.000000' от -90 до 90
+   * @param {number} longitude '00.000000' от -180 до 180
    * @param {String} firstName Имя
    * @param {String} surname Фамилия
    * @param {String} patronymic Отчество
@@ -1164,8 +1164,14 @@ class Human {
     let headerCoordinatesStartingPointHTMLEl = document.createElement('h4');
     headerCoordinatesStartingPointHTMLEl.textContent = 'координаты места старта';
     this.inputLatitudeHTMLEl = document.createElement('input');
+    this.inputLatitudeHTMLEl.type = 'number';
+    this.inputLatitudeHTMLEl.min = -90;
+    this.inputLatitudeHTMLEl.max = 90;
     this.inputLatitudeHTMLEl.name = `inputLatitude_${this.idHuman}`;
     this.inputLongitudeHTMLEl = document.createElement('input');
+    this.inputLongitudeHTMLEl.type = 'number';
+    this.inputLongitudeHTMLEl.min = -180;
+    this.inputLongitudeHTMLEl.max = 180;
     this.inputLongitudeHTMLEl.name = `inputLongitude_${this.idHuman}`;
 
     this.сoordinatesStartingPointHTMLEl.appendChild(headerCoordinatesStartingPointHTMLEl);
