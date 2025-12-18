@@ -160,7 +160,6 @@ class Map {
 
     this.tableHTMLEl.appendChild(tableEl);
 
-    console.log(this.cels[`latitude${0}_longitude${0}`]);
     this.cels[`latitude${0}_longitude${0}`].classList.add('water');
     this.cels[`latitude${0}_longitude${0}`].textContent = 'latitude${0}_longitude${0}';
     this.cels[`latitude${1}_longitude${1}`].classList.add('land');
@@ -212,6 +211,7 @@ class Map {
    */
   addOnMap(object) {
     this.objectsMap.push(object);
+    console.log(this.objectsMap);
   }
 
   /**
