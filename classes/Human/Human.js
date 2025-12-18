@@ -809,14 +809,12 @@ class Human {
   //дата рождения
   dateBirth;
 
-  //Координаты старта человека
-  coordinatesStartingPoint;
   //HTML элементы координат старта человека
   сoordinatesStartingPointHTMLEl;
-  //HTML элемент координат старта человека
-  inputCoordinatesStartingPointHTMLEl;
-  //координаты старта человека по умолчанию.
-  coordinatesStartingPointDefault = '54, 39';
+  //HTML элемент с широтой
+  inputLatitudeHTMLEl;
+  //HTML элемент с долготой
+  inputLongitudeHTMLEl;
 
 
   /**
@@ -936,15 +934,17 @@ class Human {
   /**
    * Конструктор базового класса.
    * @param {Object} dateBirth Дата рождения. { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 }
-   * @param {Array} coordinatesBirth '[00.000000, 00.000000]'
+   * @param {string} latitude '00.000000'
+   * @param {string} longitude '00.000000'
    * @param {String} firstName Имя
    * @param {String} surname Фамилия
    * @param {String} patronymic Отчество
    * @param {Number} idHuman id
    */
-  constructor(dateBirth, coordinatesStartingPoint, firstName, surname, patronymic, idHuman) {
+  constructor(dateBirth, latitude, longitude, firstName, surname, patronymic, idHuman) {
     this.dateBirth = dateBirth;
-    this.coordinatesBirth = coordinatesStartingPoint;
+    this.latitude = latitude;
+    this.longitude = longitude;
     this.firstName = firstName;
     this.surname = surname;
     this.patronymic = patronymic;
@@ -977,10 +977,6 @@ class Human {
 
   getDateBirth() {
     return this.dateBirth;
-  }
-
-  getCoordinatesBirth() {
-    return this.coordinatesStartingPoint;
   }
 
   getLatitude() {
@@ -1159,7 +1155,7 @@ class Human {
 
   /**
    * Cоздаёт HTML элемент для выбора координат места старта.
-   * Пример 54.61731283340977, 39.68856205239361 (Рязань, ул. Островского 111).
+   * Пример широта 54.61731283340977, долгота 39.68856205239361 (Рязань, ул. Островского 111).
    * @returns {HTMLElement} HTML элемент для выбора координат места старта.
    */
   createCoordinatesStartingPointHTMLEl() {
@@ -1167,12 +1163,14 @@ class Human {
     this.сoordinatesStartingPointHTMLEl.classList.add('inputGroup');
     let headerCoordinatesStartingPointHTMLEl = document.createElement('h4');
     headerCoordinatesStartingPointHTMLEl.textContent = 'координаты места старта';
-    this.inputCoordinatesStartingPointHTMLEl = document.createElement('input');
-    this.inputCoordinatesStartingPointHTMLEl.name = 'inputCoordinatesStartingPointHTMLEl';
-    this.inputCoordinatesStartingPointHTMLEl.value = this.coordinatesStartingPointDefault;
+    this.inputLatitudeHTMLEl = document.createElement('input');
+    this.inputLatitudeHTMLEl.name = 'inputLatitude';
+    this.inputLongitudeHTMLEl = document.createElement('input');
+    this.inputLongitudeHTMLEl.name = 'inputLongitude';
 
     this.сoordinatesStartingPointHTMLEl.appendChild(headerCoordinatesStartingPointHTMLEl);
-    this.сoordinatesStartingPointHTMLEl.appendChild(this.inputCoordinatesStartingPointHTMLEl);
+    this.сoordinatesStartingPointHTMLEl.appendChild(this.inputLatitudeHTMLEl);
+    this.сoordinatesStartingPointHTMLEl.appendChild(this.inputLongitudeHTMLEl);
 
     return this.сoordinatesStartingPointHTMLEl;
   }

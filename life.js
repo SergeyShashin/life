@@ -88,7 +88,7 @@ const life = {
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
-        '[00.000000, 00.000000]', '', '', '', i);
+        '00.000000', '00.000000', '', '', '', i);
       let headerHTMLEl = document.createElement('h3');
       headerHTMLEl.textContent = `${i + 1} человек`;
 
