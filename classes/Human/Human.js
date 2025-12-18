@@ -1164,9 +1164,9 @@ class Human {
     let headerCoordinatesStartingPointHTMLEl = document.createElement('h4');
     headerCoordinatesStartingPointHTMLEl.textContent = 'координаты места старта';
     this.inputLatitudeHTMLEl = document.createElement('input');
-    this.inputLatitudeHTMLEl.name = 'inputLatitude';
+    this.inputLatitudeHTMLEl.name = `inputLatitude_${this.idHuman}`;
     this.inputLongitudeHTMLEl = document.createElement('input');
-    this.inputLongitudeHTMLEl.name = 'inputLongitude';
+    this.inputLongitudeHTMLEl.name = `inputLongitude_${this.idHuman}`;
 
     this.сoordinatesStartingPointHTMLEl.appendChild(headerCoordinatesStartingPointHTMLEl);
     this.сoordinatesStartingPointHTMLEl.appendChild(this.inputLatitudeHTMLEl);
