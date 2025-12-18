@@ -93,8 +93,6 @@ const life = {
       headerHTMLEl.textContent = `${i + 1} человек`;
 
       let humanHTMLEl = human.createHumanHTMLEl();
-      //добавляем объект человека на карту
-      this.map.addOnMap({id: human.getIDHuman()});
 
       humanHTMLEl.appendChild(human.createFirstNameHTMLEl());
       humanHTMLEl.appendChild(human.createNumberDayLifeHTMLEl());
@@ -106,6 +104,10 @@ const life = {
 
       this.settings.getSettingsEl().appendChild(headerHTMLEl);
       this.settings.getSettingsEl().appendChild(humanHTMLEl);
+
+      this.map.addOnMap(
+        { name: 'human', id: human.getIDHuman(), latitude: human.getLatitude(), longitute: human.getLongitude() }
+      );
     }
 
   },

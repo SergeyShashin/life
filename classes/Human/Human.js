@@ -808,6 +808,7 @@ class Human {
   siblings = [];
   //дата рождения
   dateBirth;
+
   //Координаты старта человека
   coordinatesStartingPoint;
   //HTML элементы координат старта человека
@@ -816,6 +817,7 @@ class Human {
   inputCoordinatesStartingPointHTMLEl;
   //координаты старта человека по умолчанию.
   coordinatesStartingPointDefault = '54, 39';
+
 
   /**
    * Широта. Минимальное значение -90. Максимальное значение 90.   54.61731283340977
@@ -979,6 +981,14 @@ class Human {
 
   getCoordinatesBirth() {
     return this.coordinatesStartingPoint;
+  }
+
+  getLatitude() {
+    return this.latitude;
+  }
+
+  getLongitude() {
+    return this.longitude;
   }
 
   setFirstName(firstName) {
