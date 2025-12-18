@@ -94,7 +94,7 @@ const life = {
 
       let humanHTMLEl = human.createHumanHTMLEl();
       //добавляем объект человека на карту
-      this.map.addOnMap(human);
+      this.map.addOnMap({id: human.getIDHuman()});
 
       humanHTMLEl.appendChild(human.createFirstNameHTMLEl());
       humanHTMLEl.appendChild(human.createNumberDayLifeHTMLEl());
