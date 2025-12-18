@@ -157,6 +157,12 @@ td {
   margin: 20px 0;
 }
 
+/* класс на карте */
+.human {
+  background: linear-gradient(brown, lightseagreen);
+  color: crimson;
+}
+
 /* .inputGorup {} */
 
 .headEl {
