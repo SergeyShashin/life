@@ -1162,7 +1162,7 @@ class Human {
     this.сoordinatesStartingPointHTMLEl = document.createElement('section');
     this.сoordinatesStartingPointHTMLEl.classList.add('inputGroup');
     let headerCoordinatesStartingPointHTMLEl = document.createElement('h4');
-    headerCoordinatesStartingPointHTMLEl.textContent = 'координаты места старта';
+    headerCoordinatesStartingPointHTMLEl.textContent = 'координаты старта';
     this.inputLatitudeHTMLEl = document.createElement('input');
     this.inputLatitudeHTMLEl.type = 'number';
     this.inputLatitudeHTMLEl.min = -90;

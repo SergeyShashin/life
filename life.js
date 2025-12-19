@@ -88,7 +88,7 @@ const life = {
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
-        0.000000, 0.000000, '', '', '', i + 1);
+        0.0000, i, '', '', '', i + 1);
       let headerHTMLEl = document.createElement('h3');
       headerHTMLEl.textContent = `${i + 1} человек`;
 
@@ -106,7 +106,7 @@ const life = {
       this.settings.getSettingsEl().appendChild(humanHTMLEl);
 
       this.map.addOnMap(
-        { classObject: 'human', id: human.getIDHuman(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
+        { classObjectEn: 'human', classObjectRu: 'человек', id: human.getIDHuman(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
       );
     }
 

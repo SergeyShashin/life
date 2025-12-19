@@ -159,7 +159,7 @@ td {
 
 /* класс на карте */
 .human {
-  background: linear-gradient(brown, lightseagreen);
+  background: radial-gradient(orange, lightseagreen);
   color: crimson;
 }
 
