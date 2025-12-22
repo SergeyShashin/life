@@ -111,7 +111,7 @@ class Map {
 
     this.control = new Control([
       { class: 'btn', id: 'btnAddNewElement', textRu: '+ новый' },
-      { class: 'btn', id: 'btnAddExistElement', textRu: '+ существующиий' },
+      { class: 'btn', id: 'btnAddExistElement', textRu: '+ существующий' },
       { class: 'btn', id: 'btnMapSun', textRu: 'Солнце' },
       { class: 'btn', id: 'btnMapMercury', textRu: 'Меркурий' },
       { class: 'btn', id: 'btnMapVenus', textRu: 'Венера' },
