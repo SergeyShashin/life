@@ -120,16 +120,23 @@ const life = {
   },
 
   /**
+   * Скрывает активные Окна
+   */
+  closeAllWindows() {
+    this.world.info.hideInfoEl();
+    this.settings.hideSettingsEl();
+    this.map.hideMapHTMLEl();
+    this.capsule.hideCapsuleHTMLEl();
+  },
+
+  /**
    * При клике мышкой вызывает соответствующий обработчики
    * @param {Event} Событие при клике в WINDOW
    */
   handlerClickBtn(e) {
     switch (e.target.id) {
       case 'btnStartGame':
-        this.world.info.hideInfoEl();
-        this.settings.hideSettingsEl();
-        this.map.hideMapHTMLEl();
-        this.capsule.hideCapsuleHTMLEl();
+        this.closeAllWindows();
 
         for (let i = 1; i < this.settings.getSizeTeam() + 2; i++) {
           this.containerEl.appendChild(new Days(i, [
@@ -183,14 +190,15 @@ const life = {
       case 'btnPlusDay':
         this.time.updateTime(e.target.dataset.dayvalue);
         break;
-      case 'btnAddNewElement':
-        this.map.addNewElement();
-        break;
       case 'btnChange':
         alert('Будет менялка. Лист "экономика_потребление" из файла "возможно будет лучше.xlsx".');
         break;
       case 'btnTasksHumanityUp4050':
         alert('Добавление, удаление, редактирование, просмотр,  голосование, сделаю.');
+        break;
+      case 'btnAddNewElement':
+        this.closeAllWindows();
+        this.map.addNewElement();
         break;
       case 'btnAddExistElement':
         this.map.addExistElement();
