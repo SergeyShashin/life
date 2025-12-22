@@ -172,7 +172,7 @@ class Settings {
    * Включение видимости HTML элемента настроек.
    */
   showSettingsEl() {
-    this.infoEl.style.display = 'block';
+    this.settingsEl.style.display = 'block';
   }
 
   /**

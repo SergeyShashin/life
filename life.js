@@ -178,19 +178,23 @@ const life = {
         this.control.toggleTextBtn(e.target, 'автоматический', 'ручной');
         break;
       case 'btnResources':
-        this.world.info.toggleInfoEl();
+        this.closeAllWindows();
+        this.world.info.showInfoEl();
         break;
       case 'btnMap':
-        this.map.toggleMapHTMLEl();
+        this.closeAllWindows();
+        this.map.showMapHTMLEl();
         break;
       case 'btnSettings':
-        this.settings.toggleSettingsEl();
+        this.closeAllWindows();
+        this.settings.showSettingsEl();
         break;
       case 'btnMinusDay':
       case 'btnPlusDay':
         this.time.updateTime(e.target.dataset.dayvalue);
         break;
       case 'btnChange':
+         this.closeAllWindows();
         alert('Будет менялка. Лист "экономика_потребление" из файла "возможно будет лучше.xlsx".');
         break;
       case 'btnTasksHumanityUp4050':
