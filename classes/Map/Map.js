@@ -87,13 +87,18 @@ class Map {
   */
   objectsMap = [];
 
+  // варианты новых элементов для добавления на карту. Используется при создании datalistForAddNewElementOnMapHTMLEl
+  newElements = ['здание', 'транспорт', 'сооружение', 'полотно для транспорта', 'полотно для людей'];
+
+  //datalist для выбора нового элемента при добавлении на карту
+  datalistForAddNewElementOnMapHTMLEl;
+
   /**
    * Конструктор базового класса
    */
   constructor() {
 
   }
-
 
   /**
   * Создаёт HTML элемент карты.
@@ -128,14 +133,43 @@ class Map {
     ]);
 
 
+
+
+
     wrapImgHTMLEl.appendChild(this.mapImgHTMLEl);
 
     this.mapHTMLEl.appendChild(headerHTMLEl);
     this.mapHTMLEl.appendChild(this.control.createControlHTMLEl());
     this.mapHTMLEl.appendChild(wrapImgHTMLEl);
     this.mapHTMLEl.appendChild(this.createTableHTMLEl());
+    this.mapHTMLEl.appendChild(this.createDatalistForAddNewElementOnMapHTMLEl());
 
     return this.mapHTMLEl
+  }
+
+   /**
+  * Создаёт datalist для выбора нового элемента карты в инпуте.
+  * @returns {HTMLElement} datalist нового элемента карты в инпуте.
+  */
+  createDatalistForAddNewElementOnMapHTMLEl() {
+    this.datalistForAddNewElementOnMapHTMLEl = document.createElement('datalist');
+    this.datalistForAddNewElementOnMapHTMLEl.id = 'datalistForAddNewElementOnMapHTMLEl';
+
+    for (let element of this.newElements) {
+      let optionEl = document.createElement('option');
+      optionEl.value = element;
+      this.datalistForAddNewElementOnMapHTMLEl.appendChild(optionEl);
+    }
+
+    return this.datalistForAddNewElementOnMapHTMLEl;
+  }
+
+  /**
+  * Возвращает datalist для выбора нового элемента карты в инпуте.
+  * @returns {HTMLElement} datalist нового элемента карты в инпуте.
+  */
+  getDatalistForAddNewElementOnMapHTMLEl() {
+    return this.datalistForAddNewElementOnMapHTMLEl;
   }
 
   createTableHTMLEl() {
@@ -236,7 +270,6 @@ class Map {
    */
   addNewElement() {
     alert('Добавление нового элемента. Варианты: человек, млекопитающее, птица, пресмыкающееся, земноводное, рыба, насекомое, паукообразное, моллюск, ракообразное, кораловый полип, животное, цветковое растение, голосеменное, сосудистое споровое, мохобразное, водоросль карсная/зелёная, лишайник, гриб, бурая водоросль,  дерево, куст, цветок, трава, родник, облако, океан, море, река, лужа, здание, мост, опора линии электропередачи, провода, самолёт, вертолёт, ...');
-
   }
 
   /**
