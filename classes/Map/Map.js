@@ -371,4 +371,13 @@ class Map {
   renderMapImgHTMLElSrc() {
     this.mapImgHTMLEl.src = this.pathEarthIMG[this.scaleCounter];
   }
+
+  /**
+   *@returns {Array} Возвращает массив с новыми элементами 
+   */
+  getNewElements() {
+    return this.newElements
+  }
+
+
 }

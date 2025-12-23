@@ -195,7 +195,7 @@ const life = {
         this.time.updateTime(e.target.dataset.dayvalue);
         break;
       case 'btnChange':
-         this.closeAllWindows();
+        this.closeAllWindows();
         alert('Будет менялка. Лист "экономика_потребление" из файла "возможно будет лучше.xlsx".');
         break;
       case 'btnTasksHumanityUp4050':
@@ -267,9 +267,31 @@ const life = {
    * Обрабатывает события change
    * @param {Event} e Событие при change в WINDOW
    */
-  handlerChange(e){
-    console.log(e.target.name);
-    console.log(e.target.value);
+  handlerChange(e) {
+    // console.log(e.target.name);
+    // console.log(e.target.value);
+
+    //['здание', 'транспорт', 'сооружение', 'полотно для транспорта', 'полотно для людей']
+    let newElements = this.map.getNewElements();
+
+    switch (e.target.value) {
+      case newElements[0]:
+        alert('Создаём новый объект здания и добавляем его параметры в HTML.');
+        break;
+      case newElements[1]:
+        alert('Создаём новый объект транспорта и добавляем его параметры в HTML.');
+        break;
+      case newElements[2]:
+        alert('Создаём новый объект сооружения и добавляем его параметры в HTML.');
+        break;
+      case newElements[3]:
+        alert('Создаём новый объект полотна для транспорта и добавляем его параметры в HTML.');
+        break;
+      case newElements[4]:
+        alert('Создаём новый объект полотна для людей и добавляем его параметры в HTML.');
+        break;
+
+    }
   }
 
 };
