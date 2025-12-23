@@ -268,9 +268,7 @@ const life = {
    * @param {Event} e Событие при change в WINDOW
    */
   handlerChange(e) {
-    // console.log(e.target.name);
-    // console.log(e.target.value);
-
+    // console.log(e.target);
     //['здание', 'транспорт', 'сооружение', 'полотно для транспорта', 'полотно для людей']
     let newElements = this.map.getNewElements();
 
