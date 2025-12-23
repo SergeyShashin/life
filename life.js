@@ -117,6 +117,7 @@ const life = {
    */
   setEventHandlers() {
     window.addEventListener('click', e => this.handlerClickBtn(e));
+    window.addEventListener('change', e => this.handlerChange(e));
   },
 
   /**
@@ -131,7 +132,7 @@ const life = {
 
   /**
    * При клике мышкой вызывает соответствующий обработчики
-   * @param {Event} Событие при клике в WINDOW
+   * @param {Event} e Событие при клике в WINDOW
    */
   handlerClickBtn(e) {
     switch (e.target.id) {
@@ -202,7 +203,6 @@ const life = {
         alert('Добавление, удаление, редактирование, просмотр,  голосование, сделаю.');
         break;
       case 'btnAddNewElement':
-        this.closeAllWindows();
         this.map.addNewElement();
         break;
       case 'btnAddExistElement':
@@ -262,6 +262,15 @@ const life = {
         break;
     }
   },
+
+  /**
+   * Обрабатывает события change
+   * @param {Event} e Событие при change в WINDOW
+   */
+  handlerChange(e){
+    console.log(e.target.name);
+    console.log(e.target.value);
+  }
 
 };
 

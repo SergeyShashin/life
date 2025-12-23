@@ -87,8 +87,14 @@ class Map {
   */
   objectsMap = [];
 
-  // варианты новых элементов для добавления на карту. Используется при создании datalistForAddNewElementOnMapHTMLEl
+  //Варианты новых элементов для добавления на карту. Используется при создании datalistForAddNewElementOnMapHTMLEl
   newElements = ['здание', 'транспорт', 'сооружение', 'полотно для транспорта', 'полотно для людей'];
+
+  //Группа инпутов для выборов параметров при добавлении нового элемента на карту.
+  inputGroupForChoseParametrsNewElementHTMLEl;
+
+  //Инпут в котором выбирается тип нового элемента при добавлении на карту.
+  inputTypeNewElementHTMLEl;
 
   //datalist для выбора нового элемента при добавлении на карту
   datalistForAddNewElementOnMapHTMLEl;
@@ -133,9 +139,6 @@ class Map {
     ]);
 
 
-
-
-
     wrapImgHTMLEl.appendChild(this.mapImgHTMLEl);
 
     this.mapHTMLEl.appendChild(headerHTMLEl);
@@ -147,10 +150,31 @@ class Map {
     return this.mapHTMLEl
   }
 
-   /**
-  * Создаёт datalist для выбора нового элемента карты в инпуте.
-  * @returns {HTMLElement} datalist нового элемента карты в инпуте.
-  */
+  /**
+   * Создаёт HTML элемент для выбора нового элемента карты.
+   * @returns {HTMLElement} HTML элемент для выбора нового элемента карты.
+   */
+  createInputGroupForChoseParametrsNewElementHTMLEl() {
+    this.inputGroupForChoseParametrsNewElementHTMLEl = document.createElement('section');
+    this.inputGroupForChoseParametrsNewElementHTMLEl.classList.add('inputGroup');
+
+    let headerInputGroupForChoseParametrsNewElementHTMLEl = document.createElement('h4');
+    headerInputGroupForChoseParametrsNewElementHTMLEl.textContent = 'Добавление нового элемента на карту.';
+    this.inputTypeNewElementHTMLEl = document.createElement('input');
+    this.inputTypeNewElementHTMLEl.name = 'inputTypeNewElementHTMLEl';
+    this.inputTypeNewElementHTMLEl.setAttribute('list', 'datalistForAddNewElementOnMapHTMLEl');
+    this.inputTypeNewElementHTMLEl.type = 'search';
+
+    this.inputGroupForChoseParametrsNewElementHTMLEl.appendChild(headerInputGroupForChoseParametrsNewElementHTMLEl);
+    this.inputGroupForChoseParametrsNewElementHTMLEl.appendChild(this.inputTypeNewElementHTMLEl);
+
+    return this.inputGroupForChoseParametrsNewElementHTMLEl;
+  }
+
+  /**
+ * Создаёт datalist для выбора нового элемента карты в инпуте, который создаётся в inputGroupForChoseParametrsNewElementHTMLEl
+ * @returns {HTMLElement} datalist нового элемента карты в инпуте.
+ */
   createDatalistForAddNewElementOnMapHTMLEl() {
     this.datalistForAddNewElementOnMapHTMLEl = document.createElement('datalist');
     this.datalistForAddNewElementOnMapHTMLEl.id = 'datalistForAddNewElementOnMapHTMLEl';
@@ -173,7 +197,6 @@ class Map {
   }
 
   createTableHTMLEl() {
-
     this.tableHTMLEl = document.createElement('section');
     let tableEl = document.createElement('table');
     this.tableHTMLEl.id = 'tableHTMLElInMapHTMLEl';
@@ -270,6 +293,7 @@ class Map {
    */
   addNewElement() {
     alert('Добавление нового элемента. Варианты: человек, млекопитающее, птица, пресмыкающееся, земноводное, рыба, насекомое, паукообразное, моллюск, ракообразное, кораловый полип, животное, цветковое растение, голосеменное, сосудистое споровое, мохобразное, водоросль карсная/зелёная, лишайник, гриб, бурая водоросль,  дерево, куст, цветок, трава, родник, облако, океан, море, река, лужа, здание, мост, опора линии электропередачи, провода, самолёт, вертолёт, ...');
+    this.mapHTMLEl.prepend(this.createInputGroupForChoseParametrsNewElementHTMLEl());
   }
 
   /**

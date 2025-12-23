@@ -54,7 +54,7 @@ h3 {
 h4,
 h5 {
   text-transform: uppercase;
-  margin-top: 10px;
+  margin: 15px 0;
   height: 20px;
 }
 
@@ -256,6 +256,10 @@ td:hover {
 #btnDeleteRoute {
   width: 50px;
   height: 25px;
+}
+
+#mapHTMLEl{
+  margin: 20px 0;
 }
 
 #tableHTMLElInMapHTMLEl {
