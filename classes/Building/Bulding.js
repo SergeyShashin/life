@@ -71,7 +71,7 @@ class Bulding {
   К2: Умеренно пожароопасные.
   К3: Пожароопасные (наиболее опасные).
   Условные обозначения: К0(15), К1(30) — с цифрой в скобках, обозначающей время теплового воздействия в минутаx
-   */
+  */
   structuralFireHazardClass;
 
   /*
@@ -84,8 +84,27 @@ class Bulding {
   */
   functionalFireHazardClass;
 
-  //дата постройки
-  dateOfConstruction;
+  /**
+  Долговечность здания. 
+   */
+  durability;
 
+  /**
+  Ресурсы для создания здания.
+   */
+  resourcesForCreation;
+
+  /**
+  Ресурсы при эксплутации здания.
+   */
+  operationalResources;
+
+  /**
+  Функциональность здания.
+   */
+  functionality;
+
+  //Дата постройки.
+  dateOfConstruction;
 
 }
