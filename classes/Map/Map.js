@@ -224,6 +224,7 @@ class Map {
       let cel = this.cels[`latitude${latitude}_longitude${longitute}`];
       cel.textContent = `${firstName}_${classObjectRu}_${id}`;
       cel.classList.add(classObjectEn);
+      this.usedCels.push(cel);
     }
     );
 
