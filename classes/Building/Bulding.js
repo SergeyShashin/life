@@ -134,8 +134,40 @@ class Bulding {
     },
     wheatProduction: {
       nameRu: 'производство пшеницы',
-      quantity: this.livingSpaces.quantity * 365 * 3 * 0.1206 //Кол-во людей * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1206 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
+    wheatStorage: {
+      nameRu: 'хранение пшеницы',
+      quantity: this.wheatProduction.quantity
+    },
+    honeyProduction: {
+      nameRu: 'производство мёда',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
+
+    //добавить по мёду и другим продуктам
+
+    creatingDailyFoodKitsInReturnableContainers: {
+      nameRu: 'создание комплектов продуктов на день в возвратных контейнерах для 4 человек',
+      quantity: this.livingSpaces.quantity
+    },
+    productionOfReturnableContainers: {
+      nameRu: 'производство возвратных контейнеров',
+      quantity: this.livingSpaces.quantity * 2, // 2 года. "Цифра от фонаря" на данный момент. Делать константу. 
+    },
+    maintenanceOfReturnableContainers: {
+      nameRu: 'техническое обслуживание возвратных контейнеров',
+      quantity: this.productionOfReturnableContainers.quantity,
+    },
+    recyclingOfReturnableContainers: {
+      nameRu: 'переработка возвратных контейнеров',
+      quantity: this.productionOfReturnableContainers.quantity
+    },
+    storageOfReturnableContainers: {
+      nameRu: 'хранение возвратных контейнеров',
+      quantity: this.productionOfReturnableContainers.quantity
     }
+
 
   };
 
