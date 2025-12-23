@@ -44,7 +44,7 @@ const life = {
       { class: 'btn', id: 'btnStartGame', textRu: 'Вжух' },
       { class: 'btn', id: 'btnChange', textRu: 'Менялка' },
       { class: 'btn', id: 'btnCapsule', textRu: 'Капсула' },
-      { class: 'btn', id: 'btnTasksHumanityUp4050', textRu: 'Задачи до 4050' },
+      { class: 'btn', id: 'btnTasksHumanityUp4050', textRu: `Задачи до ${new Date().getFullYear() * 2}` },
     ]);
     //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
     this.containerEl.appendChild(this.control.createControlHTMLEl());
