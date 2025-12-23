@@ -198,6 +198,7 @@ const life = {
         alert('Будет менялка. Лист "экономика_потребление" из файла "возможно будет лучше.xlsx".');
         break;
       case 'btnTasksHumanityUp4050':
+        this.closeAllWindows();
         alert('Добавление, удаление, редактирование, просмотр,  голосование, сделаю.');
         break;
       case 'btnAddNewElement':
@@ -247,7 +248,8 @@ const life = {
         this.map.mapDecrease();
         break;
       case 'btnCapsule':
-        this.capsule.toggleCapsuleHTMLEl();
+        this.closeAllWindows();
+        this.capsule.showCapsuleHTMLEl();
         break;
       case 'btnAddRoute':
         this.capsule.addRouteHTMLEl();
