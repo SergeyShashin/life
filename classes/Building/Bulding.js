@@ -127,8 +127,12 @@ class Bulding {
   /**
    * Функциональность здания.
    */
-  functionality = {    
-
+  functionality = {
+    livingSpaces: {
+      nameRu: 'пространства для жизни',
+      quantity: 500000 // Сейчас цифра для примера. Поставить точную цифру.
+    },
+    
   };
 
   /**
