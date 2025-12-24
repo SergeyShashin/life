@@ -30,7 +30,9 @@ class Building {
     { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
     { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
     { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
-    { header: 'долговечность', name: 'durabilityBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'долговечность', id: 'durabilityBuildingId', name: 'durabilityBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
+    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
   ];
 
   /**
@@ -149,7 +151,6 @@ class Building {
   /**
    * Функциональность здания.
    */
-
 
   functionality = {
     livingSpaces: {
