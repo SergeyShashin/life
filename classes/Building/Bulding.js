@@ -132,16 +132,20 @@ class Bulding {
       nameRu: 'пространства для жизни 4 человек',
       quantity: 125000 // Сейчас цифра для примера. Поставить точную цифру.
     },
-    wheatProduction: {
-      nameRu: 'производство пшеницы',
+    wheatCreation: {
+      nameRu: 'создание пшеницы',
       quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1206 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     wheatStorage: {
       nameRu: 'хранение пшеницы',
       quantity: this.wheatProduction.quantity
     },
-    honeyProduction: {
-      nameRu: 'производство мёда',
+    honeyCreation: {
+      nameRu: 'создание мёда',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
+    honeyStorage: {
+      nameRu: 'хранение мёда',
       quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
 
