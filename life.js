@@ -283,7 +283,7 @@ const life = {
         alert('Создаём новый объект здания и добавляем его параметры в HTML.');
         let building = new Building();
         e.target.parentElement.appendChild(building.createBuildinHTMLEl());
-        building.getBuildingHTMLEl().appendChild(new CreatorInputs(building.getPropertiesForInput()).createInputHTMLEl());
+        building.getBuildingHTMLEl().appendChild(new CreatorInputs(building.getPropertiesForInputs()).createInputHTMLEl());
         building.getBuildingHTMLEl().appendChild(new Control([{ class: 'btn', id: 'btnAddBuildingApprovedUser', textRu: 'Ага' }]).createControlHTMLEl());
         break;
       case newElements[1]:

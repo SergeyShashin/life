@@ -15,7 +15,7 @@ class Building {
   /**
    * Свойства объекта для создания инпутов в CreatorInputs.js
    */
-  propertiesForInput = [
+  propertiesForInputs = [
     { header: 'наименование здания', id: 'nameBuildingId', name: 'nameBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
     { header: 'описание здания', id: 'descriptionBuildingId', name: 'descriptionBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
     { header: 'широта', id: 'latitudeBuildingId', name: 'latitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
@@ -151,7 +151,6 @@ class Building {
   /**
    * Функциональность здания.
    */
-
   functionality = {
     livingSpaces: {
       nameRu: 'пространства для жизни 4 человек',
@@ -318,8 +317,18 @@ class Building {
     return this.buildingHTMLEl;
   }
 
-  getPropertiesForInput() {
-    return this.propertiesForInput;
+  getPropertiesForInputs() {
+    return this.propertiesForInputs;
+  }
+
+  addFunctionalityPropertiesInPropertiesForInputs(){
+    Object.keys(this.functionalFireHazardClass).map(key=>
+    {
+      this.propertiesForInputs.push(
+        {header: key.nameRu, id: key, name: key+'BuildingName', class: 'buildingInput', type: 'number', needDatalist: false}
+      );
+    }
+    );
   }
 
 
