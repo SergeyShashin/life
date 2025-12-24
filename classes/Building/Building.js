@@ -22,6 +22,15 @@ class Building {
     { header: 'долгота', id: 'longitudeBuildingId', name: 'longitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
     { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
     { header: 'ширина', id: 'widthBuildingId', name: 'widthBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'длина', id: 'lengthBuildingId', name: 'lengthBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'высота', id: 'heighthBuildingId', name: 'heightBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'высота над землёй', id: 'heightAboveGroundBuildingId', name: 'heightAboveGroundBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'количество этажей', id: 'numberFloorBuildingId', name: 'numberFloorBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'масса', id: 'weightBuildingId', name: 'weightBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
+    { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
+    { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
+    { header: 'долговечность', name: 'durabilityBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
   ];
 
   /**
