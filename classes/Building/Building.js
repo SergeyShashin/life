@@ -3,18 +3,23 @@
 /**
  * Класс здание.
  */
-class Bulding {
-
+class Building {
   /**
    * Конструктор базового класса 
    */
   constructor() {
   }
 
+  buildingHTMLEl;
+
   /**
    * Свойства объекта для создания инпутов
    */
   propertiesForInput = [
+    { header: 'наименование здания', id: 'nameBuildingId', name: 'nameBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
+    { header: 'описание здания', id: 'descriptionBuildingId', name: 'descriptionBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
+    { header: 'широта', id: 'latitudeBuildingId', name: 'latitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'долгота', id: 'longitudeBuildingId', name: 'longitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
   ];
 
   /**
@@ -290,5 +295,20 @@ class Bulding {
    * Дата постройки. 
    */
   dateOfConstruction;
+
+  createBuildinHTMLEl() {
+    this.buildingHTMLEl = document.createElement('section');
+
+    return this.buildingHTMLEl;
+  }
+
+  getBuildingHTMLEl() {
+    return this.buildingHTMLEl;
+  }
+
+  getPropertiesForInput() {
+    return this.propertiesForInput;
+  }
+
 
 }

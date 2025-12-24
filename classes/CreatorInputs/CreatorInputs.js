@@ -22,8 +22,15 @@ class CreatorInputs {
       let headerHTMLEl = document.createElement('h4');
       headerHTMLEl.textContent = input.header;
       let inputEl = document.createElement('input');
+      inputEl.id = input.id;
+      inputEl.name = input.name;
+      inputEl.type = input.type;
       inputEl.className = input.class;
-      input.id = input.id;
+
+      if (input.needDatalist) {
+        inputEl.setAttribute('list', `datalist_${input.name}_HTMLEl`);
+      }
+
       this.creatorInputsHTMLEl.appendChild(headerHTMLEl);
       this.creatorInputsHTMLEl.appendChild(inputEl);
     }
