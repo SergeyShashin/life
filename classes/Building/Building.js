@@ -16,23 +16,24 @@ class Building {
    * Свойства объекта для создания инпутов в CreatorInputs.js
    */
   propertiesForInputs = [
-    { header: 'наименование здания', id: 'nameBuildingId', name: 'nameBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
-    { header: 'описание здания', id: 'descriptionBuildingId', name: 'descriptionBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
-    { header: 'широта', id: 'latitudeBuildingId', name: 'latitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'долгота', id: 'longitudeBuildingId', name: 'longitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
-    { header: 'ширина', id: 'widthBuildingId', name: 'widthBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'длина', id: 'lengthBuildingId', name: 'lengthBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'высота', id: 'heighthBuildingId', name: 'heightBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'высота над землёй', id: 'heightAboveGroundBuildingId', name: 'heightAboveGroundBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'количество этажей', id: 'numberFloorBuildingId', name: 'numberFloorBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'масса', id: 'weightBuildingId', name: 'weightBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
-    { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
-    { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClassBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
-    { header: 'долговечность', id: 'durabilityBuildingId', name: 'durabilityBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
-    { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
-    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
+    { header: 'наименование здания', id: 'nameBuildingId', name: 'nameBuildingName', class: 'buildingInput', type: 'text', value: 'производственный центр', needDatalist: false },
+    { header: 'описание здания', id: 'descriptionBuildingId', name: 'descriptionBuildingName', class: 'buildingInput', type: 'text', value: 'Для счастливой жизни и производства всего необходимого для жизни.', needDatalist: false },
+    { header: 'широта', id: 'latitudeBuildingId', name: 'latitudeBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
+    { header: 'долгота', id: 'longitudeBuildingId', name: 'longitudeBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
+    { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'text', value: 'Производственный центр 8', needDatalist: true},
+    { header: 'ширина', id: 'widthBuildingId', name: 'widthBuildingName', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
+    { header: 'длина', id: 'lengthBuildingId', name: 'lengthBuildingName', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
+    { header: 'высота', id: 'heighthBuildingId', name: 'heightBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
+    { header: 'высота над землёй', id: 'heightAboveGroundBuildingId', name: 'heightAboveGroundBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
+    { header: 'количество этажей', id: 'numberFloorBuildingId', name: 'numberFloorBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
+    { header: 'масса', id: 'weightBuildingId', name: 'weightBuildingName', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
+    { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClassBuildingName', class: 'buildingInput', type: 'text', value: 'A+++', needDatalist: true },
+    { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClassBuildingName', class: 'buildingInput', type: 'text', value: 'K0(1440)', needDatalist: true },
+    { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClassBuildingName', class: 'buildingInput', type: 'text', value: 'Ф1', needDatalist: true },
+    { header: 'долговечность', id: 'durabilityBuildingId', name: 'durabilityBuildingName', class: 'buildingInput', type: 'number', value: 2000, needDatalist: false },
+    //ресурсы переделать как функциональность
+    { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
+    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
   ];
 
   /**
@@ -307,7 +308,12 @@ class Building {
    */
   dateOfConstruction;
 
+  init() {
+    this.addFunctionalityPropertiesInPropertiesForInputs();
+  }
+
   createBuildinHTMLEl() {
+    this.init();
     this.buildingHTMLEl = document.createElement('section');
 
     return this.buildingHTMLEl;
@@ -321,11 +327,10 @@ class Building {
     return this.propertiesForInputs;
   }
 
-  addFunctionalityPropertiesInPropertiesForInputs(){
-    Object.keys(this.functionalFireHazardClass).map(key=>
-    {
+  addFunctionalityPropertiesInPropertiesForInputs() {
+    Object.keys(this.functionality).map(key => {
       this.propertiesForInputs.push(
-        {header: key.nameRu, id: key, name: key+'BuildingName', class: 'buildingInput', type: 'number', needDatalist: false}
+        { header: this.functionality[key].nameRu, id: key, name: key + 'BuildingName', class: 'buildingInput', type: 'number', value: this.functionality[key].quantity, needDatalist: false }
       );
     }
     );

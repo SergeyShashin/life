@@ -25,6 +25,7 @@ class CreatorInputs {
       inputEl.id = input.id;
       inputEl.name = input.name;
       inputEl.type = input.type;
+      inputEl.value = input.value;
       inputEl.className = input.class;
 
       if (input.needDatalist) {
