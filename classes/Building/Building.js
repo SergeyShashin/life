@@ -13,13 +13,15 @@ class Building {
   buildingHTMLEl;
 
   /**
-   * Свойства объекта для создания инпутов
+   * Свойства объекта для создания инпутов в CreatorInputs.js
    */
   propertiesForInput = [
     { header: 'наименование здания', id: 'nameBuildingId', name: 'nameBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
     { header: 'описание здания', id: 'descriptionBuildingId', name: 'descriptionBuildingName', class: 'buildingInput', type: 'text', needDatalist: false },
     { header: 'широта', id: 'latitudeBuildingId', name: 'latitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
     { header: 'долгота', id: 'longitudeBuildingId', name: 'longitudeBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
+    { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'text', needDatalist: true },
+    { header: 'ширина', id: 'widthBuildingId', name: 'widthBuildingName', class: 'buildingInput', type: 'number', needDatalist: false },
   ];
 
   /**
