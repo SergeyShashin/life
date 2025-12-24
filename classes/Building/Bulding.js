@@ -132,6 +132,34 @@ class Bulding {
       nameRu: 'пространства для жизни 4 человек',
       quantity: 125000 // Сейчас цифра для примера. Поставить точную цифру.
     },
+    waterExtraction: {
+      nameRu: 'добыча воды',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
+    productionOfEquipmentForWaterExtraction: {
+      nameRu: 'производство оборудования для добычи воды',
+      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+    },
+    productionOfToolsForWaterExtraction: {
+      nameRu: 'производство инструментов для добычи воды',
+      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+    },
+    waterPurification: {
+      nameRu: 'очистка воды',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
+    waterStorage: {
+      nameRu: 'хранение воды',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
+    productionOfWaterContainers: {
+      nameRu: 'производство емкостей для воды',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет. Сделать константы вместо цифр.
+    },
+    storageOfWaterContainers: {
+      nameRu: 'хранение емкостей для воды',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет. Сделать константы вместо цифр.
+    },    
     wheatCreation: {
       nameRu: 'создание пшеницы',
       quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1206 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
@@ -148,8 +176,16 @@ class Bulding {
       nameRu: 'хранение мёда',
       quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
+    milkCreation: {
+      nameRu: 'создание молока',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.137 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
+    milkStorage: {
+      nameRu: 'хранение молока',
+      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.137 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+    },
 
-    //добавить по мёду и другим продуктам
+
 
     creatingDailyFoodKitsInReturnableContainers: {
       nameRu: 'создание комплектов продуктов на день в возвратных контейнерах для 4 человек',
