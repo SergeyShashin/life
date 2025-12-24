@@ -138,6 +138,8 @@ class Building {
   /**
    * Функциональность здания.
    */
+
+
   functionality = {
     livingSpaces: {
       nameRu: 'пространства для жизни 4 человек',
@@ -145,103 +147,103 @@ class Building {
     },
     waterExtraction: {
       nameRu: 'добыча воды',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     productionOfEquipmentForWaterExtraction: {
       nameRu: 'производство оборудования для добычи воды',
-      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+      quantity: 125000 //Кол-во пространств для жизни.
     },
     productionOfToolsForWaterExtraction: {
       nameRu: 'производство инструментов для добычи воды',
-      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+      quantity: 125000 //Кол-во пространств для жизни.
     },
     waterPurification: {
       nameRu: 'очистка воды',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     productionOfWaterPurificationEquipment: {
       nameRu: 'производство оборудования для очистки воды',
-      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+      quantity: 125000 //Кол-во пространств для жизни.
     },
     productionOfWaterPurificationTools: {
       nameRu: 'производство инструментов для очистки воды',
-      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+      quantity: 125000 //Кол-во пространств для жизни.
     },
     waterStorage: {
       nameRu: 'хранение воды',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 2.5 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     productionOfWaterStorageEquipment: {
       nameRu: 'производство оборудования для хранения воды',
-      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+      quantity: 125000 //Кол-во пространств для жизни.
     },
     productionOfWaterStorageInstruments: {
       nameRu: 'производство инструментов для хранения воды',
-      quantity: this.livingSpaces.quantity //Кол-во пространств для жизни.
+      quantity: 125000 //Кол-во пространств для жизни.
     },
     productionOfWaterPipes: {
       nameRu: 'производство труб для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     productionEquipmentForProductionWaterPipes: {
       nameRu: 'производство оборудования для производства труб для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     productionOfToolsForProductionOfWaterPipes: {
       nameRu: 'производство инструментов для производства труб для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     storageOfWaterPipes: {
       nameRu: 'хранение труб для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     productionOfEquipmentForStoringWaterPipes: {
       nameRu: 'производство оборудования для хранения труб для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     productionOfToolsForStoringWaterPipes: {
       nameRu: 'производство инструментов для хранения труб для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     productionOfWaterContainers: {
       nameRu: 'производство емкостей для воды',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет. Сделать константы вместо цифр.
     },
     productionOfEquipmentForProductionOfWaterContainers: {
       nameRu: 'производство оборудования для производства ёмкостей для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     productionOfToolsForProductionOfWaterContainers: {
       nameRu: 'производство инструментов для производства ёмкостей для воды',
-      quantity: this.livingSpaces.quantity //На данный момент 'цифра от фонаря'. 
+      quantity: 125000 //На данный момент 'цифра от фонаря'. 
     },
     storageOfWaterContainers: {
       nameRu: 'хранение емкостей для воды',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет. Сделать константы вместо цифр.
     },
     wheatCreation: {
       nameRu: 'создание пшеницы',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1206 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 0.1206 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     wheatStorage: {
       nameRu: 'хранение пшеницы',
-      quantity: this.wheatProduction.quantity
+      quantity: 125000 * 4 * 365 * 3 * 0.1206 //Кол-во пространств для жизни * кол-во человек * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     honeyCreation: {
       nameRu: 'создание мёда',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     honeyStorage: {
       nameRu: 'хранение мёда',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 0.1 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     milkCreation: {
       nameRu: 'создание молока',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.137 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 0.137 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
     milkStorage: {
       nameRu: 'хранение молока',
-      quantity: this.livingSpaces.quantity * 4 * 365 * 3 * 0.137 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
+      quantity: 125000 * 4 * 365 * 3 * 0.137 //Кол-во пространств для жизни * кол-во дней в году * кол-во лет * нужно в день. Сделать константы вместо цифр.
     },
 
     //.......добавить продукты, одежду, материалы, обородуования, инструменты и др.
@@ -249,26 +251,24 @@ class Building {
 
     creatingDailyFoodKitsInReturnableContainers: {
       nameRu: 'создание комплектов продуктов на день в возвратных контейнерах для 4 человек',
-      quantity: this.livingSpaces.quantity
+      quantity: 125000
     },
     productionOfReturnableContainers: {
       nameRu: 'производство возвратных контейнеров',
-      quantity: this.livingSpaces.quantity * 2, // 2 года. "Цифра от фонаря" на данный момент. Делать константу. 
+      quantity: 125000 * 2, // 2 года. "Цифра от фонаря" на данный момент. Делать константу. 
     },
     maintenanceOfReturnableContainers: {
       nameRu: 'техническое обслуживание возвратных контейнеров',
-      quantity: this.productionOfReturnableContainers.quantity,
+      quantity: 125000 * 2, // 2 года. "Цифра от фонаря" на данный момент. Делать константу. 
     },
     recyclingOfReturnableContainers: {
       nameRu: 'переработка возвратных контейнеров',
-      quantity: this.productionOfReturnableContainers.quantity
+      quantity: 125000 * 2, // 2 года. "Цифра от фонаря" на данный момент. Делать константу. 
     },
     storageOfReturnableContainers: {
       nameRu: 'хранение возвратных контейнеров',
-      quantity: this.productionOfReturnableContainers.quantity
+      quantity: 125000 * 2, // 2 года. "Цифра от фонаря" на данный момент. Делать константу. 
     }
-
-
   };
 
   /**

@@ -205,6 +205,12 @@ const life = {
       case 'btnAddNewElement':
         this.map.addNewElement();
         break;
+      case 'btnAddBuildingApprovedUser':
+        alert('Параметры здания выбраны. Добавить на карту.');
+        //Пример this.map.addOnMap(
+        //   { classObjectEn: 'human', classObjectRu: 'человек', id: human.getIDHuman(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
+        // );
+        break;
       case 'btnAddExistElement':
         this.map.addExistElement();
         break;
@@ -275,6 +281,10 @@ const life = {
     switch (e.target.value) {
       case newElements[0]:
         alert('Создаём новый объект здания и добавляем его параметры в HTML.');
+        let building = new Building();
+        e.target.parentElement.appendChild(building.createBuildinHTMLEl());
+        building.getBuildingHTMLEl().appendChild(new CreatorInputs(building.getPropertiesForInput()).createInputHTMLEl());
+        building.getBuildingHTMLEl().appendChild(new Control([{ class: 'btn', id: 'btnAddBuildingApprovedUser', textRu: 'Ага' }]).createControlHTMLEl());
         break;
       case newElements[1]:
         alert('Создаём новый объект транспорта и добавляем его параметры в HTML.');
