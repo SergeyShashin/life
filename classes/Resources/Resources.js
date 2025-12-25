@@ -456,51 +456,183 @@ class Resources {
     },
     palladium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'палладий',
+      symbol: 'Pd',
+      unitsMeasurement: 'kg'
+    },
+    argentum: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'серебро',
+      symbol: 'Ag',
+      unitsMeasurement: 'kg'
     },
     cadmium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'кадмий',
+      symbol: 'Cd',
+      unitsMeasurement: 'kg'
     },
     indium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'индий',
+      symbol: 'In',
+      unitsMeasurement: 'kg'
     },
-    tin: {
+    stannum: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'олово',
+      symbol: 'Sn',
+      unitsMeasurement: 'kg'
+    },
+    stibium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'сурьма',
+      symbol: 'Sb',
+      unitsMeasurement: 'kg'
     },
     tellurium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'теллур',
+      symbol: 'Te',
+      unitsMeasurement: 'kg'
+    },
+    iodine: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'йод',
+      symbol: 'I',
+      unitsMeasurement: 'l'
     },
     xenon: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'ксенон',
+      symbol: 'Xe',
+      unitsMeasurement: 'm3'
     },
-    cesium: {
+    caesium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'цезий',
+      symbol: 'Cs',
+      unitsMeasurement: 'kg'
     },
     barium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'барий',
+      symbol: 'Ba',
+      unitsMeasurement: 'kg'
     },
     lanthanum: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'лантан',
+      symbol: 'La',
+      unitsMeasurement: 'kg'
     },
     cerium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'церий',
+      symbol: 'Ce',
+      unitsMeasurement: 'kg'
+    },
+    praseodymium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'празеодим',
+      symbol: 'Pr',
+      unitsMeasurement: 'kg'
     },
     neodymium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'неодим',
+      symbol: 'Nd',
+      unitsMeasurement: 'kg'
+    },
+    samarium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'самарий',
+      symbol: 'Sm',
+      unitsMeasurement: 'kg'
+    },
+    europium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'европий',
+      symbol: 'Eu',
+      unitsMeasurement: 'kg'
+    },
+    gadolinium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'гадолиний',
+      symbol: 'Gd',
+      unitsMeasurement: 'kg'
     },
     terbium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'тербий',
+      symbol: 'Tb',
+      unitsMeasurement: 'kg'
+    },
+    dysprosium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'диспрозий',
+      symbol: 'Dy',
+      unitsMeasurement: 'kg'
     },
     wolfram: {
       availability: '?',
