@@ -46,7 +46,7 @@ class Resources {
       free: 0,
       needsСreated: 0,
       nameRu: 'вода',
-      symbol: 'water',
+      symbol: 'H2O',
       unitsMeasurement: 'l'
     },
     freshWater: {
@@ -65,27 +65,52 @@ class Resources {
       needsСreated: 0,
       nameRu: 'водород',
       symbol: 'H',
-      unitsMeasurement: 't'
+      unitsMeasurement: 'm3'
     },
     oxygen: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'кислород',
+      symbol: 'O',
+      unitsMeasurement: 'm3'
     },
     helium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'гелий',
+      symbol: 'He',
+      unitsMeasurement: 'm3'
     },
     lithium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'литий',
+      symbol: 'Li',
+      unitsMeasurement: 't'
     },
     beryllium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'бериллий',
+      symbol: 'Be',
+      unitsMeasurement: 't'
     },
     boron: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'бор',
+      symbol: 'B',
+      unitsMeasurement: 't'
     },
     carbon: {
       availability: '?',
