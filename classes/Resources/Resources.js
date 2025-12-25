@@ -436,9 +436,23 @@ class Resources {
       symbol: 'Mo',
       unitsMeasurement: 'kg'
     },
+    ruthenium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'рутений',
+      symbol: 'Ru',
+      unitsMeasurement: 'kg'
+    },
     rhodium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'родий',
+      symbol: 'Rh',
+      unitsMeasurement: 'kg'
     },
     palladium: {
       availability: '?',
