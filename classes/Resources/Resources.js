@@ -6,6 +6,7 @@ class Resources {
   resources = {
     people: {
       availability: 8341290530,
+      enoughEarthlings: 8341290530,
       free: 0,
       needsСreated: 0,
       nameRu: 'люди',
@@ -14,6 +15,7 @@ class Resources {
     },
     landArea: {
       availability: 149000000,
+      enoughEarthlings: 149000000,
       free: 0,
       needsСreated: 0,
       nameRu: 'земля',
@@ -22,6 +24,7 @@ class Resources {
     },
     earth: {
       availability: 149000000,
+      enoughEarthlings: 149000000,
       free: 0,
       needsСreated: 0,
       nameRu: 'земля',
@@ -30,6 +33,7 @@ class Resources {
     },
     waterArea: {
       availability: 361000000,
+      enoughEarthlings: 361000000,
       free: 0,
       needsСreated: 0,
       nameRu: 'вода',
@@ -38,6 +42,7 @@ class Resources {
     },
     water: {
       availability: 361000000,
+      enoughEarthlings: 361000000,
       free: 0,
       needsСreated: 0,
       nameRu: 'вода',
@@ -46,6 +51,7 @@ class Resources {
     },
     freshWater: {
       availability: 35000000,
+      enoughEarthlings: 35000000,
       free: 0,
       needsСreated: 0,
       nameRu: 'пресная вода',
@@ -54,6 +60,7 @@ class Resources {
     },
     hydrogen: {
       availability: 5000000000000,
+      enoughEarthlings: 5000000000000,
       free: 0,
       needsСreated: 0,
       nameRu: 'водород',
