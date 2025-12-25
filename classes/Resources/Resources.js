@@ -652,21 +652,104 @@ class Resources {
       symbol: 'Er',
       unitsMeasurement: 'kg'
     },
+    thulium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'тулия',
+      symbol: 'Tm',
+      unitsMeasurement: 'kg'
+    },
+    ytterbium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'иттербий',
+      symbol: 'Yb',
+      unitsMeasurement: 'kg'
+    },
+    lutetium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'лютеций',
+      symbol: 'Lu',
+      unitsMeasurement: 'kg'
+    },
+    hafnium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'гафний',
+      symbol: 'Hf',
+      unitsMeasurement: 'kg'
+    },
+    tantalum: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'тантал',
+      symbol: 'Ta',
+      unitsMeasurement: 'kg'
+    },
     wolfram: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'вольфрам',
+      symbol: 'W',
+      unitsMeasurement: 'kg'
+    },
+    rhenium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'рений',
+      symbol: 'Re',
+      unitsMeasurement: 'kg'
     },
     osmium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'осмий',
+      symbol: 'Os',
+      unitsMeasurement: 'kg'
+    },
+    Lawrencium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'лоуренсий',
+      symbol: 'Lr',
+      unitsMeasurement: 'a.e.m.'
     },
     platinum: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'платина',
+      symbol: 'Pt',
+      unitsMeasurement: 'kg'
     },
     gold: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'золото',
+      symbol: 'Au',
+      unitsMeasurement: 'kg'
     },
     mercury: {
       availability: '?',
