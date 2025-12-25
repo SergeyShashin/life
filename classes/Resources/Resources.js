@@ -634,6 +634,24 @@ class Resources {
       symbol: 'Dy',
       unitsMeasurement: 'kg'
     },
+    holmium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'гольмий',
+      symbol: 'Ho',
+      unitsMeasurement: 'kg'
+    },
+    erbium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'эрбиум',
+      symbol: 'Er',
+      unitsMeasurement: 'kg'
+    },
     wolfram: {
       availability: '?',
       nameRu: 'вольфрам',
