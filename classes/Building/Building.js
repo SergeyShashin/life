@@ -14,6 +14,7 @@ class Building {
 
   /**
    * Свойства объекта для создания инпутов в CreatorInputs.js
+   * Цифры и текст в значениях value на 25.12.25 "от фонаря".
    */
   propertiesForInputs = [
     { header: 'наименование здания', id: 'nameBuildingId', name: 'nameBuildingName', class: 'buildingInput', type: 'text', value: 'производственный центр', needDatalist: false },
