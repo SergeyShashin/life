@@ -753,31 +753,66 @@ class Resources {
     },
     mercury: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'ртуть',
+      symbol: 'Hg',
+      unitsMeasurement: 'kg'
     },
     thallium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'талий',
+      symbol: 'Tl',
+      unitsMeasurement: 'kg'
     },
     plumbum: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'свинец',
+      symbol: 'Pb',
+      unitsMeasurement: 'kg'
     },
     bismuth: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'висмут',
+      symbol: 'Bi',
+      unitsMeasurement: 'kg'
     },
     thorium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'торий',
+      symbol: 'Th',
+      unitsMeasurement: 'kg'
     },
     uranium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'уран',
+      symbol: 'U',
+      unitsMeasurement: 'kg'
     },
     plutonium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'плутоний',
+      symbol: 'Pu',
+      unitsMeasurement: 'kg'
     },
   };
 
