@@ -186,51 +186,111 @@ class Resources {
     },
     phosphorus: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'фосфор',
+      symbol: 'P',
+      unitsMeasurement: 'kg'
     },
     sulfur: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'сера',
+      symbol: 'S',
+      unitsMeasurement: 'kg'
     },
     chlorine: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'хлор',
+      symbol: 'Cl',
+      unitsMeasurement: 'kg'
     },
     argon: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'аргон',
+      symbol: 'Ar',
+      unitsMeasurement: 'm3'
     },
-    potassium: {
+    kalium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'калий',
+      symbol: 'K',
+      unitsMeasurement: 'kg'
     },
     calcium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'кальций',
+      symbol: 'Ca',
+      unitsMeasurement: 'kg'
     },
     scandium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'скандий',
+      symbol: 'Sc',
+      unitsMeasurement: 'kg'
     },
     titanium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'титан',
+      symbol: 'Ti',
+      unitsMeasurement: 'kg'
     },
     vanadium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'ванадий',
+      symbol: 'V',
+      unitsMeasurement: 'kg'
     },
     chromium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'хром',
+      symbol: 'Cr',
+      unitsMeasurement: 'kg'
     },
-    manganese: {
+    manganum: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'марганец',
+      symbol: 'Mn',
+      unitsMeasurement: 'kg'
     },
     iron: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'железо',
+      symbol: 'Fe',
+      unitsMeasurement: 'kg'
     },
     cobalt: {
       availability: '?',
