@@ -814,6 +814,24 @@ class Resources {
       symbol: 'Pu',
       unitsMeasurement: 'kg'
     },
+    sand: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'песок',
+      symbol: 'sand',
+      unitsMeasurement: 'kg'
+    },
+    stone: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'камень',
+      symbol: 'stone',
+      unitsMeasurement: 'kg'
+    },
   };
 
 }
