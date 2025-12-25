@@ -294,55 +294,147 @@ class Resources {
     },
     cobalt: {
       availability: '?',
-      nameRu: 'железо',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'кобальт',
+      symbol: 'Co',
+      unitsMeasurement: 'kg'
     },
     nickel: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'никель',
+      symbol: 'Ni',
+      unitsMeasurement: 'kg'
     },
     copper: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'медь',
+      symbol: 'Cu',
+      unitsMeasurement: 'kg'
     },
     zinc: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'цинк',
+      symbol: 'Zn',
+      unitsMeasurement: 'kg'
     },
     gallium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'галий',
+      symbol: 'Ga',
+      unitsMeasurement: 'kg'
     },
     germanium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'германий',
+      symbol: 'Ge',
+      unitsMeasurement: 'kg'
     },
     garsenic: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'мышьяк',
+      symbol: 'As',
+      unitsMeasurement: 'kg'
     },
     selenium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'селен',
+      symbol: 'Se',
+      unitsMeasurement: 'kg'
     },
     bromine: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'бром',
+      symbol: 'Br',
+      unitsMeasurement: 'l'
+    },
+    krypton: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'криптон',
+      symbol: 'Kr',
+      unitsMeasurement: 'm3'
     },
     rubidium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'рубидий',
+      symbol: 'RB',
+      unitsMeasurement: 'kg'
     },
     strontium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'стронций',
+      symbol: 'Sr',
+      unitsMeasurement: 'kg'
+    },
+    yttrium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'итриум',
+      symbol: 'Y',
+      unitsMeasurement: 'kg'
     },
     zirconium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'цирконий',
+      symbol: 'Zr',
+      unitsMeasurement: 'kg'
+    },
+    niobium: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'ниобий',
+      symbol: 'Nb',
+      unitsMeasurement: 'kg'
     },
     molybdenum: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'молибден',
+      symbol: 'Mo',
+      unitsMeasurement: 'kg'
     },
     rhodium: {
       availability: '?',
