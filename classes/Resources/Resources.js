@@ -832,6 +832,74 @@ class Resources {
       symbol: 'stone',
       unitsMeasurement: 'kg'
     },
+    crushedStone: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'щебень',
+      symbol: 'crushedStone',
+      unitsMeasurement: 'kg'
+    },
+    lime: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'известь',
+      symbol: 'lime',
+      unitsMeasurement: 'kg'
+    },
+    cement_200: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'цемент_200',
+      symbol: 'caementum_200',
+      unitsMeasurement: 'kg'
+    },
+    cement_300: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'цемент_300',
+      symbol: 'caementum_300',
+      unitsMeasurement: 'kg'
+    },
+    cement_400: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'цемент_400',
+      symbol: 'caementum_400',
+      unitsMeasurement: 'kg'
+    },
+    cement_500: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'цемент_500',
+      symbol: 'caementum_500',
+      unitsMeasurement: 'kg'
+    },
+    cement_600: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'цемент_600',
+      symbol: 'caementum_600',
+      unitsMeasurement: 'kg'
+    },
+
+    getResources() {
+      return this.resources;
+    }
+
   };
 
 }

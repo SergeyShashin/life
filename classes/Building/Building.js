@@ -7,10 +7,12 @@ class Building {
   /**
    * Конструктор базового класса 
    */
-  constructor() {
+  constructor(resources) {
+    this.resources = resources;
   }
 
   buildingHTMLEl;
+  resources;
 
   /**
    * Свойства объекта для создания инпутов в CreatorInputs.js
@@ -347,6 +349,7 @@ class Building {
 
   init() {
     this.addFunctionalityPropertiesInPropertiesForInputs();
+    //сделать добавление inputov c ресурсами
   }
 
   createBuildinHTMLEl() {
