@@ -92,7 +92,7 @@ class Resources {
       needsСreated: 0,
       nameRu: 'литий',
       symbol: 'Li',
-      unitsMeasurement: 't'
+      unitsMeasurement: 'kg'
     },
     beryllium: {
       availability: '?',
@@ -101,7 +101,7 @@ class Resources {
       needsСreated: 0,
       nameRu: 'бериллий',
       symbol: 'Be',
-      unitsMeasurement: 't'
+      unitsMeasurement: 'kg'
     },
     boron: {
       availability: '?',
@@ -110,39 +110,79 @@ class Resources {
       needsСreated: 0,
       nameRu: 'бор',
       symbol: 'B',
-      unitsMeasurement: 't'
+      unitsMeasurement: 'kg'
     },
     carbon: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'углерод',
+      symbol: 'С',
+      unitsMeasurement: 'kg'
     },
     nitrogen: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'азот',
+      symbol: 'N',
+      unitsMeasurement: 'm3'
     },
     fluorine: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'фтор',
+      symbol: 'F',
+      unitsMeasurement: 'kg'
     },
     neon: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'неон',
+      symbol: 'NE',
+      unitsMeasurement: 'm3'
     },
     sodium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'натрий',
+      symbol: 'Na',
+      unitsMeasurement: 'kg'
     },
     magnesium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'магний',
+      symbol: 'Mg',
+      unitsMeasurement: 'kg'
     },
     aluminum: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'алюминий',
+      symbol: 'Al',
+      unitsMeasurement: 'kg'
     },
-    silicon: {
+    silicium: {
       availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
       nameRu: 'кремний',
+      symbol: 'Si',
+      unitsMeasurement: 'kg'
     },
     phosphorus: {
       availability: '?',
