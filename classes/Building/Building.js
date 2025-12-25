@@ -20,20 +20,28 @@ class Building {
     { header: 'описание здания', id: 'descriptionBuildingId', name: 'descriptionBuildingName', class: 'buildingInput', type: 'text', value: 'Для счастливой жизни и производства всего необходимого для жизни.', needDatalist: false },
     { header: 'широта', id: 'latitudeBuildingId', name: 'latitudeBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
     { header: 'долгота', id: 'longitudeBuildingId', name: 'longitudeBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
-    { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'text', value: 'Производственный центр 8', needDatalist: true},
-    { header: 'ширина', id: 'widthBuildingId', name: 'widthBuildingName', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
-    { header: 'длина', id: 'lengthBuildingId', name: 'lengthBuildingName', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
-    { header: 'высота', id: 'heighthBuildingId', name: 'heightBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
-    { header: 'высота над землёй', id: 'heightAboveGroundBuildingId', name: 'heightAboveGroundBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
-    { header: 'количество этажей', id: 'numberFloorBuildingId', name: 'numberFloorBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
+    { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'text', value: 'Производственный центр 8', needDatalist: true },
+    { header: 'ширина', id: 'widthBuildingId', name: 'widthBuildingName', class: 'buildingInput', type: 'number', value: 50, needDatalist: false },
+    { header: 'длина', id: 'lengthBuildingId', name: 'lengthBuildingName', class: 'buildingInput', type: 'number', value: 50, needDatalist: false },
+    { header: 'высота', id: 'heighthBuildingId', name: 'heightBuildingName', class: 'buildingInput', type: 'number', value: 100, needDatalist: false },
+    { header: 'высота над землёй', id: 'heightAboveGroundBuildingId', name: 'heightAboveGroundBuildingName', class: 'buildingInput', type: 'number', value: 50, needDatalist: false },
+    { header: 'высота под землёй', id: 'heightUndergroundBuildingId', name: 'heightUndergroundBuildingName', class: 'buildingInput', type: 'number', value: 50, needDatalist: false },
+    { header: 'количество этажей', id: 'numberFloorBuildingId', name: 'numberFloorBuildingName', class: 'buildingInput', type: 'number', value: 5, needDatalist: false },
     { header: 'масса', id: 'weightBuildingId', name: 'weightBuildingName', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
     { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClassBuildingName', class: 'buildingInput', type: 'text', value: 'A+++', needDatalist: true },
     { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClassBuildingName', class: 'buildingInput', type: 'text', value: 'K0(1440)', needDatalist: true },
     { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClassBuildingName', class: 'buildingInput', type: 'text', value: 'Ф1', needDatalist: true },
     { header: 'долговечность', id: 'durabilityBuildingId', name: 'durabilityBuildingName', class: 'buildingInput', type: 'number', value: 2000, needDatalist: false },
-    //ресурсы переделать как функциональность
-    { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
-    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
+    { header: 'дата постройки', id: 'dateOfConstructionBuildingId', name: 'dateOfConstructionBuildingName', class: 'buildingInput', type: 'date', value: '', needDatalist: false },
+    { header: '3d модель снаружи', id: 'model3DFromOutsideBuildingId', name: 'model3DFromOutsideBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
+    { header: '3d модель внутри', id: 'model3DFromInsideBuildingId', name: 'model3DFromInsideBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
+    { header: 'архитектурный проект', id: 'architecturalProjectBuildingId', name: 'architecturalProjectBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
+    { header: 'технические условия', id: 'technicalSpecificationsBuildingId', name: 'technicalSpecificationsBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
+    { header: 'результаты инженерных', id: 'resultsOfEngineeringSurveysBuildingId', name: 'resultsOfEngineeringSurveysBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
+    { header: 'результаты инженерных', id: 'landPlotPlanningSchemeBuildingId', name: 'landPlotPlanningSchemeBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
+    //ресурсы переделать, как функциональность
+    // { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
+    // { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
   ];
 
   /**
@@ -138,6 +146,41 @@ class Building {
    * Долговечность здания. 
    */
   durability;
+
+  /**
+   * 3d модель снаружи
+   */
+  model3DFromOutside;
+
+  /**
+   * 3d модель внутри
+   */
+  model3DFromInside;
+
+  /**
+   * Архитектурный проект (включает архитектурные, конструктивные решения и инженерные системы).
+   */
+  architecturalProject;
+
+  /**
+   * Технические условия (ТУ) на подключение к сетям (вода, газ, электричество, канализация)
+   */
+  technicalSpecifications;
+
+  /**
+   * Результаты инженерных изысканий (геология, геодезия).
+   */
+  resultsOfEngineeringSurveys;
+
+  /**
+   * Схема планировочной организации земельного участка. Схема расположения дома, коммуникаций, подъездов, показывающая соблюдение отступов.
+   */
+  landPlotPlanningScheme;
+
+  /**
+   * Дата постройки. 
+   */
+  dateOfConstruction;
 
   /**
    * Ресурсы для создания здания.
@@ -283,30 +326,7 @@ class Building {
     }
   };
 
-  /**
-   * Архитектурный проект (включает архитектурные, конструктивные решения и инженерные системы).
-   */
-  architecturalProject;
 
-  /**
-   * Технические условия (ТУ) на подключение к сетям (вода, газ, электричество, канализация)
-   */
-  technicalSpecifications;
-
-  /**
-   * Результаты инженерных изысканий (геология, геодезия).
-   */
-  resultsOfEngineeringSurveys;
-
-  /**
-   * Схема планировочной организации земельного участка. Схема расположения дома, коммуникаций, подъездов, показывающая соблюдение отступов.
-   */
-  landPlotPlanningScheme;
-
-  /**
-   * Дата постройки. 
-   */
-  dateOfConstruction;
 
   init() {
     this.addFunctionalityPropertiesInPropertiesForInputs();

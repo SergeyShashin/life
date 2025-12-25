@@ -19,6 +19,8 @@ class CreatorInputs {
     this.creatorInputsHTMLEl = document.createElement('section');
 
     for (let input of this.inputs) {
+      let pEl = document.createElement('p');
+      pEl.className = 'inputBlock';
       let headerHTMLEl = document.createElement('h4');
       headerHTMLEl.textContent = input.header;
       let inputEl = document.createElement('input');
@@ -32,8 +34,9 @@ class CreatorInputs {
         inputEl.setAttribute('list', `datalist_${input.name}_HTMLEl`);
       }
 
-      this.creatorInputsHTMLEl.appendChild(headerHTMLEl);
-      this.creatorInputsHTMLEl.appendChild(inputEl);
+      pEl.appendChild(headerHTMLEl);
+      pEl.appendChild(inputEl);
+      this.creatorInputsHTMLEl.appendChild(pEl);
     }
 
     return this.creatorInputsHTMLEl;

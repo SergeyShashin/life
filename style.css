@@ -22,6 +22,19 @@ input {
   margin-bottom: 10px;
 }
 
+input::file-selector-button {
+  /* color: crimson; */
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: beige;
+}
+
+input::file-selector-button:hover {
+  color: crimson;
+}
+
 input:hover {
   border-bottom: 1px solid crimson;
 }
@@ -258,7 +271,7 @@ td:hover {
   height: 25px;
 }
 
-#mapHTMLEl{
+#mapHTMLEl {
   margin: 20px 0;
 }
 
@@ -284,4 +297,13 @@ td:hover {
 /* вода */
 .water {
   background: lightblue;
+}
+
+.inputBlock {
+  margin: 20px 0;
+}
+
+.inputBlock h4 {
+  margin: 10px 0;
+  height: 45px;
 }
