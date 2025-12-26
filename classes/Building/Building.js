@@ -9,7 +9,6 @@ class Building {
    */
   constructor(peopleAndResources) {
     this.peopleAndresources = peopleAndResources;
-    console.log(this.peopleAndresources);
   }
 
   buildingHTMLEl;
@@ -43,8 +42,8 @@ class Building {
     { header: 'технические условия', id: 'technicalSpecificationsBuildingId', name: 'technicalSpecificationsBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'resultsOfEngineeringSurveysBuildingId', name: 'resultsOfEngineeringSurveysBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'landPlotPlanningSchemeBuildingId', name: 'landPlotPlanningSchemeBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
-    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: true },
     { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: true },
+    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: true },
   ];
 
   /**
