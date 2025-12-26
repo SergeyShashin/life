@@ -10,8 +10,14 @@ class Building {
   constructor(peopleAndResources) {
     this.peopleAndresources = peopleAndResources;
   }
-
+  /**
+   * HTML элемент здания
+   */
   buildingHTMLEl;
+
+  /**
+   * Люди и ресурсы полученные из life.js
+   */
   peopleAndResources;
 
   /**

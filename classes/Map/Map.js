@@ -161,6 +161,7 @@ class Map {
 
   /**
  * Создаёт datalist для выбора нового элемента карты в инпуте, который создаётся в inputGroupForChoseParametrsNewElementHTMLEl
+ * Переделать т.к. есть CreatorDatalist. Или создавать все datalist в life.js
  * @returns {HTMLElement} datalist нового элемента карты в инпуте.
  */
   createDatalistForAddNewElementOnMapHTMLEl() {
