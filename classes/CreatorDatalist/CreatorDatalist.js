@@ -41,9 +41,12 @@ class CreatorDatalist {
     /**
      * Классы энергоэффективности.
      */
-    datalist_energyEfficiencyClass_HTMLEl: [
-      'A+++', 'A++', 'A+', 'A', 'B', 'C', 'D', 'E', 'F', 'G'
-    ]
+    datalist_energyEfficiencyClass_HTMLEl: ['A+++', 'A++', 'A+', 'A', 'B', 'C', 'D', 'E', 'F', 'G'],
+
+    /**
+     * Классы энергоэффективности.
+     */
+    datalist_structuralFireHazardClass_HTMLEl: ['K0(1440)', 'K1(1440)', 'K2(1440)', 'K3(1440)']
   }
 
   /**
