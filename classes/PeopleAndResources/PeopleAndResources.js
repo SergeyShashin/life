@@ -1,9 +1,9 @@
 'use strict';
 
-class Resources {
+class PeopleAndResources {
   constructor() {
   }
-  resources = {
+  peopleAndResources = {
     people: {
       availability: 8341290530,
       enoughEarthlings: 8341290530,
@@ -896,8 +896,8 @@ class Resources {
       unitsMeasurement: 'kg'
     },
 
-    getResources() {
-      return this.resources;
+    getPeopleAndResources() {
+      return this.peopleAndResources;
     }
 
   };

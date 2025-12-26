@@ -7,12 +7,12 @@ class Building {
   /**
    * Конструктор базового класса 
    */
-  constructor(resources) {
-    this.resources = resources;
+  constructor(peopleAndResources) {
+    this.peopleAndresources = peopleAndResources;
   }
 
   buildingHTMLEl;
-  resources;
+  peopleAndResources;
 
   /**
    * Свойства объекта для создания инпутов в CreatorInputs.js
@@ -42,9 +42,8 @@ class Building {
     { header: 'технические условия', id: 'technicalSpecificationsBuildingId', name: 'technicalSpecificationsBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'resultsOfEngineeringSurveysBuildingId', name: 'resultsOfEngineeringSurveysBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'landPlotPlanningSchemeBuildingId', name: 'landPlotPlanningSchemeBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
-    //ресурсы переделать, как функциональность
-    // { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
-    // { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: false },
+    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: true },
+    { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: true },
   ];
 
   /**
@@ -345,11 +344,8 @@ class Building {
     },
   };
 
-
-
   init() {
     this.addFunctionalityPropertiesInPropertiesForInputs();
-    //сделать добавление inputov c ресурсами
   }
 
   createBuildinHTMLEl() {
