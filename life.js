@@ -51,7 +51,7 @@ const life = {
     this.containerEl.appendChild(this.control.createControlHTMLEl());
 
     //Создаёт объект с ресурсами
-    this.resources = new Resources();
+    this.peopleAndResources = new PeopleAndResources();
 
     //Создаёт объект класса Word.
     this.world = new World();

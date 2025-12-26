@@ -9,6 +9,7 @@ class Building {
    */
   constructor(peopleAndResources) {
     this.peopleAndresources = peopleAndResources;
+    console.log(this.peopleAndresources);
   }
 
   buildingHTMLEl;
