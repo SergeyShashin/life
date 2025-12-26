@@ -29,7 +29,7 @@ class Building {
     { header: 'описание здания', id: 'descriptionBuildingId', name: 'descriptionBuildingName', class: 'buildingInput', type: 'text', value: 'Для счастливой жизни и производства всего необходимого для жизни.', needDatalist: false },
     { header: 'широта', id: 'latitudeBuildingId', name: 'latitudeBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
     { header: 'долгота', id: 'longitudeBuildingId', name: 'longitudeBuildingName', class: 'buildingInput', type: 'number', value: 0, needDatalist: false },
-    { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'text', value: 'Производственный центр 8', needDatalist: true },
+    { header: 'наименование места', id: 'namePointBuildingId', name: 'namePointBuildingName', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
     { header: 'ширина', id: 'widthBuildingId', name: 'widthBuildingName', class: 'buildingInput', type: 'number', value: 50, needDatalist: false },
     { header: 'длина', id: 'lengthBuildingId', name: 'lengthBuildingName', class: 'buildingInput', type: 'number', value: 50, needDatalist: false },
     { header: 'высота', id: 'heighthBuildingId', name: 'heightBuildingName', class: 'buildingInput', type: 'number', value: 100, needDatalist: false },
@@ -37,9 +37,9 @@ class Building {
     { header: 'высота под землёй', id: 'heightUndergroundBuildingId', name: 'heightUndergroundBuildingName', class: 'buildingInput', type: 'number', value: 50, needDatalist: false },
     { header: 'количество этажей', id: 'numberFloorBuildingId', name: 'numberFloorBuildingName', class: 'buildingInput', type: 'number', value: 5, needDatalist: false },
     { header: 'масса', id: 'weightBuildingId', name: 'weightBuildingName', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
-    { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClassBuildingName', class: 'buildingInput', type: 'text', value: 'A+++', needDatalist: true },
-    { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClassBuildingName', class: 'buildingInput', type: 'text', value: 'K0(1440)', needDatalist: true },
-    { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClassBuildingName', class: 'buildingInput', type: 'text', value: 'Ф1', needDatalist: true },
+    { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClassBuildingName', class: 'buildingInput', type: 'search', value: 'A+++', needDatalist: true },
+    { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClassBuildingName', class: 'buildingInput', type: 'search', value: 'K0(1440)', needDatalist: true },
+    { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClassBuildingName', class: 'buildingInput', type: 'search', value: 'Ф1', needDatalist: true },
     { header: 'долговечность', id: 'durabilityBuildingId', name: 'durabilityBuildingName', class: 'buildingInput', type: 'number', value: 2000, needDatalist: false },
     { header: 'дата постройки', id: 'dateOfConstructionBuildingId', name: 'dateOfConstructionBuildingName', class: 'buildingInput', type: 'date', value: '', needDatalist: false },
     { header: '3d модель снаружи', id: 'model3DFromOutsideBuildingId', name: 'model3DFromOutsideBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
@@ -48,8 +48,8 @@ class Building {
     { header: 'технические условия', id: 'technicalSpecificationsBuildingId', name: 'technicalSpecificationsBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'resultsOfEngineeringSurveysBuildingId', name: 'resultsOfEngineeringSurveysBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'landPlotPlanningSchemeBuildingId', name: 'landPlotPlanningSchemeBuildingName', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
-    { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: true },
-    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'text', value: '', needDatalist: true },
+    { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreationBuildingName', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
+    { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResourcesBuildingName', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
   ];
 
   /**

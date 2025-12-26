@@ -53,8 +53,10 @@ class CreatorInputs {
       inputEl.className = input.class;
 
       if (input.needDatalist) {
-        inputEl.setAttribute('list', `datalist_${input.name}_HTMLEl`);
-
+        let idNameForDatalist = `datalist_${input.name}_HTMLEl`;
+        inputEl.setAttribute('list', idNameForDatalist);
+        let datalistHTMLEl = new CreatorDatalist(idNameForDatalist, this.namesPoints).createDatalistHTMLel();
+        pEl.appendChild(datalistHTMLEl);
       }
 
       pEl.appendChild(headerHTMLEl);
