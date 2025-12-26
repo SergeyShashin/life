@@ -54,12 +54,9 @@ class CreatorDatalist {
     this.datalistHTMLEl = document.createElement('datalist');
     this.datalistHTMLEl.id = this.idNameForDatalist;
 
-    let list = this.lists[this.idNameForDatalist];
-    console.log(list[0]);
-
-    for (let i = 0; i < list.length; i++) {
+    for (let el of this.lists[this.idNameForDatalist]) {
       let optionEl = document.createElement('option');
-      optionEl.value = list[i];
+      optionEl.value = el;
       this.datalistHTMLEl.appendChild(optionEl);
     }
 
