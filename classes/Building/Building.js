@@ -43,7 +43,6 @@ class Building {
     { header: 'технические условия', id: 'technicalSpecificationsBuildingId', name: 'technicalSpecifications', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'resultsOfEngineeringSurveysBuildingId', name: 'resultsOfEngineeringSurveys', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'landPlotPlanningSchemeBuildingId', name: 'landPlotPlanningScheme', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
-    //Ввод ресурсов для создания и эксплуатции. Сделать наименование ресурса и количество. Сделать добавление нового ресурса и количества после заполнения. 
     { header: 'ресурсы для создания и эксплуатации', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreation', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
   ];
 
