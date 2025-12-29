@@ -9,6 +9,10 @@ class CreatorInputs {
   }
 
   creatorInputsHTMLEl;
+
+  /**
+   * Объекты с данными для инпутов
+   */
   inputs;
 
   /**

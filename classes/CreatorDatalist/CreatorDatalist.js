@@ -11,6 +11,8 @@ class CreatorDatalist {
 
   idNameForDatalist;
   datalistHTMLel;
+  //Создаёт объект с ресурсами
+  peopleAndResources = new PeopleAndResources();
 
   /**
    * Списки. 
@@ -52,6 +54,11 @@ class CreatorDatalist {
      * Классы функциональной пожарной опасности зданий
      */
     datalist_functionalFireHazardClass_HTMLEl: ['Ф1', 'Ф2', 'Ф3', 'Ф4', 'Ф5'],
+   
+    /**
+     * Люди и ресурсы
+     */
+    datalist_resourcesForCreation_HTMLEl: ['проверочка', 'проверочка'],
   }
 
   /**

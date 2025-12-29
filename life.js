@@ -10,7 +10,6 @@ const life = {
   time: null,
   control: null,
   settings: null,
-  resources: null,
 
   /**
    * Запуск игры
@@ -48,10 +47,7 @@ const life = {
       { class: 'btn', id: 'btnTasksHumanityUp4050', textRu: `Задачи до ${new Date().getFullYear() * 2}` },
     ]);
     //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
-    this.containerEl.appendChild(this.control.createControlHTMLEl());
-
-    //Создаёт объект с ресурсами
-    this.peopleAndResources = new PeopleAndResources();
+    this.containerEl.appendChild(this.control.createControlHTMLEl()); 
 
     //Создаёт объект класса Word.
     this.world = new World();
@@ -285,7 +281,7 @@ const life = {
     switch (e.target.value) {
       case newElements[0]:
         alert('Создаём новый объект здания и добавляем его параметры в HTML.');
-        let building = new Building(this.peopleAndResources);
+        let building = new Building();
         e.target.parentElement.appendChild(building.createBuildinHTMLEl());
         building.getBuildingHTMLEl().appendChild(new CreatorInputs(building.getPropertiesForInputs()).createInputHTMLEl());
         building.getBuildingHTMLEl().appendChild(new Control([{ class: 'btn', id: 'btnAddBuildingApprovedUser', textRu: 'Ага' }]).createControlHTMLEl());

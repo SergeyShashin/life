@@ -7,18 +7,13 @@ class Building {
   /**
    * Конструктор базового класса 
    */
-  constructor(peopleAndResources) {
-    this.peopleAndresources = peopleAndResources;
+  constructor() {
+
   }
   /**
    * HTML элемент здания
    */
   buildingHTMLEl;
-
-  /**
-   * Люди и ресурсы полученные из life.js
-   */
-  peopleAndResources;
 
   /**
    * Свойства объекта для создания инпутов в CreatorInputs.js
@@ -48,8 +43,7 @@ class Building {
     { header: 'технические условия', id: 'technicalSpecificationsBuildingId', name: 'technicalSpecifications', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'resultsOfEngineeringSurveysBuildingId', name: 'resultsOfEngineeringSurveys', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'landPlotPlanningSchemeBuildingId', name: 'landPlotPlanningScheme', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
-    // { header: 'ресурсы для создания', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreation', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
-    // { header: 'ресурсы при эксплуатации', id: 'operationalResourcesBuildingId', name: 'operationalResources', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
+    { header: 'ресурсы для создания и эксплуатации', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreation', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
   ];
 
   /**
