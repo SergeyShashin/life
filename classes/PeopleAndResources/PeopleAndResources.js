@@ -724,7 +724,7 @@ class PeopleAndResources {
       symbol: 'Os',
       unitsMeasurement: 'kg'
     },
-    Lawrencium: {
+    lawrencium: {
       availability: '?',
       enoughEarthlings: '?',
       free: 0,
@@ -896,10 +896,24 @@ class PeopleAndResources {
       unitsMeasurement: 'kg'
     },
 
-    getPeopleAndResources() {
-      return this.peopleAndResources;
-    }
-
   };
+
+  /**
+   * Возвращает объект с ресурсами.
+   * @returns {object} Объект с ресурсами.
+   */
+  getPeopleAndResources() {
+    return this.peopleAndResources;
+  }
+
+  /**
+   * Возвращает массив с названиями ресурсов на русском языке.
+   * @returns {Array} Массив с названиями ресурсов на русском языке.
+   */
+  getPeopleAndResourcesNameRuInArr() {
+    const peopleAndResourcesNameRuInArr = [];
+    Object.values(this.peopleAndResources).map(el => peopleAndResourcesNameRuInArr.push(el.nameRu));
+    return peopleAndResourcesNameRuInArr;
+  }
 
 }

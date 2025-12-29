@@ -12,7 +12,7 @@ class CreatorDatalist {
   idNameForDatalist;
   datalistHTMLel;
   //Создаёт объект с ресурсами
-  peopleAndResources = new PeopleAndResources();
+  peopleAndResourcesNameRuInArr = new PeopleAndResources().getPeopleAndResourcesNameRuInArr();
 
   /**
    * Списки. 
@@ -54,11 +54,11 @@ class CreatorDatalist {
      * Классы функциональной пожарной опасности зданий
      */
     datalist_functionalFireHazardClass_HTMLEl: ['Ф1', 'Ф2', 'Ф3', 'Ф4', 'Ф5'],
-   
+
     /**
      * Люди и ресурсы
      */
-    datalist_resourcesForCreation_HTMLEl: ['проверочка', 'проверочка'],
+    datalist_resourcesForCreation_HTMLEl: this.peopleAndResourcesNameRuInArr,
   }
 
   /**
@@ -66,6 +66,8 @@ class CreatorDatalist {
    * @returns {HTMLElement} datalist
    */
   createDatalistHTMLel() {
+    console.log(this.peopleAndResources);
+
     this.datalistHTMLEl = document.createElement('datalist');
     this.datalistHTMLEl.id = this.idNameForDatalist;
 
