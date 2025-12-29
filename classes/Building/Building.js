@@ -39,7 +39,7 @@ class Building {
     { header: 'масса', id: 'weightBuildingId', name: 'weight', class: 'buildingInput', type: 'number', value: 1, needDatalist: false },
     { header: 'класс энергоэффективности', id: 'energyEfficiencyClassBuildingId', name: 'energyEfficiencyClass', class: 'buildingInput', type: 'search', value: 'A+++', needDatalist: true },
     { header: 'класс конструктивной пожарной опасности', id: 'structuralFireHazardClassBuildingId', name: 'structuralFireHazardClass', class: 'buildingInput', type: 'search', value: 'K0(1440)', needDatalist: true },
-    // { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClass', class: 'buildingInput', type: 'search', value: 'Ф1', needDatalist: true },
+    { header: 'класс функциональной пожарной опасности', id: 'functionalFireHazardClassBuildingId', name: 'functionalFireHazardClass', class: 'buildingInput', type: 'search', value: 'Ф1', needDatalist: true },
     { header: 'долговечность', id: 'durabilityBuildingId', name: 'durability', class: 'buildingInput', type: 'number', value: 2000, needDatalist: false },
     { header: 'дата постройки', id: 'dateOfConstructionBuildingId', name: 'dateOfConstruction', class: 'buildingInput', type: 'date', value: '', needDatalist: false },
     { header: '3d модель снаружи', id: 'model3DFromOutsideBuildingId', name: 'model3DFromOutside', class: 'buildingInput', type: 'file', value: '', needDatalist: false },

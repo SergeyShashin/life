@@ -44,9 +44,14 @@ class CreatorDatalist {
     datalist_energyEfficiencyClass_HTMLEl: ['A+++', 'A++', 'A+', 'A', 'B', 'C', 'D', 'E', 'F', 'G'],
 
     /**
-     * Классы энергоэффективности.
+     * Классы конструктивной пожарной опасности зданий
      */
-    datalist_structuralFireHazardClass_HTMLEl: ['K0(1440)', 'K1(1440)', 'K2(1440)', 'K3(1440)']
+    datalist_structuralFireHazardClass_HTMLEl: ['K0(1440)', 'K1(1440)', 'K2(1440)', 'K3(1440)'],
+
+    /**
+     * Классы функциональной пожарной опасности зданий
+     */
+    datalist_functionalFireHazardClass_HTMLEl: ['Ф1', 'Ф2', 'Ф3', 'Ф4', 'Ф5'],
   }
 
   /**
