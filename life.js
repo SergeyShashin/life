@@ -47,7 +47,7 @@ const life = {
       { class: 'btn', id: 'btnTasksHumanityUp4050', textRu: `Задачи до ${new Date().getFullYear() * 2}` },
     ]);
     //Создаёт HTML элемент объекта control и добавляет его в HTML элемент игры
-    this.containerEl.appendChild(this.control.createControlHTMLEl()); 
+    this.containerEl.appendChild(this.control.createControlHTMLEl());
 
     //Создаёт объект класса Word.
     this.world = new World();
@@ -298,7 +298,13 @@ const life = {
       case newElements[4]:
         alert('Создаём новый объект полотна для людей и добавляем его параметры в HTML.');
         break;
+    }
 
+    switch (e.target.id) {
+      case 'resourcesForCreationBuildingId':
+        alert('Создать инпут для выбранного ресурса. Ввод количества. Добавить инпут в родителейский элемент.\
+        В котором будут отражены ресурсы для строительства здания.');
+        break;
     }
   }
 

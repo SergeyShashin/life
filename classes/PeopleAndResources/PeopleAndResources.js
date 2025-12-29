@@ -18,7 +18,7 @@ class PeopleAndResources {
       enoughEarthlings: 149000000,
       free: 0,
       needsСreated: 0,
-      nameRu: 'земля',
+      nameRu: 'земля (кв. км)',
       symbol: 'landArea',
       unitsMeasurement: 'km'
     },
@@ -823,13 +823,94 @@ class PeopleAndResources {
       symbol: 'sand',
       unitsMeasurement: 'kg'
     },
-    stone: {
+    granite: {
       availability: '?',
       enoughEarthlings: '?',
       free: 0,
       needsСreated: 0,
-      nameRu: 'камень',
-      symbol: 'stone',
+      nameRu: 'гранит',
+      symbol: 'granite',
+      unitsMeasurement: 'kg'
+    },
+    limeStone: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'известняк',
+      symbol: 'limeStone',
+      unitsMeasurement: 'kg'
+    },
+    dolomite: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'доломит',
+      symbol: 'CaCO3•MgCO3',
+      unitsMeasurement: 'kg'
+    },
+    marble: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'мрамор',
+      symbol: 'marble',
+      unitsMeasurement: 'kg'
+    },
+    sandStone: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'песчаник',
+      symbol: 'sandStone',
+      unitsMeasurement: 'kg'
+    },
+    quartzite: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'кварцит',
+      symbol: 'quartzite',
+      unitsMeasurement: 'kg'
+    },
+    quartziteSandStone: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'кварцито-песчаник',
+      symbol: 'quartziteSandSton',
+      unitsMeasurement: 'kg'
+    },
+    slate: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'сланец',
+      symbol: 'slate',
+      unitsMeasurement: 'kg'
+    },
+    porphyry: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'порфир',
+      symbol: 'porphyry',
+      unitsMeasurement: 'kg'
+    },
+    onyx: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'оникс',
+      symbol: 'onyx',
       unitsMeasurement: 'kg'
     },
     crushedStone: {
