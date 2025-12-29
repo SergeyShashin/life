@@ -304,6 +304,8 @@ const life = {
       case 'resourcesForCreationBuildingId':
         alert('Создать инпут для выбранного ресурса. Ввод количества. Добавить инпут в родителейский элемент.\
         В котором будут отражены ресурсы для строительства здания.');
+        // building.getBuildingHTMLEl().appendChild(new CreatorInputs({ header: 'наименование здания', id: 'nameBuildingId', name: 'name', class: 'buildingInput', type: 'text', value: 'производственный центр', needDatalist: false }).createInputHTMLEl());
+
         break;
     }
   }
