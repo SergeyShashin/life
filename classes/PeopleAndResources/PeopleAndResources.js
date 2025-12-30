@@ -976,6 +976,24 @@ class PeopleAndResources {
       symbol: 'caementum_600',
       unitsMeasurement: 'kg'
     },
+    glass: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'стекло',
+      symbol: 'glass',
+      unitsMeasurement: 'kg'
+    },
+    syzygiumAromaticum: {
+      availability: '?',
+      enoughEarthlings: '?',
+      free: 0,
+      needsСreated: 0,
+      nameRu: 'гвоздика',
+      symbol: 'syzygiumAromaticum',
+      unitsMeasurement: 'kg'
+    },
 
   };
 
