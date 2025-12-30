@@ -58,7 +58,7 @@ class CreatorDatalist {
     /**
      * Люди и ресурсы
      */
-    datalist_resourcesForCreation_HTMLEl: this.peopleAndResourcesNameRuInArr,
+    datalist_peopleAndResourcesForCreation_HTMLEl: this.peopleAndResourcesNameRuInArr,
   }
 
   /**

@@ -43,7 +43,7 @@ class Building {
     { header: 'технические условия', id: 'technicalSpecificationsBuildingId', name: 'technicalSpecifications', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'resultsOfEngineeringSurveysBuildingId', name: 'resultsOfEngineeringSurveys', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
     { header: 'результаты инженерных', id: 'landPlotPlanningSchemeBuildingId', name: 'landPlotPlanningScheme', class: 'buildingInput', type: 'file', value: '', needDatalist: false },
-    { header: 'ресурсы для создания и эксплуатации', id: 'resourcesForCreationBuildingId', name: 'resourcesForCreation', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
+    { header: 'люди и ресурсы для создания и эксплуатации', id: 'peopleAndResourcesForCreationBuildingId', name: 'peopleAndResourcesForCreation', class: 'buildingInput', type: 'search', value: '', needDatalist: true },
   ];
 
   /**
@@ -187,7 +187,7 @@ class Building {
   /**
    * Ресурсы для создания здания.
    */
-  resourcesForCreation;
+  peopleAndResourcesForCreation;
 
   /**
    * Ресурсы при эксплутации здания.

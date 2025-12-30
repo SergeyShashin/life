@@ -301,9 +301,8 @@ const life = {
     }
 
     switch (e.target.id) {
-      case 'resourcesForCreationBuildingId':       
+      case 'peopleAndResourcesForCreationBuildingId':       
         e.target.parentElement.appendChild(new CreatorInputs([{ header: e.target.value, id: '', name: '', class: 'buildingInput', type: 'number', value: '', needDatalist: false }]).createInputHTMLEl());
-
         break;
     }
   }
