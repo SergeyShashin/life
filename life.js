@@ -10,6 +10,8 @@ const life = {
   time: null,
   control: null,
   settings: null,
+  counterHuman: null,
+  counterBuilding: null,
 
   /**
    * Запуск игры
@@ -27,6 +29,9 @@ const life = {
   init() {
     //Находит HTML элемент игры
     this.containerEl = document.getElementById('life');
+
+    this.counterHuman = 0;
+    this.counterBuilding = 0;
 
     //Создаёт объект класса Time. Текущая дата с возможностью передвигать день
     this.time = new Time();
@@ -86,6 +91,7 @@ const life = {
    */
   createHumanForGroup() {
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
+      this.counterHuman++;
       const human = new Human(
         { year: 0, month: 0, day: 1, hour: 0, minute: 0, second: 0 },
         0.0000, i, '', '', '', i + 1);
@@ -208,7 +214,7 @@ const life = {
       case 'btnAddBuildingApprovedUser':
         alert('Параметры здания выбраны. Добавить на карту.');
         //Пример this.map.addOnMap(
-        //   { classObjectEn: 'human', classObjectRu: 'человек', id: human.getIDHuman(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
+        //   { classObjectEn: 'building', classObjectRu: 'здание', id: building.getIDBuilding(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
         // );
         break;
       case 'btnAddExistElement':
@@ -281,10 +287,11 @@ const life = {
     switch (e.target.value) {
       case newElements[0]:
         alert('Создаём новый объект здания и добавляем его параметры в HTML.');
-        let building = new Building();
+        this.counterBuilding++;
+        let building = new Building(this.counterBuilding);
         e.target.parentElement.appendChild(building.createBuildinHTMLEl());
         building.getBuildingHTMLEl().appendChild(new CreatorInputs(building.getPropertiesForInputs()).createInputHTMLEl());
-        building.getBuildingHTMLEl().appendChild(new Control([{ class: 'btn', id: 'btnAddBuildingApprovedUser', textRu: 'Ага' }]).createControlHTMLEl());
+        building.getBuildingHTMLEl().appendChild(new Control([{ class: 'btn', id: 'btnAddBuildingApprovedUser', datasetID: building.getIDBuilding(), textRu: 'Ага' }]).createControlHTMLEl());
         break;
       case newElements[1]:
         alert('Создаём новый объект транспорта и добавляем его параметры в HTML.');
@@ -301,7 +308,7 @@ const life = {
     }
 
     switch (e.target.id) {
-      case 'peopleAndResourcesForCreationBuildingId':       
+      case 'peopleAndResourcesForCreationBuildingId':
         e.target.parentElement.appendChild(new CreatorInputs([{ header: e.target.value, id: '', name: '', class: 'buildingInput', type: 'number', value: '', needDatalist: false }]).createInputHTMLEl());
         break;
     }

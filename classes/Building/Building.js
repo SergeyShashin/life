@@ -7,13 +7,18 @@ class Building {
   /**
    * Конструктор базового класса 
    */
-  constructor() {
-
+  constructor(idBuilding) {
+    this.idBuilding = idBuilding;
   }
   /**
    * HTML элемент здания
    */
   buildingHTMLEl;
+
+  /**
+   * ID здания
+   */
+  idBuilding;
 
   /**
    * Свойства объекта для создания инпутов в CreatorInputs.js
@@ -372,5 +377,8 @@ class Building {
     );
   }
 
+  getIDBuilding() {
+    return this.idBuilding;
+  }
 
 }

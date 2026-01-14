@@ -26,6 +26,11 @@ class Control {
       btnEl.className = button.class;
       btnEl.id = button.id;
       btnEl.textContent = button.textRu;
+
+      if (button.datasetID) {
+        btnEl.dataset.id = button.datasetID;
+      }
+
       this.controlHTMLEl.appendChild(btnEl);
     }
 
