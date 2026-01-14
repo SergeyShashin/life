@@ -66,7 +66,6 @@ class CreatorDatalist {
    * @returns {HTMLElement} datalist
    */
   createDatalistHTMLel() {
-    console.log(this.peopleAndResources);
 
     this.datalistHTMLEl = document.createElement('datalist');
     this.datalistHTMLEl.id = this.idNameForDatalist;

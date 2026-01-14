@@ -266,9 +266,9 @@ class Map {
   render() {
     this.usedCels = [];
     this.objectsMap.map(object => {
-      let { classObjectEn, classObjectRu, id, firstName, latitude, longitute } = object;
+      let { classObjectEn, classObjectRu, id, nameObj, latitude, longitute } = object;
       let cel = this.cels[`latitude${latitude}_longitude${longitute}`];
-      cel.textContent = `${firstName}_${classObjectRu}_${id}`;
+      cel.textContent = `${nameObj}_${classObjectRu}_${id}`;
       cel.classList.add(classObjectEn);
       this.usedCels.push(cel);
     }

@@ -112,7 +112,7 @@ const life = {
       this.settings.getSettingsEl().appendChild(humanHTMLEl);
 
       this.map.addOnMap(
-        { classObjectEn: 'human', classObjectRu: 'человек', id: human.getIDHuman(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
+        { classObjectEn: 'human', classObjectRu: 'человек', id: human.getIDHuman(), nameObj: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
       );
     }
 
@@ -215,12 +215,11 @@ const life = {
         alert('Параметры здания выбраны. Добавить на карту.');
 
         for (let input of document.getElementById(e.target.dataset.id).querySelectorAll('input')) {
-
           console.log(input);
         }
 
         //Пример this.map.addOnMap(
-        //   { classObjectEn: 'building', classObjectRu: 'здание', id: building.getIDBuilding(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
+        //   { classObjectEn: 'building', classObjectRu: 'здание', id: building.getIDBuilding(), nameObj: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
         // );
         break;
       case 'btnAddExistElement':
