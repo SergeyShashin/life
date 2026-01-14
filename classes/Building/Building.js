@@ -8,7 +8,7 @@ class Building {
    * Конструктор базового класса 
    */
   constructor(idBuilding) {
-    this.idBuilding = idBuilding;
+    this.idBuilding = 'building_' + idBuilding;
   }
   /**
    * HTML элемент здания
@@ -356,6 +356,7 @@ class Building {
   createBuildinHTMLEl() {
     this.init();
     this.buildingHTMLEl = document.createElement('section');
+    this.buildingHTMLEl.id = this.idBuilding;
 
     return this.buildingHTMLEl;
   }

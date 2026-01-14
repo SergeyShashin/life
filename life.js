@@ -213,6 +213,12 @@ const life = {
         break;
       case 'btnAddBuildingApprovedUser':
         alert('Параметры здания выбраны. Добавить на карту.');
+
+        for (let input of document.getElementById(e.target.dataset.id).querySelectorAll('input')) {
+
+          console.log(input);
+        }
+
         //Пример this.map.addOnMap(
         //   { classObjectEn: 'building', classObjectRu: 'здание', id: building.getIDBuilding(), firstName: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
         // );
