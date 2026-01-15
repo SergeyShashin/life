@@ -88,6 +88,8 @@ const life = {
 
   /**
    * Создает заданное количество людей для группы и добавляет их параметры в HTML элемент settings.
+   * 
+   * Доделывать добавление в массив humans, добавление в human после заполнения.
    */
   createHumanForGroup() {
     for (let i = 0; i < this.settings.getSizeTeam(); i++) {
@@ -218,9 +220,10 @@ const life = {
           console.log(input);
         }
 
-        //Пример this.map.addOnMap(
-        //   { classObjectEn: 'building', classObjectRu: 'здание', id: building.getIDBuilding(), nameObj: human.getFirstName(), latitude: human.getLatitude(), longitute: human.getLongitude() }
-        // );
+        //нужно сделать нормально. Пока захордкожено какими-то цифрами чтобы добавилось на карту.
+        this.map.addOnMap(
+          { classObjectEn: 'building', classObjectRu: 'здание', id: 8, nameObj: 'здание8', latitude: 8, longitute: 8 }
+        )
         break;
       case 'btnAddExistElement':
         this.map.addExistElement();
